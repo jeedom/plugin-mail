@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info>
+    <id>mail</id>
+    <name>Mail</name>
+    <description>Plugin pour envoyer des mails</description>
+    <icon>fa fa-envelope</icon>
+    <licence>AGPL</licence>
+    <author>Loïc Gevrey</author>
+    <installation>Aucune</installation>
+    <require>1.10</require>
+    <version>1.0</version>
+    <category>communication</category>
+    <include type="php">mail.inc</include>
+</info>
+

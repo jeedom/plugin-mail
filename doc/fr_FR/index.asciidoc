@@ -1,0 +1,10 @@
+== Mail
+
+=== Description
+Plugin permetant d'envoyer des mails
+
+=== Configuration
+include::configuration.asciidoc[]
+
+=== Changelog
+include::changelog.asciidoc[]

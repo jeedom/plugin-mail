@@ -1,1 +1,12 @@
-TODO
+Le plugin Mail ajoute une fonctionnalité utile : les mails (comme son nom ne le laissait pas entendre) :
+
+image::../images/mail.JPG[]
+
+Plugin pouvant aller d’un fonctionnement très simple à plus compliqué. De base on peut configurer le nom de l’équipement, l’activer ou le désactiver, le nom de l’expéditeur qui envoie le mail ainsi que l’adresse mail de l’expéditeur (c’est là qu’on voit que les mails sont très sécurisés car on peut mettre l’adresse que l’on veut même si elle ne nous appartient pas ou n’existe pas, ce qui est le cas ici) et on peut configurer le mode d’envoi :
+
+- Mail() : fonction de base de php, ce mode considère donc une configuration
+- Sendmail : fonction d’envoi de mail du système celui-ci doit donc être configuré
+- SMTP : la configuration se fait entièrement dans Jeedom
+- Qmail
+
+Ensuite fonctionnement on ne peut plus simple : une commande = un mail.

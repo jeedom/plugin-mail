@@ -3,8 +3,14 @@
 === Description
 Plugin permetant d'envoyer des mails
 
+'''
 === Configuration
 include::configuration.asciidoc[]
 
+'''
+=== FAQ
+include::faq.asciidoc[]
+
+'''
 === Changelog
 include::changelog.asciidoc[]

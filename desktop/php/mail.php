@@ -6,7 +6,7 @@ sendVarToJS('eqType', 'mail');
 ?>
 
 <div class="row row-overflow">
-    <div class="col-lg-2">
+    <div class="col-lg-2 col-md-3 col-sm-4">
         <div class="bs-sidebar">
             <ul id="ul_eqLogic" class="nav nav-list bs-sidenav">
                 <a class="btn btn-default eqLogicAction" style="width : 100%;margin-top : 5px;margin-bottom: 5px;" data-action="add"><i class="fa fa-plus-circle"></i> {{Ajouter Emails}}</a>
@@ -19,22 +19,22 @@ sendVarToJS('eqType', 'mail');
             </ul>
         </div>
     </div>
-    <div class="col-lg-10 eqLogic" style="border-left: solid 1px #EEE; padding-left: 25px;display: none;">
+    <div class="col-lg-10 col-md-9 col-sm-8 eqLogic" style="border-left: solid 1px #EEE; padding-left: 25px;display: none;">
         <div class='row'>
-            <div class="col-lg-6">
+            <div class="col-sm-6">
                 <form class="form-horizontal">
                     <fieldset>
                         <legend>{{Général}}</legend>
                         <div class="form-group">
-                            <label class="col-lg-4 control-label">{{Nom de l'équipement mail}}</label>
-                            <div class="col-lg-6">
+                            <label class="col-sm-4 control-label">{{Nom de l'équipement mail}}</label>
+                            <div class="col-sm-6">
                                 <input type="text" class="eqLogicAttr form-control" data-l1key="id" style="display : none;" />
                                 <input type="text" class="eqLogicAttr form-control" data-l1key="name" placeholder="{{Nom de l'équipement mail}}"/>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-4 control-label" >{{Objet parent}}</label>
-                            <div class="col-lg-8">
+                            <label class="col-sm-4 control-label" >{{Objet parent}}</label>
+                            <div class="col-sm-8">
                                 <select class="eqLogicAttr form-control" data-l1key="object_id">
                                     <option value="">{{Aucun}}</option>
                                     <?php
@@ -46,30 +46,30 @@ sendVarToJS('eqType', 'mail');
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-4 control-label">{{Activer}}</label>
-                            <div class="col-lg-1">
+                            <label class="col-sm-4 control-label">{{Activer}}</label>
+                            <div class="col-sm-1">
                                 <input type="checkbox" class="eqLogicAttr" data-l1key="isEnable" checked/>
                             </div>
-                            <label class="col-lg-4 control-label">{{Visible}}</label>
-                            <div class="col-lg-1">
+                            <label class="col-sm-4 control-label">{{Visible}}</label>
+                            <div class="col-sm-1">
                                 <input type="checkbox" class="eqLogicAttr" data-l1key="isVisible" checked/>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-4 control-label">{{Nom expéditeur}}</label>
-                            <div class="col-lg-6">
+                            <label class="col-sm-4 control-label">{{Nom expéditeur}}</label>
+                            <div class="col-sm-6">
                                 <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='fromName' />
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-4 control-label">{{Mail expéditeur}}</label>
-                            <div class="col-lg-6">
+                            <label class="col-sm-4 control-label">{{Mail expéditeur}}</label>
+                            <div class="col-sm-6">
                                 <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='fromMail' />
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-4 control-label">{{Mode d'envoi}}</label>
-                            <div class="col-lg-6">
+                            <label class="col-sm-4 control-label">{{Mode d'envoi}}</label>
+                            <div class="col-sm-6">
                                 <select class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='sendMode'>
                                     <option value='smtp'>SMTP</option>
                                     <option value='sendmail' class="expertModeVisible">Sendmail</option>
@@ -81,7 +81,7 @@ sendVarToJS('eqType', 'mail');
                     </fieldset> 
                 </form>
             </div>
-            <div class="col-lg-6">
+            <div class="col-sm-6">
                 <form class="form-horizontal">
                     <fieldset>
                         <div class='sendMode sendmail' style="display: none;">
@@ -96,20 +96,20 @@ sendVarToJS('eqType', 'mail');
                         <div class='sendMode smtp' style="display: none;">
                             <legend>{{Configuration SMTP}}</legend>
                             <div class="form-group">
-                                <label class="col-lg-4 control-label">{{Serveur SMTP}}</label>
-                                <div class="col-lg-6">
+                                <label class="col-sm-4 control-label">{{Serveur SMTP}}</label>
+                                <div class="col-sm-6">
                                     <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::server' />
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-lg-4 control-label">{{Port SMTP}}</label>
-                                <div class="col-lg-6">
+                                <label class="col-sm-4 control-label">{{Port SMTP}}</label>
+                                <div class="col-sm-6">
                                     <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::port' />
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-lg-4 control-label">{{Securité SMTP}}</label>
-                                <div class="col-lg-6">
+                                <label class="col-sm-4 control-label">{{Securité SMTP}}</label>
+                                <div class="col-sm-6">
                                     <select class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::security'>
                                         <option value=''>{{Aucune}}</option>
                                         <option value='tls'>TLS</option>
@@ -118,14 +118,14 @@ sendVarToJS('eqType', 'mail');
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-lg-4 control-label">{{Uitlisateur SMTP}}</label>
-                                <div class="col-lg-6">
+                                <label class="col-sm-4 control-label">{{Uitlisateur SMTP}}</label>
+                                <div class="col-sm-6">
                                     <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::username' />
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-lg-4 control-label">{{Mot de passe SMTP}}</label>
-                                <div class="col-lg-6">
+                                <label class="col-sm-4 control-label">{{Mot de passe SMTP}}</label>
+                                <div class="col-sm-6">
                                     <input type="password" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::password' />
                                 </div>
                             </div>

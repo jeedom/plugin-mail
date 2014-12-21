@@ -2,17 +2,21 @@ Le plugin Mail permet à Jeedom d’envoyer des emails.
 
 Une fois installé à partir du Market, on accède à la page du plugin Mail.
 
-image::../images/mailmail_screenshot1.JPG[]
+image:../images/mail_screenshot1.jpg[
+width=800,
+link="
+../images/mail_screenshot1.jpg
+"]
 
 L'onglet général permet de choisir le nom de l'équipement, savoir s'il est actif ou non. On peut également personnaliser le nom de l’expéditeur ainsi que son adresse email. (Lorsqu'on envoie un email on doit toujours préciser l'expéditeur, cela permet de savoir que le mail vient bien de Jeedom par exemple)
 
-image::../images/mailmail_screenshot2.jpg[]
+image:../images/mail_screenshot2.jpg[]
 
 En mode non expert, seule l'option SMTP est disponible. En effet les autres options nécessitent la configuration de l'OS (Linux) pour pouvoir fonctionner. Autrement dit, de base seule la fonction SMTP fonctionne, les autres sont réservées aux experts qui pourront s'ils le souhaitent paramétrer eux même ces options.
 
 L’onglet configuration SMTP permet de renseigner les informations du serveur d’email que vous voulez utiliser.
 
-image::../images/mailmail_screenshot3.jpg[]
+image:../images/mail_screenshot3.jpg[]
 
 Voici quelques exemples pour les principaux fournisseurs de services email :
 
@@ -36,13 +40,21 @@ Les champs « Utilisateur SMTP » et « Mot de passe SMTP » correspondent aux i
 
 L'onglet email permet ici de définir les adresses emails qu’il sera possible d’utiliser dans Jeedom. Il est possible de configurer autant d’adresse email que l'on souhaite. Il est également possible de tester l’adresse en envoyant un email de test. Les adresses inscrites ici, sont les mails destinataires sur lesquels vous voulez envoyer des emails de notification.
 
-image::../images/mail4.jpg[]
+image:../images/mail4.jpg[
+width=800,
+link="
+../images/mail4.jpg
+"]
 
 Ce plugin fonctionne comme un module, c’est-à-dire qu’une fois sauvegardé nous pouvons le retrouver dans la liste des actions ou commandes, il est ainsi très simple de l’utiliser lors de la création de scénarios par exemple.
 
 Dans un scénario, une fois sélectionné dans une action il faudra alors remplir #titre# qui correspond au titre de l’email et #message# qui correspond au corps de l’email.
 
-image::../images/mail5.jpg[]
+image:../images/mail5.jpg[
+width=800,
+link="
+../images/mail5.jpg
+"]
 
 Nota : le format HTML est supporté par l’éditeur de scénario pour le corps des messages.
 

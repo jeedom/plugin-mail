@@ -84,6 +84,7 @@ class mailCmd extends cmd {
                 break;
             case 'sendmail':
                 $mail->isSendmail();
+                break;
             case 'qmail':
                 $mail->isQmail();
                 break;

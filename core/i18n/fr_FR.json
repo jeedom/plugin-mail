@@ -27,5 +27,9 @@
     },
     "plugins\/mail\/desktop\/js\/mail.js": {
         "Tester": "Tester"
+    },
+    "plugins\/mail\/plugin_info\/info.xml": {
+        "Plugin pour envoyer des mails": "Plugin pour envoyer des mails",
+        "Aucune": "Aucune"
     }
 }

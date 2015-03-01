@@ -97,6 +97,7 @@ class mailCmd extends cmd {
 		$mail->addAddress($this->getConfiguration('recipient'));
 		$mail->Subject = $_options['title'];
 		$mail->Body = nl2br($_options['message']);
+		$mail->AltBody = nl2br($_options['message']);
 		return $mail->send();
 	}
 

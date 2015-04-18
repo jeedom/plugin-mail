@@ -1,6 +1,6 @@
 <?php
 if (!isConnect('admin')) {
-    throw new Exception('{{401 - Accès non autorisé}}');
+	throw new Exception('{{401 - Accès non autorisé}}');
 }
 sendVarToJS('eqType', 'mail');
 $eqLogics = eqLogic::byType('mail');
@@ -13,10 +13,10 @@ $eqLogics = eqLogic::byType('mail');
                 <a class="btn btn-default eqLogicAction" style="width : 100%;margin-top : 5px;margin-bottom: 5px;" data-action="add"><i class="fa fa-plus-circle"></i> {{Ajouter Email}}</a>
                 <li class="filter" style="margin-bottom: 5px;"><input class="filter form-control input-sm" placeholder="{{Rechercher}}" style="width: 100%"/></li>
                 <?php
-                foreach ($eqLogics as $eqLogic) {
-                    echo '<li class="cursor li_eqLogic" data-eqLogic_id="' . $eqLogic->getId() . '"><a>' . $eqLogic->getHumanName(true) . '</a></li>';
-                }
-                ?>
+foreach ($eqLogics as $eqLogic) {
+	echo '<li class="cursor li_eqLogic" data-eqLogic_id="' . $eqLogic->getId() . '"><a>' . $eqLogic->getHumanName(true) . '</a></li>';
+}
+?>
             </ul>
         </div>
     </div>
@@ -25,23 +25,23 @@ $eqLogics = eqLogic::byType('mail');
         <legend>{{Mes mails}}
         </legend>
         <?php
-        if (count($eqLogics) == 0) {
-            echo "<br/><br/><br/><center><span style='color:#767676;font-size:1.2em;font-weight: bold;'>{{Vous n'avez pas encore de mail, cliquez sur Ajouter Emails pour commencer}}</span></center>";
-        } else {
-            ?>
+if (count($eqLogics) == 0) {
+	echo "<br/><br/><br/><center><span style='color:#767676;font-size:1.2em;font-weight: bold;'>{{Vous n'avez pas encore de mail, cliquez sur Ajouter Emails pour commencer}}</span></center>";
+} else {
+	?>
             <div class="eqLogicThumbnailContainer">
                 <?php
-                foreach ($eqLogics as $eqLogic) {
-                    echo '<div class="eqLogicDisplayCard cursor" data-eqLogic_id="' . $eqLogic->getId() . '" style="background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;" >';
-                    echo "<center>";
-                    echo '<img src="plugins/mail/doc/images/mail_icon.png" height="105" width="95" />';
-                    echo "</center>";
-                    echo '<span style="font-size : 1.1em;position:relative; top : 15px;word-break: break-all;white-space: pre-wrap;word-wrap: break-word;"><center>' . $eqLogic->getHumanName(true, true) . '</center></span>';
-                    echo '</div>';
-                }
-                ?>
+foreach ($eqLogics as $eqLogic) {
+		echo '<div class="eqLogicDisplayCard cursor" data-eqLogic_id="' . $eqLogic->getId() . '" style="background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;" >';
+		echo "<center>";
+		echo '<img src="plugins/mail/doc/images/mail_icon.png" height="105" width="95" />';
+		echo "</center>";
+		echo '<span style="font-size : 1.1em;position:relative; top : 15px;word-break: break-all;white-space: pre-wrap;word-wrap: break-word;"><center>' . $eqLogic->getHumanName(true, true) . '</center></span>';
+		echo '</div>';
+	}
+	?>
             </div>
-        <?php } ?>
+        <?php }?>
     </div>
 
     <div class="col-lg-10 col-md-9 col-sm-8 eqLogic" style="border-left: solid 1px #EEE; padding-left: 25px;display: none;">
@@ -59,14 +59,14 @@ $eqLogics = eqLogic::byType('mail');
                         </div>
                         <div class="form-group">
                             <label class="col-sm-4 control-label" >{{Objet parent}}</label>
-                            <div class="col-sm-8">
+                            <div class="col-sm-6">
                                 <select class="eqLogicAttr form-control" data-l1key="object_id">
                                     <option value="">{{Aucun}}</option>
                                     <?php
-                                    foreach (object::all() as $object) {
-                                        echo '<option value="' . $object->getId() . '">' . $object->getName() . '</option>';
-                                    }
-                                    ?>
+foreach (object::all() as $object) {
+	echo '<option value="' . $object->getId() . '">' . $object->getName() . '</option>';
+}
+?>
                                 </select>
                             </div>
                         </div>
@@ -103,7 +103,7 @@ $eqLogics = eqLogic::byType('mail');
                                 </select>
                             </div>
                         </div>
-                    </fieldset> 
+                    </fieldset>
                 </form>
             </div>
             <div class="col-sm-6">
@@ -155,7 +155,7 @@ $eqLogics = eqLogic::byType('mail');
                                 </div>
                             </div>
                         </div>
-                    </fieldset> 
+                    </fieldset>
                 </form>
             </div>
         </div>

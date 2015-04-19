@@ -1,6 +1,6 @@
 ==== Configuration du plugin
 
-Après avoir installé le plugin il vous suffit de l'activer, ce plugin n'a aucun configuration particuliere : 
+Après avoir installé, le plugin il vous suffit de l'activer. Ce plugin n'a aucune configuration particulière : 
 
 image::../images/mail1.PNG[]
 
@@ -16,7 +16,7 @@ image::../images/mail3.PNG[]
 
 [icon="../images/plugin/tip.png"]
 [TIP]
-Comme à beaucoup d'endroits sur Jeedom, mettre la souris tout à gauche permet de faire apparaître un menu d'accès rapide (vous pouvez, à partir de votre profil, le laisser toujours visible).
+Comme à beaucoup d'endroits sur Jeedom, placer la souris tout à gauche permet de faire apparaître un menu d'accès rapide (vous pouvez, à partir de votre profil, le laisser toujours visible).
 
 Une fois que vous cliquez sur l'un d'eux, vous obtenez : 
 
@@ -27,57 +27,59 @@ Vous retrouvez ici toute la configuration de votre équipement :
 * *Nom de l'équipement mail* : nom de votre équipement mail
 * *Objet parent* : indique l'objet parent auquel appartient l'équipement
 * *Activer* : permet de rendre votre équipement actif
-* *Visible* : le rend visible sur le dashboard
-* *Nom expediteur* : nom de l'éxpéditeur du mail (ex : Jeedom)
-* *Mail expéditeur* : mail de l'éxpediteur (ex : jeedom@moi.fr)
+* *Visible* : rend votre équipement visible sur le dashboard
+* *Nom expéditeur* : nom de l'expéditeur du mail (ex : Jeedom)
+* *Mail expéditeur* : mail de l'expéditeur (ex : jeedom@moi.fr)
 * *Mode d'envoi* : mode d'envoi du mail : 
 ** SMTP : mode le plus courant pour l'envoi de mail
 ** Sendmail (mode expert)
 ** Qmail (mode expert)
-** Mail() (mode expert) : utilise la méthode d'envoi standard de PHP, nécessite d'avoir configuré le l'OS
+** Mail() (mode expert) : utilise la méthode d'envoi standard de PHP, nécessite d'avoir configuré l'OS
++ 
 
-
-En mode non expert, seule l'option SMTP est disponible. En effet les autres options nécessitent la configuration de l'OS (Linux) pour pouvoir fonctionner. Autrement dit, de base seule la fonction SMTP fonctionne, les autres sont réservées aux experts qui pourront s'ils le souhaitent paramétrer eux même ces options.
+En mode non expert, seule l'option SMTP est disponible. En effet les autres options nécessitent la configuration de l'OS (Linux) pour pouvoir fonctionner. Autrement dit, de base seule la fonction SMTP fonctionne, les autres sont réservées aux experts qui pourront, s'ils le souhaitent, paramétrer eux-mêmes ces options.
 
 L’onglet configuration SMTP permet de renseigner les informations du serveur d’email que vous voulez utiliser.
 
 image:../images/mail_screenshot3.jpg[]
-
++ 
 Voici quelques exemples pour les principaux fournisseurs de services email :
 
-- Gmail
+- *Gmail*
 * Serveur SMTP : smtp.gmail.com
 * Port : 465
 * Sécurité : SSL
-- Hotmail
+- *Hotmail*
 * Serveur SMTP : smtp.live.com
 * Port : 25
 * Sécurité : SSL
-- iCloud
+- *iCloud*
 * Serveur SMTP : smtp.me.com
 * Port : 25
-- Yahoo.com
+- *Yahoo.com*
 * Serveur SMTP : smtp.mail.yahoo.com
 * Port : 465
 * Sécurité : SSL
  
 Les champs « Utilisateur SMTP » et « Mot de passe SMTP » correspondent aux identifiants de votre compte email.
 
-
-En dessous (partie mail), vous pouvez ajouter des commandes qui correspondent au addresse mail à qui vous souhaitez pouvoir envoyer des mails avec Jeedom : 
++ 
+En dessous (partie mail), vous pouvez ajouter des commandes qui correspondent aux adresses mail à qui vous souhaitez pouvoir envoyer des mails avec Jeedom : 
 
 * *nom* : nom de la commande,
 * *email* : l'addresse email à qui envoyer le message
 * *configuration avancée* (petites roues crantées) : permet d'afficher la configuration avancée de la commande (méthode d'historisation, widget...),
 * *tester* : permet de tester la commande,
 * *supprimer* (signe -) : permet de supprimer la commande.
-
-Ce plugin fonctionne comme un module, c’est-à-dire qu’une fois sauvegardé nous pouvons le retrouver dans la liste des actions ou commandes, il est ainsi très simple de l’utiliser lors de la création de scénarios par exemple.
-
++ 
+Ce plugin fonctionne comme un module, c’est-à-dire qu’une fois sauvegardé, il apparaît dans la liste des actions ou commandes. Il est ainsi très simple de l’utiliser lors de la création de scénarios par exemple.
++ 
 Dans un scénario, une fois sélectionné dans une action il faudra alors remplir #titre# qui correspond au titre de l’email et #message# qui correspond au corps de l’email.
 
 image:../images/mail5.jpg[]
-
++ 
++ 
+[TIP]
 Nota : le format HTML est supporté par l’éditeur de scénario pour le corps des messages.
-
-Pensez à sauvegarder toute modification.
+[TIP]
+Pensez à sauvegarder toutes les modifications.

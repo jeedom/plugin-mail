@@ -2,7 +2,7 @@
 == Mail
 
 === Description
-Plugin permetant d'envoyer des mails
+Plugin permettant d'envoyer des mails.
 
 '''
 === Configuration

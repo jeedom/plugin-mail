@@ -94,7 +94,7 @@ class mailCmd extends cmd {
 		}
 		$mail->From = $eqLogic->getConfiguration('fromMail');
 		$mail->isHTML(true);
-		$mail->addAddress($this->getConfiguration('recipient'));
+		$mail->AddAddress($this->getConfiguration('recipient'));
 		$mail->Subject = $_options['title'];
 		$mail->Body = nl2br($_options['message']);
 		$mail->AltBody = nl2br($_options['message']);

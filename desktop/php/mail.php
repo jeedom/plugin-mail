@@ -155,6 +155,12 @@ foreach (object::all() as $object) {
                             <input type="password" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::password' />
                         </div>
                     </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">{{Ne pas verifier le certificat SSL}}</label>
+                        <div class="col-sm-6">
+                            <input type="checkbox" class="eqLogicAttr" data-l1key='configuration' data-l2key='smtp::dontcheckssl' />
+                        </div>
+                    </div>
                 </div>
             </fieldset>
         </form>

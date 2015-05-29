@@ -72,6 +72,15 @@ class mailCmd extends cmd {
 					$mail->Username = $eqLogic->getConfiguration('smtp::username'); 	// SMTP account username
 					$mail->Password = $eqLogic->getConfiguration('smtp::password'); 	// SMTP account password
 				}
+				if ($eqLogic->getConfiguration('smtp::dontcheckssl', 0) == 1) {
+					$mail->SMTPOptions = array(
+						'ssl' => array(
+							'verify_peer' => false,
+							'verify_peer_name' => false,
+							'allow_self_signed' => true,
+						),
+					);
+				}
 				break;
 			case 'mail':
 				$mail->isMail();

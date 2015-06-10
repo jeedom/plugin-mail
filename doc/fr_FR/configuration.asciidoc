@@ -1,6 +1,6 @@
 ==== Configuration du plugin
 
-Après avoir installé, le plugin il vous suffit de l'activer. Ce plugin n'a aucune configuration particulière : 
+Après avoir installé le plugin, il vous suffit de l'activer. Ce plugin n'a aucune configuration particulière : 
 
 image::../images/mail1.PNG[]
 
@@ -34,10 +34,10 @@ Vous retrouvez ici toute la configuration de votre équipement :
 ** SMTP : mode le plus courant pour l'envoi de mail
 ** Sendmail (mode expert)
 ** Qmail (mode expert)
-** Mail() (mode expert) : utilise la méthode d'envoi standard de PHP, nécessite d'avoir configuré l'OS
+** Mail() (mode expert) : utilise la http://fr.php.net/manual/fr/function.mail.php[fonction d'envoi standard de PHP, window="_blank"], nécessite de configurer le système d'exploitation
 
 
-En mode non expert, seule l'option SMTP est disponible. En effet les autres options nécessitent la configuration de l'OS (Linux) pour pouvoir fonctionner. Autrement dit, de base seule la fonction SMTP fonctionne, les autres sont réservées aux experts qui pourront, s'ils le souhaitent, paramétrer eux-mêmes ces options.
+En mode non expert, seule l'option SMTP est disponible. En effet, les autres options nécessitent la configuration de l'OS (Linux) pour pouvoir fonctionner. Autrement dit, de base seule la fonction SMTP fonctionne, les autres sont réservées aux experts qui pourront, s'ils le souhaitent, paramétrer eux-mêmes ces options.
 
 L’onglet configuration SMTP permet de renseigner les informations du serveur d’email que vous voulez utiliser.
 
@@ -76,7 +76,7 @@ En dessous (partie mail), vous pouvez ajouter des commandes qui correspondent au
 Ce plugin fonctionne comme un module, c’est-à-dire qu’une fois sauvegardé, il apparaît dans la liste des actions ou commandes. Il est ainsi très simple de l’utiliser lors de la création de scénarios par exemple.
 
 
-Dans un scénario, une fois sélectionné dans une action il faudra alors remplir #titre# qui correspond au titre de l’email et #message# qui correspond au corps de l’email.
+Dans un scénario, une fois sélectionné dans une action il faudra alors saisir `#titre#` qui correspond au titre de l’email et `#message#` qui correspond au corps de l’email.
 
 image:../images/mail5.jpg[]
 

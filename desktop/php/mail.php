@@ -26,12 +26,12 @@ foreach ($eqLogics as $eqLogic) {
     </legend>
     <div class="eqLogicThumbnailContainer">
       <div class="cursor eqLogicAction" data-action="add" style="background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;" >
-         <center>
-            <i class="fa fa-plus-circle" style="font-size : 7em;color:#94ca02;"></i>
-        </center>
-        <span style="font-size : 1.1em;position:relative; top : 23px;word-break: break-all;white-space: pre-wrap;word-wrap: break-word;color:#94ca02"><center>Ajouter</center></span>
-    </div>
-    <?php
+       <center>
+        <i class="fa fa-plus-circle" style="font-size : 7em;color:#94ca02;"></i>
+    </center>
+    <span style="font-size : 1.1em;position:relative; top : 23px;word-break: break-all;white-space: pre-wrap;word-wrap: break-word;color:#94ca02"><center>Ajouter</center></span>
+</div>
+<?php
 foreach ($eqLogics as $eqLogic) {
 	echo '<div class="eqLogicDisplayCard cursor" data-eqLogic_id="' . $eqLogic->getId() . '" style="background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;" >';
 	echo "<center>";
@@ -72,99 +72,96 @@ foreach (object::all() as $object) {
                        </div>
                    </div>
                    <div class="form-group">
-                    <label class="col-sm-4 control-label">{{Activer}}</label>
-                    <div class="col-sm-1">
-                        <input type="checkbox" class="eqLogicAttr" data-l1key="isEnable" checked/>
-                    </div>
-                    <label class="col-sm-4 control-label">{{Visible}}</label>
-                    <div class="col-sm-1">
-                        <input type="checkbox" class="eqLogicAttr" data-l1key="isVisible" checked/>
+                    <label class="col-sm-4 control-label"></label>
+                    <div class="col-sm-8">
+                      <input type="checkbox" class="eqLogicAttr bootstrapSwitch" data-label-text="{{Activer}}" data-l1key="isEnable" checked/>
+                      <input type="checkbox" class="eqLogicAttr bootstrapSwitch" data-label-text="{{Visible}}" data-l1key="isVisible" checked/>
+                  </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-4 control-label">{{Nom expéditeur}}</label>
+                <div class="col-sm-6">
+                    <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='fromName' />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">{{Mail expéditeur}}</label>
+                <div class="col-sm-6">
+                    <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='fromMail' />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">{{Mode d'envoi}}</label>
+                <div class="col-sm-6">
+                    <select class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='sendMode'>
+                        <option value='smtp'>SMTP</option>
+                        <option value='sendmail' class="expertModeVisible">Sendmail</option>
+                        <option value='qmail' class="expertModeVisible">Qmail</option>
+                        <option value='mail' class="expertModeVisible">Mail() [PHP fonction]</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<div class="col-sm-6">
+    <form class="form-horizontal">
+        <fieldset>
+            <div class='sendMode sendmail' style="display: none;">
+                <div class="alert alert-danger">Attention cette option nécessite d'avoir correctement configurer le système (OS).</div>
+            </div>
+            <div class='sendMode mail' style="display: none;">
+                <div class="alert alert-danger">Attention cette option nécessite d'avoir correctement configurer le système (OS).</div>
+            </div>
+            <div class='sendMode qmail' style="display: none;">
+                <div class="alert alert-danger">Attention cette option nécessite d'avoir correctement configurer le système (OS).</div>
+            </div>
+            <div class='sendMode smtp' style="display: none;">
+                <legend>{{Configuration SMTP}}</legend>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">{{Serveur SMTP}}</label>
+                    <div class="col-sm-6">
+                        <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::server' />
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-4 control-label">{{Nom expéditeur}}</label>
+                    <label class="col-sm-4 control-label">{{Port SMTP}}</label>
                     <div class="col-sm-6">
-                        <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='fromName' />
+                        <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::port' />
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-4 control-label">{{Mail expéditeur}}</label>
+                    <label class="col-sm-4 control-label">{{Securité SMTP}}</label>
                     <div class="col-sm-6">
-                        <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='fromMail' />
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-sm-4 control-label">{{Mode d'envoi}}</label>
-                    <div class="col-sm-6">
-                        <select class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='sendMode'>
-                            <option value='smtp'>SMTP</option>
-                            <option value='sendmail' class="expertModeVisible">Sendmail</option>
-                            <option value='qmail' class="expertModeVisible">Qmail</option>
-                            <option value='mail' class="expertModeVisible">Mail() [PHP fonction]</option>
+                        <select class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::security'>
+                            <option value=''>{{Aucune}}</option>
+                            <option value='tls'>TLS</option>
+                            <option value='ssl'>SSL</option>
                         </select>
                     </div>
                 </div>
-            </fieldset>
-        </form>
-    </div>
-    <div class="col-sm-6">
-        <form class="form-horizontal">
-            <fieldset>
-                <div class='sendMode sendmail' style="display: none;">
-                    <div class="alert alert-danger">Attention cette option nécessite d'avoir correctement configurer le système (OS).</div>
-                </div>
-                <div class='sendMode mail' style="display: none;">
-                    <div class="alert alert-danger">Attention cette option nécessite d'avoir correctement configurer le système (OS).</div>
-                </div>
-                <div class='sendMode qmail' style="display: none;">
-                    <div class="alert alert-danger">Attention cette option nécessite d'avoir correctement configurer le système (OS).</div>
-                </div>
-                <div class='sendMode smtp' style="display: none;">
-                    <legend>{{Configuration SMTP}}</legend>
-                    <div class="form-group">
-                        <label class="col-sm-4 control-label">{{Serveur SMTP}}</label>
-                        <div class="col-sm-6">
-                            <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::server' />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-4 control-label">{{Port SMTP}}</label>
-                        <div class="col-sm-6">
-                            <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::port' />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-4 control-label">{{Securité SMTP}}</label>
-                        <div class="col-sm-6">
-                            <select class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::security'>
-                                <option value=''>{{Aucune}}</option>
-                                <option value='tls'>TLS</option>
-                                <option value='ssl'>SSL</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-4 control-label">{{Uitlisateur SMTP}}</label>
-                        <div class="col-sm-6">
-                            <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::username' />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-4 control-label">{{Mot de passe SMTP}}</label>
-                        <div class="col-sm-6">
-                            <input type="password" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::password' />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-4 control-label">{{Ne pas verifier le certificat SSL}}</label>
-                        <div class="col-sm-6">
-                            <input type="checkbox" class="eqLogicAttr" data-l1key='configuration' data-l2key='smtp::dontcheckssl' />
-                        </div>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">{{Uitlisateur SMTP}}</label>
+                    <div class="col-sm-6">
+                        <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::username' />
                     </div>
                 </div>
-            </fieldset>
-        </form>
-    </div>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">{{Mot de passe SMTP}}</label>
+                    <div class="col-sm-6">
+                        <input type="password" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::password' />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">{{Ne pas verifier le certificat SSL}}</label>
+                    <div class="col-sm-6">
+                    <input type="checkbox" class="eqLogicAttr bootstrapSwitch" data-l1key='configuration' data-l2key='smtp::dontcheckssl' />
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
 </div>
 
 <legend>{{Email}}</legend>

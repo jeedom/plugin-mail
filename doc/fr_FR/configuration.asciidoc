@@ -1,10 +1,10 @@
-==== Configuration du plugin
+=== Configuration du plugin
 
 Après avoir installé le plugin, il vous suffit de l'activer. Ce plugin n'a aucune configuration particulière : 
 
 image::../images/mail1.PNG[]
 
-==== Configuration des équipements
+=== Configuration des équipements
 
 La configuration des équipements Mail est accessible à partir du menu plugin : 
 
@@ -14,7 +14,6 @@ Voilà à quoi ressemble la page du plugin Mail (ici avec déjà 1 mail, vous po
 
 image::../images/mail3.PNG[]
 
-[icon="../images/plugin/tip.png"]
 [TIP]
 Comme à beaucoup d'endroits sur Jeedom, placer la souris tout à gauche permet de faire apparaître un menu d'accès rapide (vous pouvez, à partir de votre profil, le laisser toujours visible).
 
@@ -81,7 +80,7 @@ Dans un scénario, une fois sélectionné dans une action il faudra alors saisir
 image:../images/mail5.jpg[]
 
 
-[ATTENTION]
+[IMPORTANT]
 Avec Gmail il faut ABSOLUMENT désactiver la double authentification sinon le plugin ne pourra envoyer de mail
 
 [TIP]

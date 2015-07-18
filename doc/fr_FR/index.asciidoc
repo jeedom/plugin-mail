@@ -1,13 +1,7 @@
-:icons:
-== Mail
+= Mail
 
-=== Description
 Plugin permettant d'envoyer des mails.
 
-'''
-=== Configuration
+== Configuration
 include::configuration.asciidoc[]
 
-'''
-=== FAQ
-include::faq.asciidoc[]

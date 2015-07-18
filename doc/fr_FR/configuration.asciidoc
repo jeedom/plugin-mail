@@ -76,7 +76,7 @@ En dessous (partie mail), vous pouvez ajouter des commandes qui correspondent au
 Ce plugin fonctionne comme un module, c’est-à-dire qu’une fois sauvegardé, il apparaît dans la liste des actions ou commandes. Il est ainsi très simple de l’utiliser lors de la création de scénarios par exemple.
 
 
-Dans un scénario, une fois sélectionné dans une action il faudra alors saisir `#titre#` qui correspond au titre de l’email et `#message#` qui correspond au corps de l’email.
+Dans un scénario, une fois sélectionné dans une action il faudra alors saisir titre et le messagel.
 
 image:../images/mail5.jpg[]
 
@@ -85,7 +85,7 @@ image:../images/mail5.jpg[]
 Avec Gmail il faut ABSOLUMENT désactiver la double authentification sinon le plugin ne pourra envoyer de mail
 
 [TIP]
-Nota : le format HTML est supporté par l’éditeur de scénario pour le corps des messages.
+Le format HTML est supporté par l’éditeur de scénario pour le corps des messages.
 
 [TIP]
 Pensez à sauvegarder toutes les modifications.

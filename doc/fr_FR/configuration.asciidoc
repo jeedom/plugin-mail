@@ -81,7 +81,11 @@ Dans un scénario, une fois sélectionné dans une action il faudra alors saisir
 image:../images/mail5.jpg[]
 
 
+[ATTENTION]
+Avec Gmail il faut ABSOLUMENT désactiver la double authentification sinon le plugin ne pourra envoyer de mail
+
 [TIP]
 Nota : le format HTML est supporté par l’éditeur de scénario pour le corps des messages.
+
 [TIP]
 Pensez à sauvegarder toutes les modifications.

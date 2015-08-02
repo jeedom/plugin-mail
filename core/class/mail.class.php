@@ -69,8 +69,8 @@ class mailCmd extends cmd {
 				}
 				if ($eqLogic->getConfiguration('smtp::username') != '') {
 					$mail->SMTPAuth = true;
-					$mail->Username = $eqLogic->getConfiguration('smtp::username'); 	// SMTP account username
-					$mail->Password = $eqLogic->getConfiguration('smtp::password'); 	// SMTP account password
+					$mail->Username = $eqLogic->getConfiguration('smtp::username'); // SMTP account username
+					$mail->Password = $eqLogic->getConfiguration('smtp::password'); // SMTP account password
 				}
 				if ($eqLogic->getConfiguration('smtp::dontcheckssl', 0) == 1) {
 					$mail->SMTPOptions = array(
@@ -107,6 +107,11 @@ class mailCmd extends cmd {
 		$mail->Subject = $_options['title'];
 		$mail->Body = nl2br($_options['message']);
 		$mail->AltBody = nl2br($_options['message']);
+		if (isset($_options['files']) && is_array($_options['files'])) {
+			foreach ($_options['files'] as $file) {
+				$mail->AddAttachment($file);
+			}
+		}
 		return $mail->send();
 	}
 

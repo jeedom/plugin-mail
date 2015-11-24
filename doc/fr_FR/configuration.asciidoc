@@ -50,8 +50,8 @@ Voici quelques exemples pour les principaux fournisseurs de services email :
 * Sécurité : SSL
 - *Hotmail*
 * Serveur SMTP : smtp.live.com
-* Port : 25
-* Sécurité : SSL
+* Port : 587
+* Sécurité : TLS
 - *iCloud*
 * Serveur SMTP : smtp.me.com
 * Port : 25

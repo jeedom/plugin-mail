@@ -143,7 +143,7 @@ foreach (object::all() as $object) {
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-4 control-label">{{Uitlisateur SMTP}}</label>
+                    <label class="col-sm-4 control-label">{{Utilisateur SMTP}}</label>
                     <div class="col-sm-6">
                         <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::username' />
                     </div>

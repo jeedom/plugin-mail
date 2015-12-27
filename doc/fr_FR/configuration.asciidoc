@@ -81,7 +81,7 @@ image:../images/mail5.jpg[]
 
 
 [IMPORTANT]
-Avec Gmail il faut ABSOLUMENT désactiver la double authentification sinon le plugin ne pourra envoyer de mail
+Avec Gmail il faut donner un mot de passe spécifique pour l'application : Mon compte => connexion et sécurité => Se connecter à Google => Mots de passe d'application
 
 [TIP]
 Le format HTML est supporté par l’éditeur de scénario pour le corps des messages.

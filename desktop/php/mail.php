@@ -14,8 +14,7 @@ $eqLogics = eqLogic::byType('mail');
                 <li class="filter" style="margin-bottom: 5px;"><input class="filter form-control input-sm" placeholder="{{Rechercher}}" style="width: 100%"/></li>
                 <?php
 foreach ($eqLogics as $eqLogic) {
-	$opacity = ($eqLogic->getIsEnable()) ? '' : jeedom::getConfiguration('eqLogic:style:noactive');
-	echo '<li class="cursor li_eqLogic" data-eqLogic_id="' . $eqLogic->getId() . '" style="' . $opacity . '"><a>' . $eqLogic->getHumanName(true) . '</a></li>';
+	echo '<li class="cursor li_eqLogic" data-eqLogic_id="' . $eqLogic->getId() . '"><a>' . $eqLogic->getHumanName(true) . '</a></li>';
 }
 ?>
            </ul>
@@ -23,7 +22,7 @@ foreach ($eqLogics as $eqLogic) {
    </div>
 
    <div class="col-lg-10 col-md-9 col-sm-8 eqLogicThumbnailDisplay" style="border-left: solid 1px #EEE; padding-left: 25px;">
-    <legend>{{Mes mails}}
+    <legend><i class="fa fa-envelope"></i>  {{Mes Mails}}
     </legend>
     <div class="eqLogicThumbnailContainer">
       <div class="cursor eqLogicAction" data-action="add" style="background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;" >
@@ -34,8 +33,7 @@ foreach ($eqLogics as $eqLogic) {
 </div>
 <?php
 foreach ($eqLogics as $eqLogic) {
-	$opacity = ($eqLogic->getIsEnable()) ? '' : jeedom::getConfiguration('eqLogic:style:noactive');
-	echo '<div class="eqLogicDisplayCard cursor" data-eqLogic_id="' . $eqLogic->getId() . '" style="background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;' . $opacity . '" >';
+	echo '<div class="eqLogicDisplayCard cursor" data-eqLogic_id="' . $eqLogic->getId() . '" style="background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;" >';
 	echo "<center>";
 	echo '<img src="plugins/mail/doc/images/mail_icon.png" height="105" width="95" />';
 	echo "</center>";
@@ -119,7 +117,7 @@ foreach (object::all() as $object) {
                 <div class="alert alert-danger">Attention cette option nécessite d'avoir correctement configurer le système (OS).</div>
             </div>
             <div class='sendMode smtp' style="display: none;">
-                <legend>{{Configuration SMTP}}</legend>
+                <legend><i class="fa fa-wrench"></i>  {{Configuration SMTP}}</legend>
                 <div class="form-group">
                     <label class="col-sm-4 control-label">{{Serveur SMTP}}</label>
                     <div class="col-sm-6">
@@ -143,7 +141,7 @@ foreach (object::all() as $object) {
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-4 control-label">{{Utilisateur SMTP}}</label>
+                    <label class="col-sm-4 control-label">{{Uitlisateur SMTP}}</label>
                     <div class="col-sm-6">
                         <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::username' />
                     </div>
@@ -166,7 +164,7 @@ foreach (object::all() as $object) {
 </div>
 </div>
 
-<legend>{{Email}}</legend>
+<legend><i class="fa fa-list-alt"></i>  {{Emails}}</legend>
 <a class="btn btn-success btn-sm cmdAction" data-action="add"><i class="fa fa-plus-circle"></i> {{Ajouter une commande mail}}</a><br/><br/>
 <table id="table_cmd" class="table table-bordered table-condensed">
     <thead>

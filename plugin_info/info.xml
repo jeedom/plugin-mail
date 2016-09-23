@@ -3,12 +3,9 @@
     <id>mail</id>
     <name>Mail</name>
     <description>Plugin pour envoyer des mails</description>
-    <icon>fa fa-envelope</icon>
     <licence>AGPL</licence>
-    <author>Loïc Gevrey</author>
-    <installation>Aucune</installation>
-    <require>1.10</require>
-    <version>1.0</version>
+    <author>Loïc</author>
+    <require>2.0</require>
     <category>communication</category>
     <include type="php">mail.inc</include>
 </info>

@@ -1,0 +1,35 @@
+{
+    "plugins/mail/desktop/php/mail.php": {
+        "Ajouter Email": "Tambahan Mail",
+        "Rechercher": "Mencari",
+        "Mes mails": "Mail Saya",
+        "Général": "Umum",
+        "Nom de l'équipement mail": "Nama peralatan mail",
+        "Objet parent": "Objek induk",
+        "Aucun": "Tak ada",
+        "Activer": "Mengaktifkan",
+        "Visible": "Terlihat",
+        "Nom expéditeur": "Nama pemakai",
+        "Mail expéditeur": "Mail pengirim",
+        "Mode d'envoi": "Kirim mode",
+        "Configuration SMTP": "Konfigurasi SMTP",
+        "Serveur SMTP": "SMTP server",
+        "Port SMTP": "Port SMTP",
+        "Securité SMTP": "Keamanan SMTP",
+        "Aucune": "Tak ada",
+        "Utilisateur SMTP": "Utilisateur SMTP",
+        "Mot de passe SMTP": "Password SMTP",
+        "Email": "Email",
+        "Ajouter une commande mail": "Tambahan pesanan mail",
+        "Nom": "Nama",
+        "Supprimer": "Menghapus",
+        "Sauvegarder": "Menyimpan"
+    },
+    "plugins/mail/desktop/js/mail.js": {
+        "Tester": "Coba"
+    },
+    "plugins/mail/plugin_info/info.xml": {
+        "Plugin pour envoyer des mails": "Plugin untuk kirim mail",
+        "Aucune": "Tak ada"
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "plugins/mail/desktop/php/mail.php": {
+        "Ajouter Email": "Добавить Email",
+        "Rechercher": "Искать",
+        "Mes mails": "Мои письма",
+        "Général": "Главная",
+        "Nom de l'équipement mail": "Имя оборудования Mail",
+        "Objet parent": "Родительский объект",
+        "Aucun": "Нет",
+        "Activer": "Активировать",
+        "Visible": "Видимый",
+        "Nom expéditeur": "Имя отправителя",
+        "Mail expéditeur": "Почта отправителя",
+        "Mode d'envoi": "Отправка профиля",
+        "Configuration SMTP": "Конфигурация SMTP",
+        "Serveur SMTP": "SMTP сервер",
+        "Port SMTP": "SMTP порт",
+        "Securité SMTP": "Безопасность SMTP",
+        "Aucune": "Нет",
+        "Utilisateur SMTP": "Utilisateur SMTP",
+        "Mot de passe SMTP": "Пароль SMTP",
+        "Email": "Email",
+        "Ajouter une commande mail": "Добавить команду почты",
+        "Nom": "Имя",
+        "Supprimer": "Удалить",
+        "Sauvegarder": "Сохранить"
+    },
+    "plugins/mail/desktop/js/mail.js": {
+        "Tester": "Тест"
+    },
+    "plugins/mail/plugin_info/info.xml": {
+        "Plugin pour envoyer des mails": "Плагин для отправки почты",
+        "Aucune": "Нет"
+    }
+}

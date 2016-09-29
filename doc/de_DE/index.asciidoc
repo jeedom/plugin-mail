@@ -1,0 +1,6 @@
+= Mail
+
+Plugin permettant d'envoyer des mails.
+
+== Konfiguration
+include::configuration.asciidoc[]

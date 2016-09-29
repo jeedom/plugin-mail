@@ -1,0 +1,35 @@
+{
+    "plugins/mail/desktop/php/mail.php": {
+        "Ajouter Email": "E-Mail hinzufügen",
+        "Rechercher": "Suchen nach",
+        "Mes mails": "Meine Mails",
+        "Général": "Allgemein",
+        "Nom de l'équipement mail": "E-Mail Name",
+        "Objet parent": "Eltern-Objekt",
+        "Aucun": "Ohne",
+        "Activer": "aktivieren",
+        "Visible": "Sichtbar",
+        "Nom expéditeur": "Absender Name",
+        "Mail expéditeur": "Absender Mail",
+        "Mode d'envoi": "Sendeprofil",
+        "Configuration SMTP": "SMTP Konfiguration",
+        "Serveur SMTP": "SMTP Server",
+        "Port SMTP": "SMTP Port",
+        "Securité SMTP": "SMTP Sicherheit",
+        "Aucune": "Ohne",
+        "Utilisateur SMTP": "Utilisateur SMTP",
+        "Mot de passe SMTP": "SMTP Password",
+        "Email": "E-Mail",
+        "Ajouter une commande mail": "Fügen Sie eine E-Mail-Befehl",
+        "Nom": "Name",
+        "Supprimer": "Löschen",
+        "Sauvegarder": "Speichern"
+    },
+    "plugins/mail/desktop/js/mail.js": {
+        "Tester": "Test"
+    },
+    "plugins/mail/plugin_info/info.xml": {
+        "Plugin pour envoyer des mails": "Plugin zum Senden von E-Mails",
+        "Aucune": "Ohne"
+    }
+}

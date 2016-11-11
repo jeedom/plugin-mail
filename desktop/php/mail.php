@@ -46,11 +46,22 @@ foreach ($eqLogics as $eqLogic) {
 </div>
 
 <div class="col-lg-10 col-md-9 col-sm-8 eqLogic" style="border-left: solid 1px #EEE; padding-left: 25px;display: none;">
-    <div class='row'>
+    <a class="btn btn-success eqLogicAction pull-right" data-action="save"><i class="fa fa-check-circle"></i> {{Sauvegarder}}</a>
+	<a class="btn btn-danger eqLogicAction pull-right" data-action="remove"><i class="fa fa-minus-circle"></i> {{Supprimer}}</a>
+  	<a class="btn btn-default eqLogicAction pull-right" data-action="configure"><i class="fa fa-cogs"></i> {{Configuration avancée}}</a>
+  	<ul class="nav nav-tabs" role="tablist">
+		<li role="presentation"><a href="#" class="eqLogicAction" aria-controls="home" role="tab" data-toggle="tab" data-action="returnToThumbnailDisplay"><i class="fa fa-arrow-circle-left"></i></a></li>
+		<li role="presentation" class="active"><a href="#eqlogictab" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-tachometer"></i> {{Equipement}}</a></li>
+		<li role="presentation"><a href="#commandtab" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-list-alt"></i> {{Commandes}}</a></li>
+	</ul>
+  	<div class="tab-content" style="height:calc(100% - 50px);overflow:auto;overflow-x: hidden;">
+    <div role="tabpanel" class="tab-pane active" id="eqlogictab">
+  	<br/>
+  	<div class='row'>
         <div class="col-sm-6">
-            <form class="form-horizontal">
+            
+  			<form class="form-horizontal">
                 <fieldset>
-                    <legend><i class="fa fa-arrow-circle-left eqLogicAction cursor" data-action="returnToThumbnailDisplay"></i> {{Général}}<i class='fa fa-cogs eqLogicAction pull-right cursor expertModeVisible' data-action='configure'></i></legend>
                     <div class="form-group">
                         <label class="col-sm-4 control-label">{{Nom de l'équipement mail}}</label>
                         <div class="col-sm-6">
@@ -64,30 +75,30 @@ foreach ($eqLogics as $eqLogic) {
                             <select class="eqLogicAttr form-control" data-l1key="object_id">
                                 <option value="">{{Aucun}}</option>
                                 <?php
-foreach (object::all() as $object) {
-	echo '<option value="' . $object->getId() . '">' . $object->getName() . '</option>';
-}
-?>
+									foreach (object::all() as $object) {
+										echo '<option value="' . $object->getId() . '">' . $object->getName() . '</option>';
+									}
+								?>
                            </select>
                        </div>
                    </div>
                    <div class="form-group">
                     <label class="col-sm-4 control-label"></label>
-                    <div class="col-sm-8">
-                      <input type="checkbox" class="eqLogicAttr bootstrapSwitch" data-label-text="{{Activer}}" data-l1key="isEnable" checked/>
-                      <input type="checkbox" class="eqLogicAttr bootstrapSwitch" data-label-text="{{Visible}}" data-l1key="isVisible" checked/>
+                    <div class="col-sm-6">
+                      <label class="checkbox-inline"><input type="checkbox" class="eqLogicAttr" data-l1key="isEnable" checked/>{{Activer}}</label>
+                      <label class="checkbox-inline"><input type="checkbox" class="eqLogicAttr" data-l1key="isVisible" checked/>{{Visible}}</label>
                   </div>
               </div>
               <div class="form-group">
                 <label class="col-sm-4 control-label">{{Nom expéditeur}}</label>
                 <div class="col-sm-6">
-                    <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='fromName' />
+                    <input type="text" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='fromName' />
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-sm-4 control-label">{{Mail expéditeur}}</label>
                 <div class="col-sm-6">
-                    <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='fromMail' />
+                    <input type="text" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='fromMail' />
                 </div>
             </div>
             <div class="form-group">
@@ -117,17 +128,16 @@ foreach (object::all() as $object) {
                 <div class="alert alert-danger">Attention cette option nécessite d'avoir correctement configurer le système (OS).</div>
             </div>
             <div class='sendMode smtp' style="display: none;">
-                <legend><i class="fa fa-wrench"></i>  {{Configuration SMTP}}</legend>
                 <div class="form-group">
                     <label class="col-sm-4 control-label">{{Serveur SMTP}}</label>
                     <div class="col-sm-6">
-                        <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::server' />
+                        <input type="text" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::server' />
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-sm-4 control-label">{{Port SMTP}}</label>
                     <div class="col-sm-6">
-                        <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::port' />
+                        <input type="text" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::port' />
                     </div>
                 </div>
                 <div class="form-group">
@@ -143,7 +153,7 @@ foreach (object::all() as $object) {
                 <div class="form-group">
                     <label class="col-sm-4 control-label">{{Uitlisateur SMTP}}</label>
                     <div class="col-sm-6">
-                        <input class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::username' />
+                        <input type="text" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::username' />
                     </div>
                 </div>
                 <div class="form-group">
@@ -153,9 +163,9 @@ foreach (object::all() as $object) {
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-4 control-label">{{Ne pas verifier le certificat SSL}}</label>
+                    <label class="col-sm-4 control-label"></label>
                     <div class="col-sm-6">
-                    <input type="checkbox" class="eqLogicAttr bootstrapSwitch" data-l1key='configuration' data-l2key='smtp::dontcheckssl' />
+                     <label class="control-label"><input type="checkbox" class="eqLogicAttr" data-l1key='configuration' data-l2key='smtp::dontcheckssl' />{{Ne pas verifier le certificat SSL}}</label>
                     </div>
                 </div>
             </div>
@@ -163,13 +173,16 @@ foreach (object::all() as $object) {
     </form>
 </div>
 </div>
-
-<legend><i class="fa fa-list-alt"></i>  {{Emails}}</legend>
-<a class="btn btn-success btn-sm cmdAction" data-action="add"><i class="fa fa-plus-circle"></i> {{Ajouter une commande mail}}</a><br/><br/>
+</div>
+<div role="tabpanel" class="tab-pane" id="commandtab">	
+<br/>
+<a class="btn btn-success btn-sm pull-right cmdAction" data-action="add"><i class="fa fa-plus-circle"></i> {{Ajouter une commande mail}}</a><br/><br/>
 <table id="table_cmd" class="table table-bordered table-condensed">
     <thead>
         <tr>
-            <th>{{Nom}}</th><th>{{Email}}</th><th></th>
+            <th>{{Nom}}</th>
+            <th>{{Email}}</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -177,15 +190,9 @@ foreach (object::all() as $object) {
     </tbody>
 </table>
 
-<form class="form-horizontal">
-    <fieldset>
-        <div class="form-actions">
-            <a class="btn btn-danger eqLogicAction" data-action="remove"><i class="fa fa-minus-circle"></i> {{Supprimer}}</a>
-            <a class="btn btn-success eqLogicAction" data-action="save"><i class="fa fa-check-circle"></i> {{Sauvegarder}}</a>
-        </div>
-    </fieldset>
-</form>
 
+</div>
+</div>
 </div>
 </div>
 

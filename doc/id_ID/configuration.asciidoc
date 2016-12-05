@@ -63,12 +63,12 @@ Voici quelques exemples pour les principaux fournisseurs de services email :
 Les champs « Utilisateur SMTP » et « Mot de passe SMTP » correspondent aux identifiants de votre compte email.
 
 
-A partir de l'onglet "Commandes", vous pouvez ajouter des commandes qui correspondent aux adresses mail à qui vous souhaitez pouvoir envoyer des mails avec Jeedom : 
+A partir de l'onglet "Commandes", vous pouvez ajouter des commandes qui correspondent aux adresses mail auxquelles vous souhaitez pouvoir envoyer des mails avec Jeedom : 
 
 image::../images/mail_screenshot4.jpg[]
 
 * *nom* : nom de la commande,
-* *email* : l'addresse email à qui envoyer le message
+* *email* : l'addresse email à laquelle envoyer le message
 * *configuration avancée* (petites roues crantées) : permet d'afficher la configuration avancée de la commande (méthode d'historisation, widget...),
 * *tester* : permet de tester la commande,
 * *supprimer* (signe -) : permet de supprimer la commande.
@@ -77,7 +77,7 @@ image::../images/mail_screenshot4.jpg[]
 Ce plugin fonctionne comme un module, c’est-à-dire qu’une fois sauvegardé, il apparaît dans la liste des actions ou commandes. Il est ainsi très simple de l’utiliser lors de la création de scénarios par exemple.
 
 
-Dans un scénario, une fois sélectionné dans une action il faudra alors saisir titre et le messagel.
+Dans un scénario, une fois sélectionné dans une action, il faudra saisir le titre et le message.
 
 image:../images/mail5.jpg[]
 

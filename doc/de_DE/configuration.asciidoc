@@ -1,6 +1,6 @@
 === Plugin Konfiguration
 
-Après avoir installé le plugin, il vous suffit de l'activer. Ce plugin n'a aucune configuration particulière : 
+Nachdem sie das Plugin installiert haben, aktivieren sie es einfach. Dieses Plugin hat keine besondere Konfiguration: 
 
 image::../images/mail1.PNG[]
 

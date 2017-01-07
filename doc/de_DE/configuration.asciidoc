@@ -6,7 +6,7 @@ image::../images/mail1.PNG[]
 
 === Geräte Konfiguration
 
-La configuration des équipements Mail est accessible à partir du menu plugin : 
+Die Konfiguration von Mail-Geräten ist in dem Plugin-Menü verfügbar : 
 
 image::../images/mail2.PNG[]
 

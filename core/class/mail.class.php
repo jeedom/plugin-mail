@@ -36,7 +36,11 @@ class mailCmd extends cmd {
 		if ($this->getConfiguration('recipient') == '') {
 			throw new Exception(__('L\'adresse mail ne peut etre vide', __FILE__));
 		}
-		if (filter_var($this->getConfiguration('recipient'), FILTER_VALIDATE_EMAIL) === false) {
+		$bValid = true;
+		foreach(explode(',', $this->getConfiguration('recipient')) AS $sEmailAddress){
+			$bValid = ($bValid && filter_var(trim($sEmailAddress), FILTER_VALIDATE_EMAIL));
+		}
+		if ($bValid == false) {
 			throw new Exception(__('L\'adresse mail n\'est pas valide', __FILE__));
 		}
 	}
@@ -103,7 +107,9 @@ class mailCmd extends cmd {
 		}
 		$mail->From = $eqLogic->getConfiguration('fromMail');
 		$mail->isHTML(true);
-		$mail->AddAddress($this->getConfiguration('recipient'));
+		foreach(explode(',', $this->getConfiguration('recipient')) AS $sEmailAddress){
+			$mail->AddAddress(trim($sEmailAddress));
+		}
 		$mail->Subject = $_options['title'];
 		$mail->Body = nl2br($_options['message']);
 		$mail->AltBody = nl2br($_options['message']);

@@ -1,0 +1,9 @@
+{
+	"id" : "mail",
+	"name" : "Mail",
+	"description" : "Plugin pour envoyer des mails",
+	"licence" : "AGPL",
+	"author" : "Loïc",
+	"require" : "2.4",
+	"category" : "communication"
+}

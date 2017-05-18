@@ -18,6 +18,7 @@
 
 /* * ***************************Includes********************************* */
 require_once dirname(__FILE__) . '/../../core/php/mail.inc.php';
+include_file('3rdparty', 'PHPMailer/PHPMailerAutoload', 'php','mail');
 
 class mail extends eqLogic {
 

@@ -5,5 +5,7 @@
 	"licence" : "AGPL",
 	"author" : "Loïc",
 	"require" : "2.4",
-	"category" : "communication"
+	"category" : "communication",
+	"changelog" : "https://github.com/jeedom/plugin-mail/blob/stable/doc/#language#/changelog.asciidoc",
+	"documentation" : "https://github.com/jeedom/plugin-mail/blob/stable/doc/#language#/index.asciidoc"
 }

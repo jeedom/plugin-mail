@@ -114,9 +114,13 @@ class mailCmd extends cmd {
 		$mail->Subject = $_options['title'];
 		$mail->Body = nl2br($_options['message']);
 		$mail->AltBody = nl2br($_options['message']);
-		if (isset($_options['files']) && is_array($_options['files'])) {
-			foreach ($_options['files'] as $file) {
-				$mail->addAttachment($file);
+		if (isset($_options['files']))
+			if (is_array($_options['files'])) {
+				foreach ($_options['files'] as $file) {
+					$mail->addAttachment($file);
+				}
+			} else {
+				$mail->addAttachment($_options['files']);
 			}
 		}
 		return $mail->send();

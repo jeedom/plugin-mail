@@ -31,14 +31,14 @@ Hier finden sie die ganze Konfiguration Ihrer Geräte:
 * *Mail expéditeur* : mail de l'expéditeur (ex : jeedom@moi.fr)
 * *Mode d'envoi* : mode d'envoi du mail : 
 ** SMTP : mode le plus courant pour l'envoi de mail
-** Sendmail (mode expert)
-** Qmail (mode expert)
-** Mail() (mode expert) : utilise la http://fr.php.net/manual/fr/function.mail.php[fonction d'envoi standard de PHP, window="_blank"], nécessite de configurer le système d'exploitation
+** Sendmail
+** Qmail
+** Mail()[PHP Function] : utilise la http://fr.php.net/manual/fr/function.mail.php[fonction d'envoi standard de PHP, window="_blank"], nécessite de configurer le système d'exploitation
 
 
-En mode non expert, seule l'option SMTP est disponible. En effet, les autres options nécessitent la configuration de l'OS (Linux) pour pouvoir fonctionner. Autrement dit, de base seule la fonction SMTP fonctionne, les autres sont réservées aux experts qui pourront, s'ils le souhaitent, paramétrer eux-mêmes ces options.
+Hormis l'option SMTP, les autres options nécessitent la configuration de l'OS (Linux) pour pouvoir fonctionner. Autrement dit, de base seule la fonction SMTP fonctionne, les autres sont réservées aux experts qui pourront, s'ils le souhaitent, paramétrer eux-mêmes ces options.
 
-L’onglet configuration SMTP permet de renseigner les informations du serveur d’email que vous voulez utiliser.
+L’onglet configuration SMTP permet de renseigner les informations du serveur d’email que vous voulez utilisé.
 
 image:../images/mail_screenshot3.jpg[]
 
@@ -46,30 +46,30 @@ Voici quelques exemples pour les principaux fournisseurs de services email :
 
 - *Gmail*
 * Serveur SMTP : smtp.gmail.com
-* Port : 465
-* Sécurité : SSL
+* Port SMTP : 587
+* Sécurité SMTP : TLS
 - *Hotmail*
 * Serveur SMTP : smtp.live.com
-* Port : 587
-* Sécurité : TLS
+* Port SMTP : 587
+* Sécurité SMTP : TLS
 - *iCloud*
 * Serveur SMTP : smtp.me.com
-* Port : 25
+* Port SMTP : 25
 - *Yahoo.com*
 * Serveur SMTP : smtp.mail.yahoo.com
-* Port : 465
-* Sécurité : SSL
+* Port SMTP : 465
+* Sécurité SMTP : SSL
  
 Les champs « Utilisateur SMTP » et « Mot de passe SMTP » correspondent aux identifiants de votre compte email.
 
 
-A partir de l'onglet "Commandes", vous pouvez ajouter des commandes qui correspondent aux adresses mail auxquelles vous souhaitez pouvoir envoyer des mails avec Jeedom : 
+A partir de l'onglet "Commandes", vous pouvez ajouter des commandes qui correspondent aux adresses email auxquelles vous souhaitez pouvoir envoyer des emails avec Jeedom : 
 
 image::../images/mail_screenshot4.jpg[]
 
-* *nom* : nom de la commande,
+* *nom* : nom de la commande
 * *email* : l'addresse email à laquelle envoyer le message
-* *configuration avancée* (petites roues crantées) : permet d'afficher la configuration avancée de la commande (méthode d'historisation, widget...),
+* *configuration avancée* (petites roues crantées) : permet d'afficher la configuration avancée de la commande (méthode d'historisation, widget, etc.)
 * *tester* : permet de tester la commande,
 * *supprimer* (signe -) : permet de supprimer la commande.
 

@@ -31,12 +31,12 @@ Vous retrouvez ici toute la configuration de votre équipement :
 * *Mail expéditeur* : mail de l'expéditeur (ex : jeedom@moi.fr)
 * *Mode d'envoi* : mode d'envoi du mail : 
 ** SMTP : mode le plus courant pour l'envoi de mail
-** Sendmail (mode expert)
-** Qmail (mode expert)
-** Mail() (mode expert) : utilise la http://fr.php.net/manual/fr/function.mail.php[fonction d'envoi standard de PHP, window="_blank"], nécessite de configurer le système d'exploitation
+** Sendmail
+** Qmail
+** Mail()[PHP Function] : utilise la http://fr.php.net/manual/fr/function.mail.php[fonction d'envoi standard de PHP, window="_blank"], nécessite de configurer le système d'exploitation
 
 
-En mode non expert, seule l'option SMTP est disponible. En effet, les autres options nécessitent la configuration de l'OS (Linux) pour pouvoir fonctionner. Autrement dit, de base seule la fonction SMTP fonctionne, les autres sont réservées aux experts qui pourront, s'ils le souhaitent, paramétrer eux-mêmes ces options.
+Hormis l'option SMTP, les autres options nécessitent la configuration de l'OS (Linux) pour pouvoir fonctionner. Autrement dit, de base seule la fonction SMTP fonctionne, les autres sont réservées aux experts qui pourront, s'ils le souhaitent, paramétrer eux-mêmes ces options.
 
 L’onglet configuration SMTP permet de renseigner les informations du serveur d’email que vous voulez utiliser.
 

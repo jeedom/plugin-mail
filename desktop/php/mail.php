@@ -104,9 +104,9 @@ foreach ($eqLogics as $eqLogic) {
                 <div class="col-sm-6">
                     <select class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='sendMode'>
                         <option value='smtp'>SMTP</option>
-                        <option value='sendmail' class="expertModeVisible">Sendmail</option>
-                        <option value='qmail' class="expertModeVisible">Qmail</option>
-                        <option value='mail' class="expertModeVisible">Mail() [PHP fonction]</option>
+                        <option value='sendmail'>Sendmail</option>
+                        <option value='qmail'>Qmail</option>
+                        <option value='mail'>Mail() [PHP fonction]</option>
                     </select>
                 </div>
             </div>

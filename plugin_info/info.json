@@ -6,6 +6,6 @@
 	"author" : "Loïc",
 	"require" : "2.4",
 	"category" : "communication",
-	"changelog" : "https://github.com/jeedom/plugin-mail/blob/stable/doc/#language#/changelog.asciidoc",
-	"documentation" : "https://github.com/jeedom/plugin-mail/blob/stable/doc/#language#/index.asciidoc"
+	"changelog" : "https://jeedom.github.io/plugin-mail/#language#/changelog",
+	"documentation" : "https://jeedom.github.io/plugin-mail/#language#/"
 }

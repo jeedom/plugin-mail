@@ -1,6 +1,0 @@
-= Mail
-
-Plugin permettant d'envoyer des mails.
-
-== Configuration
-include::configuration.asciidoc[]

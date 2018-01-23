@@ -1,10 +1,7 @@
 Plugin permettant d’envoyer des mails.
 
-Configuration 
-=============
-
 Configuration du plugin 
------------------------
+===
 
 Après avoir installé le plugin, il vous suffit de l’activer. Ce plugin
 n’a aucune configuration particulière :
@@ -12,7 +9,7 @@ n’a aucune configuration particulière :
 ![mail1](../images/mail1.PNG)
 
 Configuration des équipements 
------------------------------
+===
 
 La configuration des équipements Mail est accessible à partir du menu
 plugin :

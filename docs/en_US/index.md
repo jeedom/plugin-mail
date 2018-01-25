@@ -31,11 +31,11 @@ Une fois que vous cliquez sur l’un d’eux, vous obtenez :
 
 ![mail4](../images/mail4.PNG)
 
-Vous retrouvez ici toute la configuration de votre équipement :
+You can find here the full configuration of your device :
 
 -   **Nom de l’équipement mail** : nom de votre équipement mail
 
--   **Objet parent** : indique l’objet parent auquel appartient
+-   **Parent Object** : means the parent object the equipment depend
     l’équipement
 
 -   **Activer** : permet de rendre votre équipement actif

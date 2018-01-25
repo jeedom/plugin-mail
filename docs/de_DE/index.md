@@ -31,7 +31,7 @@ Une fois que vous cliquez sur l’un d’eux, vous obtenez :
 
 ![mail4](../images/mail4.PNG)
 
-Vous retrouvez ici toute la configuration de votre équipement :
+Hier finden sie die ganze Konfiguration Ihrer Geräte:
 
 -   **Nom de l’équipement mail** : nom de votre équipement mail
 

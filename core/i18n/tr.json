@@ -1,0 +1,35 @@
+{
+    "plugins/mail/desktop/php/mail.php": {
+        "Ajouter Email": "Email ekle",
+        "Rechercher": "Arayın",
+        "Mes mails": "Maillerim",
+        "Général": "Genel",
+        "Nom de l'équipement mail": "Mail ekipmanın ismi",
+        "Objet parent": "Üst nesne",
+        "Aucun": "Hiçbir",
+        "Activer": "Etkinleştirmek",
+        "Visible": "Görülebilir",
+        "Nom expéditeur": "Gönderen isim",
+        "Mail expéditeur": "Mail gönderen",
+        "Mode d'envoi": "Gönderme modu",
+        "Configuration SMTP": "SMTP ayarları",
+        "Serveur SMTP": "SMTP sunucu",
+        "Port SMTP": "SMTP Port",
+        "Securité SMTP": "SMTP güvenlik",
+        "Aucune": "Hiçbir",
+        "Utilisateur SMTP": "SMTP kullanıcı",
+        "Mot de passe SMTP": "SMTP Şifre",
+        "Email": "E-posta",
+        "Ajouter une commande mail": "Mail komutası ekleyin",
+        "Nom": "İsim",
+        "Supprimer": "Sil",
+        "Sauvegarder": "Kaydet"
+    },
+    "plugins/mail/desktop/js/mail.js": {
+        "Tester": "Dene"
+    },
+    "plugins/mail/plugin_info/info.xml": {
+        "Plugin pour envoyer des mails": "Mail atmak için eklenti",
+        "Aucune": "Hiçbir"
+    }
+}

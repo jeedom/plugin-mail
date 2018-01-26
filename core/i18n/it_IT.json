@@ -17,7 +17,7 @@
         "Port SMTP": "Porta SMTP",
         "Securité SMTP": "Sicurezza SMTP",
         "Aucune": "Nessuno",
-        "Utilisateur SMTP": "Utilisateur SMTP",
+        "Utilisateur SMTP": "SMTPuser",
         "Mot de passe SMTP": "Password SMTP",
         "Email": "Email",
         "Ajouter une commande mail": "Aggiungi un comando email",

@@ -17,7 +17,7 @@
         "Port SMTP": "SMTP порт",
         "Securité SMTP": "Безопасность SMTP",
         "Aucune": "Нет",
-        "Utilisateur SMTP": "Utilisateur SMTP",
+        "Utilisateur SMTP": "SMTPuser",
         "Mot de passe SMTP": "Пароль SMTP",
         "Email": "Email",
         "Ajouter une commande mail": "Добавить команду почты",

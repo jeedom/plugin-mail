@@ -36,9 +36,9 @@ Aquí encontrará toda la configuración de su dispositivo:
 -   **Nom de l’équipement mail** : nom de votre équipement mail
 
 -   **Objeto padre** : especifica el objeto padre al que pertenece
-    l’équipement
+    equipo
 
--   **Activer** : permet de rendre votre équipement actif
+-   ** ** Activar: para que su equipo activo
 
 -   **Visible** : rend votre équipement visible sur le dashboard
 

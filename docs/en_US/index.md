@@ -36,9 +36,9 @@ You can find here the full configuration of your device :
 -   **Nom de l’équipement mail** : nom de votre équipement mail
 
 -   **Parent Object** : means the parent object the equipment depend
-    l’équipement
+    equipment
 
--   **Activer** : permet de rendre votre équipement actif
+-   **Enable**: makes your equipment active
 
 -   **Visible** : rend votre équipement visible sur le dashboard
 

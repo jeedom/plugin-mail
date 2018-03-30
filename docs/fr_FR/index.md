@@ -113,7 +113,7 @@ envoyer des emails avec Jeedom :
 
 -   **nom** : nom de la commande
 
--   **email** : l’addresse email à laquelle envoyer le message
+-   **email** : l’addresse email à laquelle envoyer le message. Vous pouvez en mettre plusieurs en les séparants par des ,
 
 -   **configuration avancée** (petites roues crantées) : permet
     d’afficher la configuration avancée de la commande (méthode

@@ -17,7 +17,7 @@
         "Port SMTP": "Port SMTP",
         "Securité SMTP": "Keamanan SMTP",
         "Aucune": "Tak ada",
-        "Utilisateur SMTP": "Utilisateur SMTP",
+        "Utilisateur SMTP": "SMTPuser",
         "Mot de passe SMTP": "Password SMTP",
         "Email": "Email",
         "Ajouter une commande mail": "Tambahan pesanan mail",

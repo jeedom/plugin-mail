@@ -40,7 +40,7 @@ You can find here the full configuration of your device :
 
 -   **Enable**: makes your equipment active
 
--   **Visible** : rend votre équipement visible sur le dashboard
+-   **Visible**: makes your equipment visible on the dashboard
 
 -   **Nom expéditeur** : nom de l’expéditeur du mail (ex : Jeedom)
 

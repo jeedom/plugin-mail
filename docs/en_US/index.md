@@ -27,7 +27,7 @@ vous pouvez en mettre autant que vous voulez avec le bouton "Ajouter") :
 > permet de faire apparaître un menu d’accès rapide (vous pouvez, à
 > partir de votre profil, le laisser toujours visible).
 
-Une fois que vous cliquez sur l’un d’eux, vous obtenez :
+Once you click on one of them, you get:
 
 ![mail4](../images/mail4.PNG)
 

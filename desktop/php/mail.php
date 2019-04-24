@@ -11,7 +11,7 @@ $eqLogics = eqLogic::byType($plugin->getId());
    <div class="col-xs-12 eqLogicThumbnailDisplay">
     <legend><i class="fa fa-envelope"></i>  {{Mes Mails}}
     </legend>
-    <div class="eqLogicThumbnailContainer">
+    <div class="eqLogicThumbnailContainer logoPrimary">
       <div class="cursor eqLogicAction" data-action="add">
         <i class="fa fa-plus-circle"></i>
     <br>

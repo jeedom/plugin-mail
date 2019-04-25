@@ -9,14 +9,17 @@ $eqLogics = eqLogic::byType($plugin->getId());
 
 <div class="row row-overflow">
    <div class="col-xs-12 eqLogicThumbnailDisplay">
-    <legend><i class="fa fa-envelope"></i>  {{Mes Mails}}
-    </legend>
-    <div class="eqLogicThumbnailContainer logoPrimary">
-      <div class="cursor eqLogicAction" data-action="add">
-        <i class="fa fa-plus-circle"></i>
-    <br>
-    <span>Ajouter</span>
+    <legend><i class="fa fa-envelope"></i>  {{Gestion}}</legend>
+    <div class="eqLogicThumbnailContainer">
+	  <div class="cursor eqLogicAction logoPrimary" data-action="add">
+		<i class="fa fa-plus-circle"></i>
+	    <br/>
+	    <span>Ajouter</span>
+	</div>
 </div>
+<legend><i class="fas fa-table"></i> {{Mes mails}}</legend>
+<input class="form-control" placeholder="{{Rechercher}}" id="in_searchEqlogic" />
+	   	<div class="eqLogicThumbnailContainer">
 <?php
 foreach ($eqLogics as $eqLogic) {
 	$opacity = ($eqLogic->getIsEnable()) ? '' : 'disableCard';
@@ -28,7 +31,6 @@ foreach ($eqLogics as $eqLogic) {
 }
 ?>
 </div>
-
 </div>
 
 <div class="col-xs-12 eqLogic" style="display: none;">

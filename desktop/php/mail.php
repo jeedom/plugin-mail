@@ -172,7 +172,7 @@ foreach ($eqLogics as $eqLogic) {
         <tr>
             <th>{{Nom}}</th>
             <th>{{Email}}</th>
-            <th></th>
+            <th style="width:130px"></th>
         </tr>
     </thead>
     <tbody>

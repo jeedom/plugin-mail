@@ -1,3 +1,5 @@
+# Mail
+
 Das Plugin wird zum Versenden von E-Mails verwendet.
 
 Plugin Konfiguration
@@ -19,12 +21,6 @@ verfügbar :
 So sieht die Mail-Plugin-Seite aus (hier schon mit 1 Mail, Sie können mit der Schaltfläche "Hinzufügen" beliebig viele hinzufügen) :
 
 ![mail3](../images/mail3.PNG)
-
-> **Tip**
->
-> Wie an vielen Stellen in Jeedom kann mit dem Mauszeiger ganz links, ein
-> Menü mit Schnellzugriff aufgerufen werden (Sie können in Ihrem Profil
-> immer sichtbar einstellen).  
 
 Sobald Sie eines davon anklicken, erhalten Sie :
 

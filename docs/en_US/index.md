@@ -1,3 +1,5 @@
+# Mail
+
 Plugin permettant d’envoyer des mails.
 
 Configuration du plugin 
@@ -21,13 +23,7 @@ vous pouvez en mettre autant que vous voulez avec le bouton "Ajouter") :
 
 ![mail3](../images/mail3.PNG)
 
-> **Tip**
->
-> Comme à beaucoup d’endroits sur Jeedom, placer la souris tout à gauche
-> permet de faire apparaître un menu d’accès rapide (vous pouvez, à
-> partir de votre profil, le laisser toujours visible).
-
-Une fois que vous cliquez sur l’un d’eux, vous obtenez :
+Once you click on one of them, you get:
 
 ![mail4](../images/mail4.PNG)
 
@@ -40,7 +36,7 @@ You can find here the full configuration of your device :
 
 -   **Enable**: makes your equipment active
 
--   **Visible** : rend votre équipement visible sur le dashboard
+-   **Visible**: makes your equipment visible on the dashboard
 
 -   **Nom expéditeur** : nom de l’expéditeur du mail (ex : Jeedom)
 
@@ -113,7 +109,7 @@ envoyer des emails avec Jeedom :
 
 -   **nom** : nom de la commande
 
--   **email** : l’addresse email à laquelle envoyer le message
+-   **email** : l’addresse email à laquelle envoyer le message. Vous pouvez en mettre plusieurs en les séparants par des ,
 
 -   **configuration avancée** (petites roues crantées) : permet
     d’afficher la configuration avancée de la commande (méthode

@@ -26,17 +26,17 @@ function addCmdToTable(_cmd) {
     }
     var tr = '<tr class="cmd" data-cmd_id="' + init(_cmd.id) + '">';
     tr += '<td>';
-    tr += '<input class="cmdAttr form-control input-sm" data-l1key="id" style="display : none;">';
-    tr += '<input class="cmdAttr form-control input-sm" data-l1key="name"></td>';
-    tr += '<td><input class="cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="recipient"></td>';
-    tr += '<td>';
-    tr += '<input class="cmdAttr form-control input-sm" data-l1key="type" value="action" style="display : none;">';
-    tr += '<input class="cmdAttr form-control input-sm" data-l1key="subType" value="message" style="display : none;">';
+    tr += '<input class="cmdAttr form-control" data-l1key="id" style="display : none;">';
+    tr += '<input class="cmdAttr form-control" data-l1key="name"></td>';
+    tr += '<td><input class="cmdAttr form-control" data-l1key="configuration" data-l2key="recipient"></td>';
+    tr += '<td style="width:150px">';
+    tr += '<input class="cmdAttr form-control" data-l1key="type" value="action" style="display : none;">';
+    tr += '<input class="cmdAttr form-control" data-l1key="subType" value="message" style="display : none;">';
     if (is_numeric(_cmd.id)) {
-        tr += '<a class="btn btn-default btn-xs cmdAction" data-action="configure"><i class="fa fa-cogs"></i></a> ';
-        tr += '<a class="btn btn-default btn-xs cmdAction" data-action="test"><i class="fa fa-rss"></i> {{Tester}}</a>';
+        tr += '<a class="btn btn-default cmdAction" data-action="configure"><i class="fa fa-cogs"></i></a> ';
+        tr += '<a class="btn btn-default cmdAction" data-action="test"><i class="fa fa-rss"></i> {{Tester}}</a> ';
     }
-    tr += '<i class="fa fa-minus-circle pull-right cmdAction cursor" data-action="remove"></i></td>';
+    tr += '<i class="fa fa-minus-circle cmdAction cursor" data-action="remove" style="margin-left:7px"></i></td>';
     tr += '</tr>';
     $('#table_cmd tbody').append(tr);
     $('#table_cmd tbody tr:last').setValues(_cmd, '.cmdAttr');

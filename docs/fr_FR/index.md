@@ -1,3 +1,5 @@
+# Mail
+
 Plugin permettant d’envoyer des mails.
 
 Configuration du plugin 
@@ -20,12 +22,6 @@ Voilà à quoi ressemble la page du plugin Mail (ici avec déjà 1 mail,
 vous pouvez en mettre autant que vous voulez avec le bouton "Ajouter") :
 
 ![mail3](../images/mail3.PNG)
-
-> **Tip**
->
-> Comme à beaucoup d’endroits sur Jeedom, placer la souris tout à gauche
-> permet de faire apparaître un menu d’accès rapide (vous pouvez, à
-> partir de votre profil, le laisser toujours visible).
 
 Une fois que vous cliquez sur l’un d’eux, vous obtenez :
 

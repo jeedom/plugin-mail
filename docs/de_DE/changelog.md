@@ -4,4 +4,4 @@
 
 # 30/03/2018
 
-- Correction de la perte de l'icone
+- Der Verlust des Symbols wurde behoben

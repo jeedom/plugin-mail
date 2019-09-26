@@ -9,7 +9,7 @@ $eqLogics = eqLogic::byType($plugin->getId());
 
 <div class="row row-overflow">
    <div class="col-xs-12 eqLogicThumbnailDisplay">
-    <legend><i class="fa fa-envelope"></i>  {{Gestion}}</legend>
+    <legend><i class="fas fa-cog"></i> {{Gestion}}</legend>
     <div class="eqLogicThumbnailContainer">
 	  <div class="cursor eqLogicAction logoPrimary" data-action="add">
 		<i class="fa fa-plus-circle"></i>
@@ -17,7 +17,7 @@ $eqLogics = eqLogic::byType($plugin->getId());
 	    <span>Ajouter</span>
 	</div>
 </div>
-<legend><i class="fas fa-table"></i> {{Mes mails}}</legend>
+<legend><i class="fa fa-envelope"></i> {{Mes mails}}</legend>
 <input class="form-control" placeholder="{{Rechercher}}" id="in_searchEqlogic" />
 	   	<div class="eqLogicThumbnailContainer">
 <?php

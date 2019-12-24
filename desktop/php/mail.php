@@ -185,7 +185,6 @@ $eqLogics = eqLogic::byType($plugin->getId());
                 <table id="table_cmd" class="table table-bordered table-condensed">
                     <thead>
                         <tr>
-                            <th style="width: 50px;"> ID</th>
 							<th style="width: 550px;">{{Nom}}</th>
                             <th style="width: 550px;">{{Email}}</th>
                             <th style="width: 130px"></th>

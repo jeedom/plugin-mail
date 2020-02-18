@@ -1,34 +1,40 @@
 {
-    "plugins/mail/desktop/php/mail.php": {
-        "Ajouter Email": "メールを追加",
-        "Rechercher": "検索する",
+    "desktop\/js\/mail.js": {
+        "Tester": "テスト"
+    },
+    "desktop\/php\/mail.php": {
+        "401 - Accès non autorisé": "401 - Accès non autorisé",
+        "Gestion": "Gestion",
+        "Ajouter": "Ajouter",
         "Mes mails": "私のメール",
-        "Général": "コモン",
+        "Rechercher": "検索する",
+        "Configuration avancée": "Configuration avancée",
+        "Dupliquer": "Dupliquer",
+        "Sauvegarder": "セーブ",
+        "Supprimer": "取り除きます",
+        "Equipement": "Equipement",
+        "Commandes": "Commandes",
         "Nom de l'équipement mail": "名前メールアドレス機器",
         "Objet parent": "親オブジェクト",
         "Aucun": "何でもありません",
+        "Catégorie": "Catégorie",
         "Activer": "アクティブにし",
         "Visible": "目に見えます",
         "Nom expéditeur": "送信者名",
         "Mail expéditeur": "メール送信者",
         "Mode d'envoi": "送信プロファイル",
-        "Configuration SMTP": "SMTPの設定",
         "Serveur SMTP": "SMTPサーバー",
         "Port SMTP": "SMTPポート",
         "Securité SMTP": "SMTPセキュリティ",
         "Aucune": "何でもありません",
-        "Utilisateur SMTP": "SMTPuser",
+        "Uitlisateur SMTP": "Uitlisateur SMTP",
         "Mot de passe SMTP": "SMTPパスワード",
-        "Email": "電子メール",
+        "Ne pas verifier le certificat SSL": "Ne pas verifier le certificat SSL",
         "Ajouter une commande mail": "mailコマンドを追加します。",
         "Nom": "表題",
-        "Supprimer": "取り除きます",
-        "Sauvegarder": "セーブ"
+        "Email": "電子メール"
     },
-    "plugins/mail/desktop/js/mail.js": {
-        "Tester": "テスト"
-    },
-    "plugins/mail/plugin_info/info.xml": {
+    "core\/class\/mail.class.php": {
         "Plugin pour envoyer des mails": "メールを送信するプラグイン",
         "Aucune": "何でもありません"
     }

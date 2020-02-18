@@ -1,35 +1,45 @@
 {
-    "plugins/mail/desktop/php/mail.php": {
-        "Ajouter Email": "Add Email",
-        "Rechercher": "Search",
+    "desktop\/js\/mail.js": {
+        "Tester": "Test"
+    },
+    "desktop\/php\/mail.php": {
+        "401 - Accès non autorisé": "401 - Unauthorized access",
+        "Gestion": "Management",
+        "Ajouter": "Add",
         "Mes mails": "My emails",
-        "Général": "Main",
+        "Rechercher": "Search",
+        "Configuration avancée": "Advanced configuration",
+        "Dupliquer": "Duplicate",
+        "Sauvegarder": "Save",
+        "Supprimer": "Delete",
+        "Equipement": "Equipment",
+        "Commandes": "Orders",
         "Nom de l'équipement mail": "Name of email equipment",
         "Objet parent": "Parent object",
         "Aucun": "None",
+        "Catégorie": "Category",
         "Activer": "Enable",
         "Visible": "Visible",
         "Nom expéditeur": "Sender name",
         "Mail expéditeur": "Sender email",
         "Mode d'envoi": "Method of shipment",
-        "Configuration SMTP": "SMTP setup",
         "Serveur SMTP": "SMTP server",
         "Port SMTP": "SMTP port",
         "Securité SMTP": "SMTP security",
         "Aucune": "None",
-        "Utilisateur SMTP": "SMTP user",
+        "Uitlisateur SMTP": "SMTP user",
         "Mot de passe SMTP": "SMTP password",
-        "Email": "Email",
+        "Ne pas verifier le certificat SSL": "Do not check the SSL certificate",
         "Ajouter une commande mail": "Add an email command",
         "Nom": "Name",
-        "Supprimer": "Delete",
-        "Sauvegarder": "Save"
+        "Email": "E-mail"
     },
-    "plugins/mail/desktop/js/mail.js": {
-        "Tester": "Test"
-    },
-    "plugins/mail/plugin_info/info.xml": {
-        "Plugin pour envoyer des mails": "Plugin to send emails",
-        "Aucune": "None"
+    "core\/class\/mail.class.php": {
+        "L\\'adresse mail ne peut etre vide": "The email address cannot be empty",
+        "L\\'adresse mail n\\'est pas valide": "The email address is invalid",
+        "[Mail] Les options de la fonction ne peuvent etre null": "[Mail] The options of the function cannot be null",
+        "[Mail] Le message et le sujet ne peuvent être vide": "[Mail] Message and subject cannot be empty",
+        "[Jeedom] - Notification": "[Jeedom] - Notification",
+        "Mode d\\'envoi non reconnu": "Unrecognized shipping method"
     }
 }

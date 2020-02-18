@@ -1,34 +1,40 @@
 {
-    "plugins/mail/desktop/php/mail.php": {
-        "Ajouter Email": "Email ekle",
-        "Rechercher": "Arayın",
+    "desktop\/js\/mail.js": {
+        "Tester": "Dene"
+    },
+    "desktop\/php\/mail.php": {
+        "401 - Accès non autorisé": "401 - Accès non autorisé",
+        "Gestion": "Gestion",
+        "Ajouter": "Ajouter",
         "Mes mails": "Maillerim",
-        "Général": "Genel",
+        "Rechercher": "Arayın",
+        "Configuration avancée": "Configuration avancée",
+        "Dupliquer": "Dupliquer",
+        "Sauvegarder": "Kaydet",
+        "Supprimer": "Sil",
+        "Equipement": "Equipement",
+        "Commandes": "Commandes",
         "Nom de l'équipement mail": "Mail ekipmanın ismi",
         "Objet parent": "Üst nesne",
         "Aucun": "Hiçbir",
+        "Catégorie": "Catégorie",
         "Activer": "Etkinleştirmek",
         "Visible": "Görülebilir",
         "Nom expéditeur": "Gönderen isim",
         "Mail expéditeur": "Mail gönderen",
         "Mode d'envoi": "Gönderme modu",
-        "Configuration SMTP": "SMTP ayarları",
         "Serveur SMTP": "SMTP sunucu",
         "Port SMTP": "SMTP Port",
         "Securité SMTP": "SMTP güvenlik",
         "Aucune": "Hiçbir",
-        "Utilisateur SMTP": "SMTP kullanıcı",
+        "Uitlisateur SMTP": "Uitlisateur SMTP",
         "Mot de passe SMTP": "SMTP Şifre",
-        "Email": "E-posta",
+        "Ne pas verifier le certificat SSL": "Ne pas verifier le certificat SSL",
         "Ajouter une commande mail": "Mail komutası ekleyin",
         "Nom": "İsim",
-        "Supprimer": "Sil",
-        "Sauvegarder": "Kaydet"
+        "Email": "E-posta"
     },
-    "plugins/mail/desktop/js/mail.js": {
-        "Tester": "Dene"
-    },
-    "plugins/mail/plugin_info/info.xml": {
+    "core\/class\/mail.class.php": {
         "Plugin pour envoyer des mails": "Mail atmak için eklenti",
         "Aucune": "Hiçbir"
     }

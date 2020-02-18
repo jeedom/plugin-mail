@@ -1,34 +1,40 @@
 {
-    "plugins/mail/desktop/php/mail.php": {
-        "Ajouter Email": "Добавить Email",
-        "Rechercher": "Искать",
+    "desktop\/js\/mail.js": {
+        "Tester": "Тест"
+    },
+    "desktop\/php\/mail.php": {
+        "401 - Accès non autorisé": "401 - Accès non autorisé",
+        "Gestion": "Gestion",
+        "Ajouter": "Ajouter",
         "Mes mails": "Мои письма",
-        "Général": "Главная",
+        "Rechercher": "Искать",
+        "Configuration avancée": "Configuration avancée",
+        "Dupliquer": "Dupliquer",
+        "Sauvegarder": "Сохранить",
+        "Supprimer": "Удалить",
+        "Equipement": "Equipement",
+        "Commandes": "Commandes",
         "Nom de l'équipement mail": "Имя оборудования Mail",
         "Objet parent": "Родительский объект",
         "Aucun": "Нет",
+        "Catégorie": "Catégorie",
         "Activer": "Активировать",
         "Visible": "Видимый",
         "Nom expéditeur": "Имя отправителя",
         "Mail expéditeur": "Почта отправителя",
         "Mode d'envoi": "Отправка профиля",
-        "Configuration SMTP": "Конфигурация SMTP",
         "Serveur SMTP": "SMTP сервер",
         "Port SMTP": "SMTP порт",
         "Securité SMTP": "Безопасность SMTP",
         "Aucune": "Нет",
-        "Utilisateur SMTP": "SMTPuser",
+        "Uitlisateur SMTP": "Uitlisateur SMTP",
         "Mot de passe SMTP": "Пароль SMTP",
-        "Email": "Email",
+        "Ne pas verifier le certificat SSL": "Ne pas verifier le certificat SSL",
         "Ajouter une commande mail": "Добавить команду почты",
         "Nom": "Имя",
-        "Supprimer": "Удалить",
-        "Sauvegarder": "Сохранить"
+        "Email": "Email"
     },
-    "plugins/mail/desktop/js/mail.js": {
-        "Tester": "Тест"
-    },
-    "plugins/mail/plugin_info/info.xml": {
+    "core\/class\/mail.class.php": {
         "Plugin pour envoyer des mails": "Плагин для отправки почты",
         "Aucune": "Нет"
     }

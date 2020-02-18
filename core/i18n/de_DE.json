@@ -1,34 +1,40 @@
 {
-    "plugins/mail/desktop/php/mail.php": {
-        "Ajouter Email": "E-Mail hinzufügen",
-        "Rechercher": "Suchen nach",
+    "desktop\/js\/mail.js": {
+        "Tester": "Test"
+    },
+    "desktop\/php\/mail.php": {
+        "401 - Accès non autorisé": "401 - Nicht autorisierter Zugriff",
+        "Gestion": "Management",
+        "Ajouter": "hinzufügen",
         "Mes mails": "Meine Mails",
-        "Général": "Allgemein",
+        "Rechercher": "Suchen nach",
+        "Configuration avancée": "Erweiterte Konfiguration",
+        "Dupliquer": "Duplikat",
+        "Sauvegarder": "Speichern",
+        "Supprimer": "Löschen",
+        "Equipement": "Ausrüstung",
+        "Commandes": "Befehle",
         "Nom de l'équipement mail": "E-Mail Gerätename",
         "Objet parent": "Eltern-Objekt",
         "Aucun": "Ohne",
+        "Catégorie": "Kategorie",
         "Activer": "aktivieren",
         "Visible": "Sichtbar",
         "Nom expéditeur": "Absender Name",
         "Mail expéditeur": "Absender E-Mail",
         "Mode d'envoi": "Sendeprofil",
-        "Configuration SMTP": "SMTP Konfiguration",
         "Serveur SMTP": "SMTP Server",
         "Port SMTP": "SMTP Port",
         "Securité SMTP": "SMTP Sicherheit",
         "Aucune": "Ohne",
-        "Utilisateur SMTP": "SMTP Benutzer",
+        "Uitlisateur SMTP": "SMTP-Benutzer",
         "Mot de passe SMTP": "SMTP Password",
-        "Email": "E-Mail",
+        "Ne pas verifier le certificat SSL": "Überprüfen Sie nicht das SSL-Zertifikat",
         "Ajouter une commande mail": "Einen E-Mail-Befehl hinzufügen",
         "Nom": "Name",
-        "Supprimer": "Löschen",
-        "Sauvegarder": "Speichern"
+        "Email": "E-Mail"
     },
-    "plugins/mail/desktop/js/mail.js": {
-        "Tester": "Test"
-    },
-    "plugins/mail/plugin_info/info.xml": {
+    "core\/class\/mail.class.php": {
         "Plugin pour envoyer des mails": "Plugin zum Senden von E-Mails",
         "Aucune": "Ohne"
     }

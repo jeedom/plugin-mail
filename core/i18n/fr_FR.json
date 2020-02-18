@@ -1,35 +1,45 @@
 {
-    "plugins\/mail\/desktop\/php\/mail.php": {
-        "Ajouter Email": "Ajouter Email",
-        "Rechercher": "Rechercher",
+    "desktop\/js\/mail.js": {
+        "Tester": "Tester"
+    },
+    "desktop\/php\/mail.php": {
+        "401 - Accès non autorisé": "401 - Accès non autorisé",
+        "Gestion": "Gestion",
+        "Ajouter": "Ajouter",
         "Mes mails": "Mes mails",
-        "Général": "Général",
+        "Rechercher": "Rechercher",
+        "Configuration avancée": "Configuration avancée",
+        "Dupliquer": "Dupliquer",
+        "Sauvegarder": "Sauvegarder",
+        "Supprimer": "Supprimer",
+        "Equipement": "Equipement",
+        "Commandes": "Commandes",
         "Nom de l'équipement mail": "Nom de l'équipement mail",
         "Objet parent": "Objet parent",
         "Aucun": "Aucun",
+        "Catégorie": "Catégorie",
         "Activer": "Activer",
         "Visible": "Visible",
         "Nom expéditeur": "Nom expéditeur",
         "Mail expéditeur": "Mail expéditeur",
         "Mode d'envoi": "Mode d'envoi",
-        "Configuration SMTP": "Configuration SMTP",
         "Serveur SMTP": "Serveur SMTP",
         "Port SMTP": "Port SMTP",
         "Securité SMTP": "Securité SMTP",
         "Aucune": "Aucune",
-        "Utilisateur SMTP": "Utilisateur SMTP",
+        "Uitlisateur SMTP": "Uitlisateur SMTP",
         "Mot de passe SMTP": "Mot de passe SMTP",
-        "Email": "Email",
+        "Ne pas verifier le certificat SSL": "Ne pas verifier le certificat SSL",
         "Ajouter une commande mail": "Ajouter une commande mail",
         "Nom": "Nom",
-        "Supprimer": "Supprimer",
-        "Sauvegarder": "Sauvegarder"
+        "Email": "Email"
     },
-    "plugins\/mail\/desktop\/js\/mail.js": {
-        "Tester": "Tester"
-    },
-    "plugins\/mail\/plugin_info\/info.xml": {
-        "Plugin pour envoyer des mails": "Plugin pour envoyer des mails",
-        "Aucune": "Aucune"
+    "core\/class\/mail.class.php": {
+        "L\\'adresse mail ne peut etre vide": "L\\'adresse mail ne peut etre vide",
+        "L\\'adresse mail n\\'est pas valide": "L\\'adresse mail n\\'est pas valide",
+        "[Mail] Les options de la fonction ne peuvent etre null": "[Mail] Les options de la fonction ne peuvent etre null",
+        "[Mail] Le message et le sujet ne peuvent être vide": "[Mail] Le message et le sujet ne peuvent être vide",
+        "[Jeedom] - Notification": "[Jeedom] - Notification",
+        "Mode d\\'envoi non reconnu": "Mode d\\'envoi non reconnu"
     }
 }

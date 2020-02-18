@@ -1,34 +1,40 @@
 {
-    "plugins/mail/desktop/php/mail.php": {
-        "Ajouter Email": "Tambahan Mail",
-        "Rechercher": "Mencari",
+    "desktop\/js\/mail.js": {
+        "Tester": "Coba"
+    },
+    "desktop\/php\/mail.php": {
+        "401 - Accès non autorisé": "401 - Accès non autorisé",
+        "Gestion": "Gestion",
+        "Ajouter": "Ajouter",
         "Mes mails": "Mail Saya",
-        "Général": "Umum",
+        "Rechercher": "Mencari",
+        "Configuration avancée": "Configuration avancée",
+        "Dupliquer": "Dupliquer",
+        "Sauvegarder": "Menyimpan",
+        "Supprimer": "Menghapus",
+        "Equipement": "Equipement",
+        "Commandes": "Commandes",
         "Nom de l'équipement mail": "Nama peralatan mail",
         "Objet parent": "Objek induk",
         "Aucun": "Tak ada",
+        "Catégorie": "Catégorie",
         "Activer": "Mengaktifkan",
         "Visible": "Terlihat",
         "Nom expéditeur": "Nama pemakai",
         "Mail expéditeur": "Mail pengirim",
         "Mode d'envoi": "Kirim mode",
-        "Configuration SMTP": "Konfigurasi SMTP",
         "Serveur SMTP": "SMTP server",
         "Port SMTP": "Port SMTP",
         "Securité SMTP": "Keamanan SMTP",
         "Aucune": "Tak ada",
-        "Utilisateur SMTP": "SMTPuser",
+        "Uitlisateur SMTP": "Uitlisateur SMTP",
         "Mot de passe SMTP": "Password SMTP",
-        "Email": "Email",
+        "Ne pas verifier le certificat SSL": "Ne pas verifier le certificat SSL",
         "Ajouter une commande mail": "Tambahan pesanan mail",
         "Nom": "Nama",
-        "Supprimer": "Menghapus",
-        "Sauvegarder": "Menyimpan"
+        "Email": "Email"
     },
-    "plugins/mail/desktop/js/mail.js": {
-        "Tester": "Coba"
-    },
-    "plugins/mail/plugin_info/info.xml": {
+    "core\/class\/mail.class.php": {
         "Plugin pour envoyer des mails": "Plugin untuk kirim mail",
         "Aucune": "Tak ada"
     }

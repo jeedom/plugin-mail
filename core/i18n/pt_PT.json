@@ -1,34 +1,40 @@
 {
-    "plugins/mail/desktop/php/mail.php": {
-        "Ajouter Email": "Adicionar Email",
-        "Rechercher": "Pesquisar",
+    "desktop\/js\/mail.js": {
+        "Tester": "teste"
+    },
+    "desktop\/php\/mail.php": {
+        "401 - Accès non autorisé": "401 - Accès non autorisé",
+        "Gestion": "Gestion",
+        "Ajouter": "Ajouter",
         "Mes mails": "meu e-mail",
-        "Général": "Geral",
+        "Rechercher": "Pesquisar",
+        "Configuration avancée": "Configuration avancée",
+        "Dupliquer": "Dupliquer",
+        "Sauvegarder": "Salvar",
+        "Supprimer": "remover",
+        "Equipement": "Equipement",
+        "Commandes": "Commandes",
         "Nom de l'équipement mail": "Nome equipamentos Email",
         "Objet parent": "objeto pai",
         "Aucun": "Nemhum",
+        "Catégorie": "Catégorie",
         "Activer": "Ativar",
         "Visible": "Visivél",
         "Nom expéditeur": "Nome do remetente",
         "Mail expéditeur": "remetente do email",
         "Mode d'envoi": "perfil de envio",
-        "Configuration SMTP": "configuração de SMTP",
         "Serveur SMTP": "servidor SMTP",
         "Port SMTP": "Porta SMTP",
         "Securité SMTP": "Segurança SMTP",
         "Aucune": "Nenhum",
-        "Utilisateur SMTP": "SMTPuser",
+        "Uitlisateur SMTP": "Uitlisateur SMTP",
         "Mot de passe SMTP": "senha SMTP",
-        "Email": "correio eletrônico",
+        "Ne pas verifier le certificat SSL": "Ne pas verifier le certificat SSL",
         "Ajouter une commande mail": "Adicionar um comando de correio",
         "Nom": "Nome",
-        "Supprimer": "remover",
-        "Sauvegarder": "Salvar"
+        "Email": "correio eletrônico"
     },
-    "plugins/mail/desktop/js/mail.js": {
-        "Tester": "teste"
-    },
-    "plugins/mail/plugin_info/info.xml": {
+    "core\/class\/mail.class.php": {
         "Plugin pour envoyer des mails": "Plugin para enviar correio",
         "Aucune": "Nenhum"
     }

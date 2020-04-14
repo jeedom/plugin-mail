@@ -156,7 +156,7 @@ $eqLogics = eqLogic::byType($plugin->getId());
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-sm-2 control-label">{{Uitlisateur SMTP}}</label>
+                                        <label class="col-sm-2 control-label">{{Utilisateur SMTP}}</label>
                                         <div class="col-sm-8">
                                             <input type="text" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::username' />
                                         </div>

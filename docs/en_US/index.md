@@ -1,145 +1,145 @@
-# Mail
+# 
 
-Plugin permettant d’envoyer des mails.
+.
 
-Configuration du plugin 
+Plugin configuration 
 ===
 
-Après avoir installé le plugin, il vous suffit de l’activer. Ce plugin
-n’a aucune configuration particulière :
+. 
+ :
 
 ![mail1](../images/mail1.PNG)
 
-Configuration des équipements 
+Equipment configuration 
 ===
 
-La configuration des équipements Mail est accessible à partir du menu
-plugin :
+
+Plugin :
 
 ![mail2](../images/mail2.PNG)
 
-Voilà à quoi ressemble la page du plugin Mail (ici avec déjà 1 mail,
-vous pouvez en mettre autant que vous voulez avec le bouton "Ajouter") :
+,
+ :
 
 ![mail3](../images/mail3.PNG)
 
-Once you click on one of them, you get:
+ :
 
 ![mail4](../images/mail4.PNG)
 
-You can find here the full configuration of your device :
+Here you find all the configuration of your equipment :
 
--   **Nom de l’équipement mail** : nom de votre équipement mail
+-   **** : 
 
--   **Parent Object** : means the parent object the equipment depend
+-   **Parent object** : indicates the parent object to which belongs
     equipment
 
--   **Enable**: makes your equipment active
+-   **Activate** : makes your equipment active
 
--   **Visible**: makes your equipment visible on the dashboard
+-   **Visible** : makes your equipment visible on the dashboard
 
--   **Nom expéditeur** : nom de l’expéditeur du mail (ex : Jeedom)
+-   **** :  : 
 
--   **Mail expéditeur** : mail de l’expéditeur (ex : <jeedom@moi.fr>)
+-   **** :  : <jeedom@moi.fr>)
 
--   **Mode d’envoi** : mode d’envoi du mail :
+-   **** :  :
 
-    -   SMTP : mode le plus courant pour l’envoi de mail
+    -    : 
 
-    -   Sendmail
+    -   
 
-    -   Qmail
+    -   
 
-    -   Mail()\[PHP Function\] : utilise la [fonction d’envoi standard
-        de PHP,
-        window="\_blank"](http://fr.php.net/manual/fr/function.mail.php),
-        nécessite de configurer le système d’exploitation
+    -   ] : 
+        ,
+        :,
+        
 
-Hormis l’option SMTP, les autres options nécessitent la configuration de
-l’OS (Linux) pour pouvoir fonctionner. Autrement dit, de base seule la
-fonction SMTP fonctionne, les autres sont réservées aux experts qui
-pourront, s’ils le souhaitent, paramétrer eux-mêmes ces options.
 
-L’onglet configuration SMTP permet de renseigner les informations du
-serveur d’email que vous voulez utilisé.
+. 
+
+.
+
+
+.
 
 ![mail screenshot3](../images/mail_screenshot3.jpg)
 
-Voici quelques exemples pour les principaux fournisseurs de services
-email :
 
--   **Gmail**
+E-mail :
 
-    -   Serveur SMTP : smtp.gmail.com
+-   ****
 
-    -   Port SMTP : 587
+    -    : 
 
-    -   Sécurité SMTP : TLS
+    -    : 587
 
--   **Hotmail**
+    -    : 
 
-    -   Serveur SMTP : smtp.live.com
+-   ****
 
-    -   Port SMTP : 587
+    -    : 
 
-    -   Sécurité SMTP : TLS
+    -    : 587
 
--   **iCloud**
+    -    : 
 
-    -   Serveur SMTP : smtp.me.com
+-   ****
 
-    -   Port SMTP : 25
+    -    : 
 
--   **Yahoo.com**
+    -    : 25
 
-    -   Serveur SMTP : smtp.mail.yahoo.com
+-   ****
 
-    -   Port SMTP : 465
+    -    : 
 
-    -   Sécurité SMTP : SSL
+    -    : 465
 
-Les champs « Utilisateur SMTP » et « Mot de passe SMTP » correspondent
-aux identifiants de votre compte email.
+    -    : 
 
-A partir de l’onglet "Commandes", vous pouvez ajouter des commandes qui
-correspondent aux adresses email auxquelles vous souhaitez pouvoir
-envoyer des emails avec Jeedom :
+Les champs « Utilisateur  » et « Mot de passe  » correspondent
+.
+
+
+
+ :
 
 ![mail screenshot4](../images/mail_screenshot4.jpg)
 
--   **nom** : nom de la commande
+-   **Name** : Name of the order
 
--   **email** : l’addresse email à laquelle envoyer le message. Vous pouvez en mettre plusieurs en les séparants par des ,
+-   **E-mail** : .  ,
 
--   **configuration avancée** (petites roues crantées) : permet
-    d’afficher la configuration avancée de la commande (méthode
-    d’historisation, widget, etc.)
+-   **Advanced configuration**  : allows
+    
+    
 
--   **tester** : permet de tester la commande,
+-   **Test** : Used to test the command,
 
--   **supprimer** (signe -) : permet de supprimer la commande.
+-   **Delete**  : allows to delete the command.
 
-Ce plugin fonctionne comme un module, c’est-à-dire qu’une fois
-sauvegardé, il apparaît dans la liste des actions ou commandes. Il est
-ainsi très simple de l’utiliser lors de la création de scénarios par
-exemple.
 
-Dans un scénario, une fois sélectionné dans une action, il faudra saisir
-le titre et le message.
+. It is
+
+Example.
+
+
+.
 
 ![mail5](../images/mail5.jpg)
 
 > **Important**
 >
-> Avec Gmail il faut donner un mot de passe spécifique pour
-> l’application : Mon compte ⇒ connexion et sécurité ⇒ Se connecter à
-> Google ⇒ Mots de passe d’application
+> 
+>  : 
+> 
 
 > **Tip**
 >
-> Le format HTML est supporté par l’éditeur de scénario pour le corps
-> des messages.
+> 
+> .
 
 > **Tip**
 >
-> Pensez à sauvegarder toutes les modifications.
+> .

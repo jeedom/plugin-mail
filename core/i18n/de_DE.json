@@ -1,41 +1,45 @@
 {
-    "desktop\/js\/mail.js": {
-        "Tester": "Test"
-    },
-    "desktop\/php\/mail.php": {
+    "plugins\/mail\/desktop\/php\/mail.php": {
         "401 - Accès non autorisé": "401 - Nicht autorisierter Zugriff",
-        "Gestion": "Management",
-        "Ajouter": "hinzufügen",
-        "Mes mails": "Meine Mails",
+        "Gestion": "Verwaltung",
+        "Ajouter": "Hinzufügen",
+        "Mes mails": "",
         "Rechercher": "Suchen nach",
         "Configuration avancée": "Erweiterte Konfiguration",
         "Dupliquer": "Duplikat",
         "Sauvegarder": "Speichern",
         "Supprimer": "Löschen",
-        "Equipement": "Ausrüstung",
+        "Equipement": "Gerät",
         "Commandes": "Befehle",
-        "Nom de l'équipement mail": "E-Mail Gerätename",
-        "Objet parent": "Eltern-Objekt",
+        "Nom de l'équipement mail": "",
+        "Objet parent": "Übergeordnetes Objekt",
         "Aucun": "Ohne",
         "Catégorie": "Kategorie",
-        "Activer": "aktivieren",
+        "Activer": "Aktivieren",
         "Visible": "Sichtbar",
-        "Nom expéditeur": "Absender Name",
-        "Mail expéditeur": "Absender E-Mail",
-        "Mode d'envoi": "Sendeprofil",
-        "Serveur SMTP": "SMTP Server",
-        "Port SMTP": "SMTP Port",
-        "Securité SMTP": "SMTP Sicherheit",
-        "Aucune": "Ohne",
-        "Uitlisateur SMTP": "SMTP-Benutzer",
-        "Mot de passe SMTP": "SMTP Password",
-        "Ne pas verifier le certificat SSL": "Überprüfen Sie nicht das SSL-Zertifikat",
-        "Ajouter une commande mail": "Einen E-Mail-Befehl hinzufügen",
+        "Nom expéditeur": "",
+        "Mail expéditeur": "",
+        "Mode d'envoi": "",
+        "Serveur SMTP": "",
+        "Port SMTP": "",
+        "Securité SMTP": "",
+        "Aucune": "Keine",
+        "Utilisateur SMTP": "",
+        "Mot de passe SMTP": "",
+        "Ne pas verifier le certificat SSL": "",
+        "Ajouter une commande mail": "",
         "Nom": "Name",
         "Email": "E-Mail"
     },
-    "core\/class\/mail.class.php": {
-        "Plugin pour envoyer des mails": "Plugin zum Senden von E-Mails",
-        "Aucune": "Ohne"
+    "plugins\/mail\/desktop\/js\/mail.js": {
+        "Tester": "Test"
+    },
+    "plugins\/mail\/core\/class\/mail.class.php": {
+        "L\\'adresse mail ne peut etre vide": "",
+        "L\\'adresse mail n\\'est pas valide": "",
+        "[Mail] Les options de la fonction ne peuvent etre null": "",
+        "[Mail] Le message et le sujet ne peuvent être vide": "",
+        "[Jeedom] - Notification": "",
+        "Mode d\\'envoi non reconnu": ""
     }
 }

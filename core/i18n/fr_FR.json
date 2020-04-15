@@ -1,8 +1,5 @@
 {
-    "desktop\/js\/mail.js": {
-        "Tester": "Tester"
-    },
-    "desktop\/php\/mail.php": {
+    "plugins\/mail\/desktop\/php\/mail.php": {
         "401 - Accès non autorisé": "401 - Accès non autorisé",
         "Gestion": "Gestion",
         "Ajouter": "Ajouter",
@@ -27,14 +24,17 @@
         "Port SMTP": "Port SMTP",
         "Securité SMTP": "Securité SMTP",
         "Aucune": "Aucune",
-        "Uitlisateur SMTP": "Uitlisateur SMTP",
+        "Utilisateur SMTP": "Utilisateur SMTP",
         "Mot de passe SMTP": "Mot de passe SMTP",
         "Ne pas verifier le certificat SSL": "Ne pas verifier le certificat SSL",
         "Ajouter une commande mail": "Ajouter une commande mail",
         "Nom": "Nom",
         "Email": "Email"
     },
-    "core\/class\/mail.class.php": {
+    "plugins\/mail\/desktop\/js\/mail.js": {
+        "Tester": "Tester"
+    },
+    "plugins\/mail\/core\/class\/mail.class.php": {
         "L\\'adresse mail ne peut etre vide": "L\\'adresse mail ne peut etre vide",
         "L\\'adresse mail n\\'est pas valide": "L\\'adresse mail n\\'est pas valide",
         "[Mail] Les options de la fonction ne peuvent etre null": "[Mail] Les options de la fonction ne peuvent etre null",

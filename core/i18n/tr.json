@@ -1,41 +1,45 @@
 {
-    "desktop\/js\/mail.js": {
-        "Tester": "Dene"
-    },
-    "desktop\/php\/mail.php": {
-        "401 - Accès non autorisé": "401 - Accès non autorisé",
-        "Gestion": "Gestion",
-        "Ajouter": "Ajouter",
-        "Mes mails": "Maillerim",
+    "plugins\/mail\/desktop\/php\/mail.php": {
+        "401 - Accès non autorisé": "401 - Yetkisiz erişim",
+        "Gestion": "Idare",
+        "Ajouter": "Ekle",
+        "Mes mails": "",
         "Rechercher": "Arayın",
-        "Configuration avancée": "Configuration avancée",
-        "Dupliquer": "Dupliquer",
+        "Configuration avancée": "Gelişmiş ayarlar",
+        "Dupliquer": "Kopyala",
         "Sauvegarder": "Kaydet",
         "Supprimer": "Sil",
-        "Equipement": "Equipement",
-        "Commandes": "Commandes",
-        "Nom de l'équipement mail": "Mail ekipmanın ismi",
+        "Equipement": "Cihaz",
+        "Commandes": "Komutalar",
+        "Nom de l'équipement mail": "",
         "Objet parent": "Üst nesne",
         "Aucun": "Hiçbir",
-        "Catégorie": "Catégorie",
-        "Activer": "Etkinleştirmek",
+        "Catégorie": "Kategori",
+        "Activer": "Etkinleştir",
         "Visible": "Görülebilir",
-        "Nom expéditeur": "Gönderen isim",
-        "Mail expéditeur": "Mail gönderen",
-        "Mode d'envoi": "Gönderme modu",
-        "Serveur SMTP": "SMTP sunucu",
-        "Port SMTP": "SMTP Port",
-        "Securité SMTP": "SMTP güvenlik",
-        "Aucune": "Hiçbir",
-        "Uitlisateur SMTP": "Uitlisateur SMTP",
-        "Mot de passe SMTP": "SMTP Şifre",
-        "Ne pas verifier le certificat SSL": "Ne pas verifier le certificat SSL",
-        "Ajouter une commande mail": "Mail komutası ekleyin",
+        "Nom expéditeur": "",
+        "Mail expéditeur": "",
+        "Mode d'envoi": "",
+        "Serveur SMTP": "",
+        "Port SMTP": "",
+        "Securité SMTP": "",
+        "Aucune": "Hayır",
+        "Utilisateur SMTP": "",
+        "Mot de passe SMTP": "",
+        "Ne pas verifier le certificat SSL": "",
+        "Ajouter une commande mail": "",
         "Nom": "İsim",
-        "Email": "E-posta"
+        "Email": ""
     },
-    "core\/class\/mail.class.php": {
-        "Plugin pour envoyer des mails": "Mail atmak için eklenti",
-        "Aucune": "Hiçbir"
+    "plugins\/mail\/desktop\/js\/mail.js": {
+        "Tester": "Test et"
+    },
+    "plugins\/mail\/core\/class\/mail.class.php": {
+        "L\\'adresse mail ne peut etre vide": "",
+        "L\\'adresse mail n\\'est pas valide": "",
+        "[Mail] Les options de la fonction ne peuvent etre null": "",
+        "[Mail] Le message et le sujet ne peuvent être vide": "",
+        "[Jeedom] - Notification": "",
+        "Mode d\\'envoi non reconnu": ""
     }
 }

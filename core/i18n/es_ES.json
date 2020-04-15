@@ -1,41 +1,45 @@
 {
-    "desktop\/js\/mail.js": {
-        "Tester": "Probar"
-    },
-    "desktop\/php\/mail.php": {
+    "plugins\/mail\/desktop\/php\/mail.php": {
         "401 - Accès non autorisé": "401 - Acceso no autorizado",
-        "Gestion": "administración",
-        "Ajouter": "añadir",
-        "Mes mails": "Mi correo",
+        "Gestion": "Gestión",
+        "Ajouter": "Añadir",
+        "Mes mails": "",
         "Rechercher": "Buscar",
         "Configuration avancée": "Configuración avanzada",
-        "Dupliquer": "duplicado",
+        "Dupliquer": "Duplicar",
         "Sauvegarder": "Guardar",
         "Supprimer": "Borrar",
-        "Equipement": "equipo",
-        "Commandes": "comandos",
-        "Nom de l'équipement mail": "Nombre del dispositivo correo",
+        "Equipement": "Dispositivos",
+        "Commandes": "Comandos",
+        "Nom de l'équipement mail": "",
         "Objet parent": "Objeto padre",
-        "Aucun": "Ninguno",
-        "Catégorie": "categoría",
+        "Aucun": "Ninguna",
+        "Catégorie": "Categoría",
         "Activer": "Activar",
-        "Visible": "visible",
-        "Nom expéditeur": "Nombre del remitente",
-        "Mail expéditeur": "E-mail del remitente",
-        "Mode d'envoi": "Modo de envío",
-        "Serveur SMTP": "Servidor SMTP",
-        "Port SMTP": "Puerto SMTP",
-        "Securité SMTP": "Seguridad SMTP",
+        "Visible": "Visible",
+        "Nom expéditeur": "",
+        "Mail expéditeur": "",
+        "Mode d'envoi": "",
+        "Serveur SMTP": "",
+        "Port SMTP": "",
+        "Securité SMTP": "",
         "Aucune": "Ninguna",
-        "Uitlisateur SMTP": "Usuario SMTP",
-        "Mot de passe SMTP": "Contraseña SMTP",
-        "Ne pas verifier le certificat SSL": "No verifique el certificado SSL",
-        "Ajouter une commande mail": "Añadir un comando de correo",
+        "Utilisateur SMTP": "",
+        "Mot de passe SMTP": "",
+        "Ne pas verifier le certificat SSL": "",
+        "Ajouter une commande mail": "",
         "Nom": "Nombre",
         "Email": "E-mail"
     },
-    "core\/class\/mail.class.php": {
-        "Plugin pour envoyer des mails": "Plugin para enviar correo",
-        "Aucune": "Ninguna"
+    "plugins\/mail\/desktop\/js\/mail.js": {
+        "Tester": "Probar"
+    },
+    "plugins\/mail\/core\/class\/mail.class.php": {
+        "L\\'adresse mail ne peut etre vide": "",
+        "L\\'adresse mail n\\'est pas valide": "",
+        "[Mail] Les options de la fonction ne peuvent etre null": "",
+        "[Mail] Le message et le sujet ne peuvent être vide": "",
+        "[Jeedom] - Notification": "",
+        "Mode d\\'envoi non reconnu": ""
     }
 }

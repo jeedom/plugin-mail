@@ -1,4 +1,4 @@
-# 
+# Mail
 
 .
 
@@ -23,13 +23,13 @@ Plugin :
 
 ![mail3](../images/mail3.PNG)
 
- :
+Once you click on one of them, you get :
 
 ![mail4](../images/mail4.PNG)
 
 Here you find all the configuration of your equipment :
 
--   **** : 
+-   **Email device name** : 
 
 -   **Parent object** : indicates the parent object to which belongs
     equipment
@@ -38,11 +38,11 @@ Here you find all the configuration of your equipment :
 
 -   **Visible** : makes your equipment visible on the dashboard
 
--   **** :  : 
+-   **Sender name** :  : 
 
--   **** :  : <jeedom@moi.fr>)
+-   **Sender E-mail** :  : <jeedom@moi.fr>)
 
--   **** :  :
+-   **Send mode** :  :
 
     -    : 
 
@@ -70,33 +70,33 @@ E-mail :
 
 -   ****
 
-    -    : 
+    -    server : 
 
-    -    : 587
+    -    port : 587
 
-    -    : 
-
--   ****
-
-    -    : 
-
-    -    : 587
-
-    -    : 
+    -    security : 
 
 -   ****
 
-    -    : 
+    -    server : 
 
-    -    : 25
+    -    port : 587
+
+    -    security : 
 
 -   ****
 
-    -    : 
+    -    server : 
 
-    -    : 465
+    -    port : 25
 
-    -    : 
+-   ****
+
+    -    server : 
+
+    -    port : 465
+
+    -    security : 
 
 Les champs « Utilisateur  » et « Mot de passe  » correspondent
 .
@@ -117,7 +117,7 @@ Les champs « Utilisateur  » et « Mot de passe  » correspondent
 
 -   **Test** : Used to test the command,
 
--   **Delete**  : allows to delete the command.
+-   **Delete** (sign -) : allows to delete the command.
 
 
 . It is

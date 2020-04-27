@@ -23,7 +23,7 @@ Plugin :
 
 ![mail3](../images/mail3.PNG)
 
- :
+Sobald Sie auf eine davon klicken, erhalten Sie :
 
 ![mail4](../images/mail4.PNG)
 
@@ -117,7 +117,7 @@ Les champs « Utilisateur  » et « Mot de passe  » correspondent
 
 -   **Test** : Wird zum Testen des Befehls verwendet,
 
--   **Löschen**  : ermöglicht das Löschen des Befehls.
+-   **Löschen** (Zeichen -) : ermöglicht das Löschen des Befehls.
 
 
 . Er ist

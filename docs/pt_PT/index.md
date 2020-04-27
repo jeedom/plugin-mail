@@ -1,8 +1,8 @@
-# Correo
+# 
 
 .
 
-Configuración del Plugin 
+Configuração do  
 ===
 
 . 
@@ -10,11 +10,11 @@ Configuración del Plugin
 
 ![mail1](../images/mail1.PNG)
 
-Configuración del equipo 
+ 
 ===
 
 
-Plugin :
+ :
 
 ![mail2](../images/mail2.PNG)
 
@@ -23,20 +23,20 @@ Plugin :
 
 ![mail3](../images/mail3.PNG)
 
-Una vez que haces clic en uno de ellos, obtienes :
+ :
 
 ![mail4](../images/mail4.PNG)
 
-Aquí encontrarás toda la configuración de tu equipo :
+ :
 
 -   **** : 
 
--   **Objeto padre** : indica el objeto padre al que pertenece
-    equipo
+-   **Objeto pai** : 
+    
 
--   **Activar** : activa su equipo
+-   **Ativar** : 
 
--   **Visible** : hace que su equipo sea visible en el tablero
+-   **Visivél** : 
 
 -   **** :  : 
 
@@ -66,7 +66,7 @@ Aquí encontrarás toda la configuración de tu equipo :
 ![mail screenshot3](../images/mail_screenshot3.jpg)
 
 
-E-mail :
+ :
 
 -   ****
 
@@ -107,39 +107,39 @@ Les champs « Utilisateur  » et « Mot de passe  » correspondent
 
 ![mail screenshot4](../images/mail_screenshot4.jpg)
 
--   **Nombre** : Nombre de la orden
+-   **Nome** : 
 
--   **E-mail** : .  ,
+-   **** : .  ,
 
--   **Configuración avanzada**  : permite
+-   **Configuração avançada**  : 
     
     
 
--   **Probar** : Se usa para probar el comando,
+-   **Teste** : ,
 
--   **Borrar** (signo -) : permite eliminar el comando.
+-   **Remover**  : .
 
 
-. El es
+. 
 
-Ejemplo.
+.
 
 
 .
 
 ![mail5](../images/mail5.jpg)
 
-> **Importante**
+> ****
 >
 > 
 >  : 
 > 
 
-> **Punta**
+> ****
 >
 > 
 > .
 
-> **Punta**
+> ****
 >
 > .

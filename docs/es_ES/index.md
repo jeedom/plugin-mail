@@ -1,4 +1,4 @@
-# Correo
+# Mail
 
 Complemento para enviar correos electrónicos.
 
@@ -29,7 +29,7 @@ Una vez que haces clic en uno de ellos, obtienes :
 
 Aquí encontrarás toda la configuración de tu equipo :
 
--   **Nombre del equipo de correo** : Nombrebre del correo de su equipo
+-   **Nombre del equipo de correo** : nombre del correo de su equipo
 
 -   **Objeto padre** : indica el objeto padre al que pertenece
     equipo
@@ -38,7 +38,7 @@ Aquí encontrarás toda la configuración de tu equipo :
 
 -   **Visible** : hace que su equipo sea visible en el tablero
 
--   **Nombre del remitente** : Nombrebre del remitente del correo electrónico (ej. : Jeedom)
+-   **Nombre del remitente** : nombre del remitente del correo electrónico (ej. : Jeedom)
 
 -   **Remitente de correo** : correo electrónico del remitente (ex : <jeedom@moi.fr>)
 
@@ -111,7 +111,7 @@ enviar correos electrónicos con Jeedom :
 
 -   **email** : la dirección de correo electrónico para enviar el mensaje. Puedes poner varios separándolos con ,
 
--   **Configuración avanzada** (ruedas con muescas pequeñas) : permite
+-   **Configuración avanzada** (ruedas con muescas pequeñas) : permet
     muestra la configuración avanzada del comando (método
     historia, widget, etc.)
 

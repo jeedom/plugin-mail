@@ -1,4 +1,4 @@
-# Post
+# Mail
 
 Plugin zum Versenden von E-Mails.
 
@@ -13,12 +13,12 @@ hat keine spezielle Konfiguration :
 Gerätekonfiguration 
 ===
 
-Auf die Konfiguration der Post-Geräte kann über das Menü zugegriffen werden
+Auf die Konfiguration der Mail-Geräte kann über das Menü zugegriffen werden
 Plugin :
 
 ![mail2](../images/mail2.PNG)
 
-So sieht die Post-Plugin-Seite aus (hier mit bereits 1 Post,
+So sieht die Mail-Plugin-Seite aus (hier mit bereits 1 Mail,
 Mit der Schaltfläche "Hinzufügen" können Sie beliebig viele eingeben. :
 
 ![mail3](../images/mail3.PNG)
@@ -111,7 +111,7 @@ Sende E-Mails mit Jeedom :
 
 -   **email** : die E-Mail-Adresse, an die die Nachricht gesendet werden soll. Sie können mehrere setzen, indem Sie sie mit trennen ,
 
--   **Erweiterte Konfiguration** (kleine gekerbte Räder) : erlaubt
+-   **Erweiterte Konfiguration** (kleine gekerbte Räder) : permet
     Zeigen Sie die erweiterte Konfiguration des Befehls (Methode) an
     Geschichte, Widget usw.)
 

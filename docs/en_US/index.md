@@ -1,11 +1,11 @@
 # Mail
 
-Plugin for sending E-mails.
+Plugin for sending emails.
 
 Plugin configuration 
 ===
 
-After installing the Plugin, you just need to activate it. This Plugin
+After installing the plugin, you just need to activate it. This plugin
 has no special configuration :
 
 ![mail1](../images/mail1.PNG)
@@ -40,7 +40,7 @@ Here you find all the configuration of your equipment :
 
 -   **Sender name** : name of the sender of the E-mail (ex : Jeedom)
 
--   **Sender E-mail** : sender's E-mail (ex : <jeedom@moi.fr>)
+-   **Sender email** : sender's E-mail (ex : <jeedom@moi.fr>)
 
 -   **Send mode** : method of sending the E-mail :
 
@@ -103,7 +103,7 @@ to the identifiers of your E-mail account.
 
 From the "Orders" tab, you can add commands that
 correspond to the E-mail addresses to which you wish to be able
-send E-mails with Jeedom :
+send emails with Jeedom :
 
 ![mail screenshot4](../images/mail_screenshot4.jpg)
 
@@ -111,7 +111,7 @@ send E-mails with Jeedom :
 
 -   **email** : the E-mail address to send the message to. You can put several by separating them with ,
 
--   **Advanced configuration** (small notched wheels) : allows
+-   **Advanced configuration** (small notched wheels) : permet
     display the advanced configuration of the command (method
     history, widget, etc.)
 

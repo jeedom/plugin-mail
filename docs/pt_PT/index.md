@@ -18,7 +18,7 @@ plugin :
 
 ![mail2](../images/mail2.PNG)
 
-É assim que a página do plugin Mail (aqui, com 1 email já,
+É assim que a página do plugin Mail (aqui, com 1 E-mail já,
 você pode colocar quantas quiser com o botão "Adicionar") :
 
 ![mail3](../images/mail3.PNG)
@@ -29,7 +29,7 @@ Depois de clicar em um deles, você obtém :
 
 Aqui você encontra toda a configuração do seu equipamento :
 
--   **Nome do equipamento de correio** : Nomee do correio do seu equipamento
+-   **Nome do equipamento de correio** : nome do correio do seu equipamento
 
 -   **Objeto pai** : indica o objeto pai ao qual pertence
     o equipamento
@@ -38,11 +38,11 @@ Aqui você encontra toda a configuração do seu equipamento :
 
 -   **Visible** : torna seu equipamento visível no painel
 
--   **Nome do remetente** : Nomee do remetente do e-mail (ex : Jeedom)
+-   **Nome do remetente** : nome do remetente do e-mail (ex : Jeedom)
 
--   **Remetente do correio** : email do remetente (ex : <jeedom@moi.fr>)
+-   **Remetente do correio** : E-mail do remetente (ex : <jeedom@moi.fr>)
 
--   **Método de envio** : método de envio do email :
+-   **Método de envio** : método de envio do E-mail :
 
     -   SMTP : modo mais comum de envio de correio
 
@@ -61,12 +61,12 @@ A função SMTP funciona, os outros são reservados para especialistas que
 podem, se desejarem, configurar essas opções eles mesmos.
 
 A guia de configuração SMTP é usada para inserir as informações para o
-servidor de email que você deseja usar.
+servidor de E-mail que você deseja usar.
 
 ![mail screenshot3](../images/mail_screenshot3.jpg)
 
 Aqui estão alguns exemplos para os principais provedores de serviços
-email :
+E-mail :
 
 -   **Gmail**
 
@@ -99,7 +99,7 @@ email :
     -   Segurança SMTP : SSL
 
 Les champs « Utilisateur SMTP » et « Mot de passe SMTP » correspondent
-para os identificadores da sua conta de email.
+para os identificadores da sua conta de E-mail.
 
 Na guia "Pedidos", você pode adicionar comandos que
 correspondem aos endereços de e-mail aos quais você deseja poder
@@ -107,11 +107,11 @@ envie e-mails com Jeedom :
 
 ![mail screenshot4](../images/mail_screenshot4.jpg)
 
--   **nom** : Nomee do comando
+-   **nom** : nome do comando
 
--   **email** : o endereço de email para enviar a mensagem para. Você pode colocar vários separando-os com ,
+-   **email** : o endereço de E-mail para enviar a mensagem para. Você pode colocar vários separando-os com ,
 
--   **Configuração avançada** (pequenas rodas dentadas) : permite
+-   **Configuração avançada** (pequenas rodas dentadas) : permet
     exibir a configuração avançada do comando (método
     histórico, widget etc.)
 

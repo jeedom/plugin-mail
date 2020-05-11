@@ -1,25 +1,20 @@
-# Mail
+# Plug-in de email
 
 Plug-in para enviar e-mails.
 
-Configuração do plugin 
-===
+# Configuração do plugin 
 
-Depois de instalar o plugin, você só precisa ativá-lo. Este plugin
-não tem configuração especial :
+Depois de instalar o plugin, você só precisa ativá-lo. Este plugin não possui nenhuma configuração específica :
 
 ![mail1](../images/mail1.PNG)
 
-Configuração do equipamento 
-===
+# Configuração do equipamento 
 
-A configuração do equipamento Mail é acessível no menu
-plugin :
+A configuração do equipamento Mail é acessível no menu do plug-in :
 
 ![mail2](../images/mail2.PNG)
 
-É assim que a página do plugin Mail (aqui, com 1 email já,
-você pode colocar quantas quiser com o botão "Adicionar") :
+É assim que a página do plugin Mail (aqui, com 1 e-mail já, você pode adicionar quantos quiser com o botão "Adicionar") :
 
 ![mail3](../images/mail3.PNG)
 
@@ -30,115 +25,66 @@ Depois de clicar em um deles, você obtém :
 Aqui você encontra toda a configuração do seu equipamento :
 
 -   **Nome do equipamento de correio** : nome do correio do seu equipamento
-
--   **Objeto pai** : indica o objeto pai ao qual pertence
-    o equipamento
-
+-   **Objeto pai** : indica o objeto pai ao qual o equipamento pertence
 -   **Ativar** : torna seu equipamento ativo
-
 -   **Visivél** : torna seu equipamento visível no painel
-
 -   **Nome do remetente** : nome do remetente do e-mail (ex : Jeedom)
-
--   **Mail expéditeur** : email do remetente (ex : <jeedom@moi.fr>)
-
+-   **Remetente do correio** : email do remetente (ex : <jeedom@moi.fr>)
 -   **Método de envio** : método de envio do email :
-
     -   SMTP : modo mais comum de envio de correio
-
     -   Sendmail
-
     -   Qmail
+    -   Mail()\[Função PHP \] : use a [função de envio padrão do PHP, window = "\_ blank"](http://fr.php.net/manual/fr/function.mail.php), requer a configuração do sistema operacional
 
-    -   Mail () \ [Função PHP \] : use a [função de envio padrão
-        do PHP,
-        window="\_blank"](http://fr.php.net/manual/fr/function.mail.php),
-        requer a configuração do sistema operacional
+Além da opção SMTP, as outras opções exigem a configuração do SO (Linux) para poder funcionar. Em outras palavras, basicamente apenas a função SMTP funciona, os outros são reservados para especialistas que podem, se desejarem, configurar essas opções eles mesmos.
 
-Além da opção SMTP, as outras opções exigem a configuração de
-o SO (Linux) para poder trabalhar. Em outras palavras, basicamente apenas o
-A função SMTP funciona, os outros são reservados para especialistas que
-podem, se desejarem, configurar essas opções eles mesmos.
-
-A guia de configuração SMTP é usada para inserir as informações para o
-servidor de email que você deseja usar.
+A guia de configuração SMTP permite inserir as informações do servidor de email que você deseja usar.
 
 ![mail screenshot3](../images/mail_screenshot3.jpg)
 
-Aqui estão alguns exemplos para os principais provedores de serviços
-E-mail :
+Aqui estão alguns exemplos para os principais provedores de serviços de email :
 
 -   **Gmail**
-
     -   Servidor SMTP : smtp.gmail.com
-
     -   Porta SMTP : 587
-
     -   Segurança SMTP : TLS
-
 -   **Hotmail**
-
     -   Servidor SMTP : smtp.live.com
-
     -   Porta SMTP : 587
-
     -   Segurança SMTP : TLS
-
 -   **iCloud**
-
     -   Servidor SMTP : smtp.me.com
-
     -   Porta SMTP : 25
-
 -   **Yahoo.com**
-
     -   Servidor SMTP : smtp.mail.yahoo.com
-
     -   Porta SMTP : 465
-
     -   Segurança SMTP : SSL
 
-Les champs « Utilisateur SMTP » et « Mot de passe SMTP » correspondent
-para os identificadores da sua conta de email.
+Les champs « Utilisateur SMTP » et « Mot de passe SMTP » correspondent aux identifiants de votre compte E-mail.
 
-Na guia "Pedidos", você pode adicionar comandos que
-correspondem aos endereços de e-mail aos quais você deseja poder
-envie e-mails com Jeedom :
+Na guia "Pedidos", você pode adicionar pedidos que correspondam aos endereços de e-mail para os quais deseja poder enviar e-mails com o Jeedom :
 
 ![mail screenshot4](../images/mail_screenshot4.jpg)
 
 -   **Nome** : nome do comando
-
 -   **E-mail** : o endereço de email para enviar a mensagem para. Você pode colocar vários separando-os com ,
-
--   **Configuração avançada** (pequenas rodas dentadas) : permet
-    exibir a configuração avançada do comando (método
-    histórico, widget etc.)
-
+-   **Configuração avançada** (pequenas rodas dentadas) : exibe a configuração avançada do comando (método de registro, widget etc.)
 -   **Teste** : permite testar o comando,
-
 -   **Remover** (sinal -) : permite excluir o comando.
 
-Este plug-in funciona como um módulo, ou seja, uma vez
-salvo, ele aparece na lista de ações ou comandos. Ele é
-muito simples de usar ao criar cenários por
-exemple.
+Este plugin funciona como um módulo, ou seja, uma vez salvo, ele aparece na lista de ações ou comandos. Portanto, é muito simples usá-lo ao criar cenários, por exemplo.
 
-Em um cenário, uma vez selecionado em uma ação, você precisará inserir
-título e mensagem.
+Em um cenário, uma vez selecionado em uma ação, você precisará inserir o título e a mensagem.
 
 ![mail5](../images/mail5.jpg)
 
 > **IMPORTANTE**
 >
-> No Gmail, você precisa fornecer uma senha específica para
-> a aplicação : Minha conta ⇒ conexão e segurança ⇒ Conectar-se a
-> Google ⇒ senhas de aplicativos
+> No Gmail, você precisa fornecer uma senha específica para o aplicativo : Minha conta ⇒ conexão e segurança ⇒ Conectar-se ao Google ⇒ senhas de aplicativos
 
 > **Dica**
 >
-> O formato HTML é suportado pelo editor de cenário para o corpo
-> mensagens.
+> O formato HTML é suportado pelo editor de cenário para o corpo das mensagens.
 
 > **Dica**
 >

@@ -1,25 +1,20 @@
-# Mail
+# Complemento de correo
 
 Complemento para enviar correos electrónicos.
 
-Configuración del plugin 
-===
+# Configuración del plugin 
 
-Después de instalar el complemento, solo necesita activarlo. Este complemento
-no tiene una configuración especial :
+Después de instalar el complemento, solo necesita activarlo. Este complemento no tiene una configuración particular :
 
 ![mail1](../images/mail1.PNG)
 
-Configuración del equipo 
-===
+# Configuración del equipo 
 
-Se puede acceder a la configuración del equipo de correo desde el menú
-Plugin :
+Se puede acceder a la configuración del equipo de correo desde el menú de complementos :
 
 ![mail2](../images/mail2.PNG)
 
-Así es como se ve la página del complemento de correo (aquí con 1 correo ya,
-puedes poner tantos como quieras con el botón "Agregar") :
+Así es como se ve la página del complemento de correo (aquí con 1 correo electrónico ya, puede agregar tantos como desee con el botón "Agregar") :
 
 ![mail3](../images/mail3.PNG)
 
@@ -30,115 +25,66 @@ Una vez que haces clic en uno de ellos, obtienes :
 Aquí encontrarás toda la configuración de tu equipo :
 
 -   **Nombre del equipo de correo** : nombre del correo de su equipo
-
--   **Objeto padre** : indica el objeto padre al que pertenece
-    equipo
-
+-   **Objeto padre** : indica el objeto padre al que pertenece el equipo
 -   **Activar** : activa su equipo
-
 -   **Visible** : hace que su equipo sea visible en el tablero
-
 -   **Nombre del remitente** : nombre del remitente del correo electrónico (ej : Jeedom)
-
--   **Correo expéditeur** : correo electrónico del remitente (ex : <jeedom@moi.fr>)
-
+-   **Remitente de correo** : correo electrónico del remitente (ex : <jeedom@moi.fr>)
 -   **Método de envío** : método de enviar el correo electrónico :
-
     -   SMTP : modo más común para enviar correo
-
     -   Sendmail
-
     -   Qmail
+    -   Mail()\[Función PHP \] : use la [función de envío estándar de PHP, window = "\_ blank"](http://fr.php.net/manual/fr/function.mail.php), requiere configurar el sistema operativo
 
-    -   Mail () \ [Función PHP \] : use la [función de envío estándar
-        de PHP,
-        window="\_blank"](http://fr.php.net/manual/fr/function.mail.php),
-        requiere configurar el sistema operativo
+Además de la opción SMTP, las otras opciones requieren la configuración del sistema operativo (Linux) para poder funcionar. En otras palabras, básicamente solo funciona la función SMTP, los otros están reservados para expertos que pueden, si lo desean, configurar estas opciones ellos mismos.
 
-Además de la opción SMTP, las otras opciones requieren la configuración de
-el sistema operativo (Linux) para poder trabajar. En otras palabras, básicamente solo el
-La función SMTP funciona, los demás están reservados para expertos que
-pueden, si lo desean, configurar estas opciones ellos mismos.
-
-La pestaña de configuración SMTP se utiliza para ingresar la información para
-servidor de correo electrónico que desea usar.
+La pestaña de configuración SMTP le permite ingresar la información del servidor de correo electrónico que desea usar.
 
 ![mail screenshot3](../images/mail_screenshot3.jpg)
 
-Aquí hay algunos ejemplos para los principales proveedores de servicios
-E-mail :
+Estos son algunos ejemplos de los principales proveedores de servicios de correo electrónico :
 
 -   **Gmail**
-
     -   Servidor SMTP : smtp.gmail.com
-
     -   Puerto SMTP : 587
-
     -   Seguridad SMTP : TLS
-
 -   **Hotmail**
-
     -   Servidor SMTP : smtp.live.com
-
     -   Puerto SMTP : 587
-
     -   Seguridad SMTP : TLS
-
 -   **iCloud**
-
     -   Servidor SMTP : smtp.me.com
-
     -   Puerto SMTP : 25
-
 -   **Yahoo.com**
-
     -   Servidor SMTP : smtp.mail.yahoo.com
-
     -   Puerto SMTP : 465
-
     -   Seguridad SMTP : SSL
 
-Les champs « Utilisateur SMTP » et « Mot de passe SMTP » correspondent
-a los identificadores de su cuenta de correo electrónico.
+Les champs « Utilisateur SMTP » et « Mot de passe SMTP » correspondent aux identifiants de votre compte E-mail.
 
-Desde la pestaña "Pedidos", puede agregar comandos que
-corresponde a las direcciones de correo electrónico a las que desea poder
-enviar correos electrónicos con Jeedom :
+Desde la pestaña "Pedidos", puede agregar pedidos que correspondan a las direcciones de correo electrónico a las que desea poder enviar correos electrónicos con Jeedom :
 
 ![mail screenshot4](../images/mail_screenshot4.jpg)
 
 -   **Nombre** : Nombre de la orden
-
 -   **E-mail** : la dirección de correo electrónico para enviar el mensaje. Puedes poner varios separándolos con ,
-
--   **Configuración avanzada** (ruedas con muescas pequeñas) : permet
-    muestra la configuración avanzada del comando (método
-    historia, widget, etc.)
-
+-   **Configuración avanzada** (ruedas con muescas pequeñas) : muestra la configuración avanzada del comando (método de registro, widget, etc.)
 -   **Probar** : Se usa para probar el comando,
-
 -   **Borrar** (signo -) : permite eliminar el comando.
 
-Este complemento funciona como un módulo, es decir, una vez
-guardado, aparece en la lista de acciones o comandos. El es
-muy simple de usar al crear escenarios por
-exemple.
+Este complemento funciona como un módulo, es decir, una vez guardado, aparece en la lista de acciones o comandos. Por lo tanto, es muy simple usarlo al crear escenarios, por ejemplo.
 
-En un escenario, una vez seleccionado en una acción, deberá ingresar
-título y mensaje.
+En un escenario, una vez seleccionado en una acción, deberá ingresar el título y el mensaje.
 
 ![mail5](../images/mail5.jpg)
 
 > **Importante**
 >
-> Con Gmail tienes que dar una contraseña específica para
-> la aplicación : Mi cuenta ⇒ conexión y seguridad ⇒ Conéctese a
-> Google ⇒ Contraseñas de aplicación
+> Con Gmail, debe proporcionar una contraseña específica para la aplicación : Mi cuenta ⇒ conexión y seguridad ⇒ Conéctese a Google ⇒ Contraseñas de aplicación
 
 > **Punta**
 >
-> El editor de escenarios del cuerpo admite el formato HTML
-> mensajes.
+> El editor de escenarios admite el formato HTML para el cuerpo de los mensajes.
 
 > **Punta**
 >

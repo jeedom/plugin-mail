@@ -1,8 +1,8 @@
-# Mail
+# Correo
 
 Complemento para enviar correos electrónicos.
 
-Configuración del Plugin 
+Configuración del plugin 
 ===
 
 Después de instalar el complemento, solo necesita activarlo. Este complemento
@@ -34,7 +34,7 @@ Aquí encontrarás toda la configuración de tu equipo :
 -   **Objeto padre** : indica el objeto padre al que pertenece
     equipo
 
--   **Activer** : activa su equipo
+-   **Activar** : activa su equipo
 
 -   **Visible** : hace que su equipo sea visible en el tablero
 
@@ -50,7 +50,7 @@ Aquí encontrarás toda la configuración de tu equipo :
 
     -   Qmail
 
-    -   Correo () \ [Función PHP \] : use la [función de envío estándar
+    -   Mail () \ [Función PHP \] : use la [función de envío estándar
         de PHP,
         window="\_blank"](http://fr.php.net/manual/fr/function.mail.php),
         requiere configurar el sistema operativo
@@ -107,39 +107,39 @@ enviar correos electrónicos con Jeedom :
 
 ![mail screenshot4](../images/mail_screenshot4.jpg)
 
--   **nom** : Nombre de la orden
+-   **Nombre** : Nombre de la orden
 
--   **email** : la dirección de correo electrónico para enviar el mensaje. Puedes poner varios separándolos con ,
+-   **E-mail** : la dirección de correo electrónico para enviar el mensaje. Puedes poner varios separándolos con ,
 
--   **Configuración avanzada** (ruedas con muescas pequeñas) : permet
+-   **Configuración avanzada** (ruedas con muescas pequeñas) : permite
     muestra la configuración avanzada del comando (método
     historia, widget, etc.)
 
--   **tester** : Se usa para probar el comando,
+-   **Probar** : Se usa para probar el comando,
 
--   **supprimer** (signo -) : permite eliminar el comando.
+-   **Borrar** (signo -) : permite eliminar el comando.
 
 Este complemento funciona como un módulo, es decir, una vez
 guardado, aparece en la lista de acciones o comandos. El es
 muy simple de usar al crear escenarios por
-exemple.
+Ejemplo.
 
 En un escenario, una vez seleccionado en una acción, deberá ingresar
 título y mensaje.
 
 ![mail5](../images/mail5.jpg)
 
-> **Important**
+> **Importante**
 >
 > Con Gmail tienes que dar una contraseña específica para
 > la aplicación : Mi cuenta ⇒ conexión y seguridad ⇒ Conéctese a
 > Google ⇒ Contraseñas de aplicación
 
-> **Tip**
+> **Punta**
 >
 > El editor de escenarios del cuerpo admite el formato HTML.
 > mensajes.
 
-> **Tip**
+> **Punta**
 >
 > Recuerde guardar todos los cambios.

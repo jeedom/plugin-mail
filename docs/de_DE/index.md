@@ -1,4 +1,4 @@
-# Mail
+# Post
 
 Plugin zum Versenden von E-Mails.
 
@@ -34,15 +34,15 @@ Hier finden Sie die gesamte Konfiguration Ihrer Geräte :
 -   **Übergeordnetes Objekt** : gibt das übergeordnete Objekt an, zu dem es gehört
     Ausrüstung
 
--   **Activer** : macht Ihre Ausrüstung aktiv
+-   **Aktivieren** : macht Ihre Ausrüstung aktiv
 
--   **Visible** : macht Ihre Ausrüstung auf dem Armaturenbrett sichtbar
+-   **Sichtbar** : macht Ihre Ausrüstung auf dem Armaturenbrett sichtbar
 
--   **Absendername** : Name des Absenders der E-Post (z : Jeedom)
+-   **Absendername** : Name des Absenders der E-Mail (z : Jeedom)
 
--   **Mail-Absender** : E-Post des Absenders (z : <jeedom@moi.fr>)
+-   **Mail-Absender** : E-Mail des Absenders (z : <jeedom@moi.fr>)
 
--   **Versandart** : Methode zum Senden der E-Post :
+-   **Versandart** : Methode zum Senden der E-Mail :
 
     -   SMTP : häufigster Modus zum Senden von E-Mails
 
@@ -50,7 +50,7 @@ Hier finden Sie die gesamte Konfiguration Ihrer Geräte :
 
     -   Qmail
 
-    -   Post () \ [PHP-Funktion \] : Verwenden Sie die [Standard-Sendefunktion
+    -   Mail () \ [PHP-Funktion \] : Verwenden Sie die [Standard-Sendefunktion
         von PHP,
         window="\_blank"](http://fr.php.net/manual/fr/function.mail.php),
         erfordert die Konfiguration des Betriebssystems
@@ -66,9 +66,9 @@ E-Mail-Server, den Sie verwenden möchten.
 ![mail screenshot3](../images/mail_screenshot3.jpg)
 
 Hier einige Beispiele für große Dienstleister
-E-Post :
+E-Mail :
 
--   **Gmail**
+-   **Google Mail**
 
     -   SMTP-Server : smtp.gmail.com
 
@@ -107,39 +107,39 @@ Sende E-Mails mit Jeedom :
 
 ![mail screenshot4](../images/mail_screenshot4.jpg)
 
--   **nom** : Name der Bestellung
+-   **Name** : Name der Bestellung
 
--   **email** : die E-Mail-Adresse, an die die Nachricht gesendet werden soll. Sie können mehrere setzen, indem Sie sie mit trennen ,
+-   **E-Mail** : die E-Mail-Adresse, an die die Nachricht gesendet werden soll. Sie können mehrere setzen, indem Sie sie mit trennen ,
 
--   **Erweiterte Konfiguration** (kleine gekerbte Räder) : permet
+-   **Erweiterte Konfiguration** (kleine gekerbte Räder) : erlaubt
     Zeigen Sie die erweiterte Konfiguration des Befehls (Methode) an
     Geschichte, Widget usw.)
 
--   **tester** : Wird zum Testen des Befehls verwendet,
+-   **Test** : Wird zum Testen des Befehls verwendet,
 
--   **supprimer** (Zeichen -) : ermöglicht das Löschen des Befehls.
+-   **Löschen** (Zeichen -) : ermöglicht das Löschen des Befehls.
 
 Dieses Plugin arbeitet als Modul, d. H. Einmal
 gespeichert, erscheint es in der Liste der Aktionen oder Befehle. Er ist
 so sehr einfach zu verwenden beim erstellen von szenarien von
-exemple.
+Beispiel.
 
 In einem Szenario müssen Sie nach Auswahl in einer Aktion eingeben
 Titel und Nachricht.
 
 ![mail5](../images/mail5.jpg)
 
-> **Important**
+> **Wichtig**
 >
-> Bei Google Post müssen Sie ein bestimmtes Passwort für angeben
+> Bei Google Mail müssen Sie ein bestimmtes Passwort für angeben
 > die Anwendung : Mein Konto ⇒ Verbindung und Sicherheit ⇒ Verbinden mit
 > Google ⇒ Anwendungskennwörter
 
-> **Tip**
+> **Spitze**
 >
 > Das HTML-Format wird vom Szenario-Editor für den Body unterstützt
 > Nachrichten.
 
-> **Tip**
+> **Spitze**
 >
 > Denken Sie daran, alle Änderungen zu speichern.

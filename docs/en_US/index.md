@@ -18,7 +18,7 @@ Plugin :
 
 ![mail2](../images/mail2.PNG)
 
-This is what the Mail Plugin page looks like (here with already 1 mail,
+This is what the Mail plugin page looks like (here with already 1 mail,
 you can put as many as you want with the "Add" button) :
 
 ![mail3](../images/mail3.PNG)
@@ -34,15 +34,15 @@ Here you find all the configuration of your equipment :
 -   **Parent object** : indicates the parent object to which belongs
     equipment
 
--   **Activer** : makes your equipment active
+-   **Activate** : makes your equipment active
 
 -   **Visible** : makes your equipment visible on the dashboard
 
--   **Sender name** : name of the sender of the E-mail (ex : Jeedom)
+-   **Sender name** : name of the sender of the email (ex : Jeedom)
 
--   **Sender email** : sender's E-mail (ex : <jeedom@moi.fr>)
+-   **Sender email** : sender's email (ex : <jeedom@moi.fr>)
 
--   **Send mode** : method of sending the E-mail :
+-   **Send mode** : method of sending the email :
 
     -   SMTP : most common mode for sending mail
 
@@ -61,7 +61,7 @@ SMTP function works, the others are reserved for experts who
 can, if they wish, configure these options themselves.
 
 The SMTP configuration tab is used to enter the information for the
-E-mail server you want to use.
+email server you want to use.
 
 ![mail screenshot3](../images/mail_screenshot3.jpg)
 
@@ -99,30 +99,30 @@ E-mail :
     -   SMTP security : SSL
 
 Les champs « Utilisateur SMTP » et « Mot de passe SMTP » correspondent
-to the identifiers of your E-mail account.
+to the identifiers of your email account.
 
 From the "Orders" tab, you can add commands that
-correspond to the E-mail addresses to which you wish to be able
+correspond to the email addresses to which you wish to be able
 send emails with Jeedom :
 
 ![mail screenshot4](../images/mail_screenshot4.jpg)
 
--   **nom** : Name of the order
+-   **Name** : Name of the order
 
--   **email** : the E-mail address to send the message to. You can put several by separating them with ,
+-   **E-mail** : the email address to send the message to. You can put several by separating them with ,
 
--   **Advanced configuration** (small notched wheels) : permet
+-   **Advanced configuration** (small notched wheels) : allows
     display the advanced configuration of the command (method
     history, widget, etc.)
 
--   **tester** : Used to test the command,
+-   **Test** : Used to test the command,
 
--   **supprimer** (sign -) : allows to delete the command.
+-   **Delete** (sign -) : allows to delete the command.
 
-This Plugin works as a module, i.e. once
+This plugin works as a module, i.e. once
 saved, it appears in the list of actions or commands. It is
 so very simple to use when creating scenarios by
-exemple.
+Example.
 
 In a scenario, once selected in an action, you will have to enter
 title and message.

@@ -4,4 +4,4 @@
 
 # 03/30/2018
 
-- Corrección de la pérdida del icono.
+- Corrección de la pérdida del icono

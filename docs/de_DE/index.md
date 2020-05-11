@@ -1,4 +1,4 @@
-# Post
+# Mail
 
 Plugin zum Versenden von E-Mails.
 
@@ -19,7 +19,7 @@ Plugin :
 ![mail2](../images/mail2.PNG)
 
 So sieht die Mail-Plugin-Seite aus (hier mit bereits 1 Mail,
-Mit der Schaltfläche "Hinzufügen" können Sie beliebig viele eingeben. :
+Mit der Schaltfläche "Hinzufügen" können Sie beliebig viele eingeben :
 
 ![mail3](../images/mail3.PNG)
 
@@ -40,7 +40,7 @@ Hier finden Sie die gesamte Konfiguration Ihrer Geräte :
 
 -   **Absendername** : Name des Absenders der E-Mail (z : Jeedom)
 
--   **Mail-Absender** : E-Mail des Absenders (z : <jeedom@moi.fr>)
+-   **Post expéditeur** : E-Mail des Absenders (z : <jeedom@moi.fr>)
 
 -   **Versandart** : Methode zum Senden der E-Mail :
 
@@ -111,7 +111,7 @@ Sende E-Mails mit Jeedom :
 
 -   **E-Mail** : die E-Mail-Adresse, an die die Nachricht gesendet werden soll. Sie können mehrere setzen, indem Sie sie mit trennen ,
 
--   **Erweiterte Konfiguration** (kleine gekerbte Räder) : erlaubt
+-   **Erweiterte Konfiguration** (kleine gekerbte Räder) : permet
     Zeigen Sie die erweiterte Konfiguration des Befehls (Methode) an
     Geschichte, Widget usw.)
 
@@ -122,7 +122,7 @@ Sende E-Mails mit Jeedom :
 Dieses Plugin arbeitet als Modul, d. H. Einmal
 gespeichert, erscheint es in der Liste der Aktionen oder Befehle. Er ist
 so sehr einfach zu verwenden beim erstellen von szenarien von
-Beispiel.
+exemple.
 
 In einem Szenario müssen Sie nach Auswahl in einer Aktion eingeben
 Titel und Nachricht.

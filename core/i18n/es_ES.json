@@ -35,8 +35,8 @@
         "Tester": "Probar"
     },
     "plugins\/mail\/core\/class\/mail.class.php": {
-        "L\\'adresse mail ne peut etre vide": "La dirección de correo electrónico no puede estar vacía.",
-        "L\\'adresse mail n\\'est pas valide": "La dirección de correo electrónico no es válida.",
+        "L\\'adresse mail ne peut etre vide": "La dirección de correo electrónico no puede estar vacía",
+        "L\\'adresse mail n\\'est pas valide": "La dirección de correo electrónico no es válida",
         "[Mail] Les options de la fonction ne peuvent etre null": "[Correo] Las opciones de la función no pueden ser nulas",
         "[Mail] Le message et le sujet ne peuvent être vide": "[Correo] El mensaje y el asunto no pueden estar vacíos",
         "[Jeedom] - Notification": "[Jeedom] - Notificación",

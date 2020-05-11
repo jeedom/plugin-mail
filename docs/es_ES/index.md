@@ -1,4 +1,4 @@
-# Correo
+# Mail
 
 Complemento para enviar correos electrónicos.
 
@@ -38,9 +38,9 @@ Aquí encontrarás toda la configuración de tu equipo :
 
 -   **Visible** : hace que su equipo sea visible en el tablero
 
--   **Nombre del remitente** : nombre del remitente del correo electrónico (ej. : Jeedom)
+-   **Nombre del remitente** : nombre del remitente del correo electrónico (ej : Jeedom)
 
--   **Remitente de correo** : correo electrónico del remitente (ex : <jeedom@moi.fr>)
+-   **Correo expéditeur** : correo electrónico del remitente (ex : <jeedom@moi.fr>)
 
 -   **Método de envío** : método de enviar el correo electrónico :
 
@@ -65,7 +65,7 @@ servidor de correo electrónico que desea usar.
 
 ![mail screenshot3](../images/mail_screenshot3.jpg)
 
-Aquí hay algunos ejemplos para los principales proveedores de servicios.
+Aquí hay algunos ejemplos para los principales proveedores de servicios
 E-mail :
 
 -   **Gmail**
@@ -111,7 +111,7 @@ enviar correos electrónicos con Jeedom :
 
 -   **E-mail** : la dirección de correo electrónico para enviar el mensaje. Puedes poner varios separándolos con ,
 
--   **Configuración avanzada** (ruedas con muescas pequeñas) : permite
+-   **Configuración avanzada** (ruedas con muescas pequeñas) : permet
     muestra la configuración avanzada del comando (método
     historia, widget, etc.)
 
@@ -122,7 +122,7 @@ enviar correos electrónicos con Jeedom :
 Este complemento funciona como un módulo, es decir, una vez
 guardado, aparece en la lista de acciones o comandos. El es
 muy simple de usar al crear escenarios por
-Ejemplo.
+exemple.
 
 En un escenario, una vez seleccionado en una acción, deberá ingresar
 título y mensaje.
@@ -137,7 +137,7 @@ título y mensaje.
 
 > **Punta**
 >
-> El editor de escenarios del cuerpo admite el formato HTML.
+> El editor de escenarios del cuerpo admite el formato HTML
 > mensajes.
 
 > **Punta**

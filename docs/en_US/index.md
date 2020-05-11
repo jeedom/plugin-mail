@@ -40,7 +40,7 @@ Here you find all the configuration of your equipment :
 
 -   **Sender name** : name of the sender of the email (ex : Jeedom)
 
--   **Sender email** : sender's email (ex : <jeedom@moi.fr>)
+-   **Mail expéditeur** : sender's email (ex : <jeedom@moi.fr>)
 
 -   **Send mode** : method of sending the email :
 
@@ -111,7 +111,7 @@ send emails with Jeedom :
 
 -   **E-mail** : the email address to send the message to. You can put several by separating them with ,
 
--   **Advanced configuration** (small notched wheels) : allows
+-   **Advanced configuration** (small notched wheels) : permet
     display the advanced configuration of the command (method
     history, widget, etc.)
 
@@ -122,7 +122,7 @@ send emails with Jeedom :
 This plugin works as a module, i.e. once
 saved, it appears in the list of actions or commands. It is
 so very simple to use when creating scenarios by
-Example.
+exemple.
 
 In a scenario, once selected in an action, you will have to enter
 title and message.

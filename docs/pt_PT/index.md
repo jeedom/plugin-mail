@@ -40,7 +40,7 @@ Aqui você encontra toda a configuração do seu equipamento :
 
 -   **Nome do remetente** : nome do remetente do e-mail (ex : Jeedom)
 
--   **Remetente do correio** : email do remetente (ex : <jeedom@moi.fr>)
+-   **Mail expéditeur** : email do remetente (ex : <jeedom@moi.fr>)
 
 -   **Método de envio** : método de envio do email :
 
@@ -111,7 +111,7 @@ envie e-mails com Jeedom :
 
 -   **E-mail** : o endereço de email para enviar a mensagem para. Você pode colocar vários separando-os com ,
 
--   **Configuração avançada** (pequenas rodas dentadas) : permite
+-   **Configuração avançada** (pequenas rodas dentadas) : permet
     exibir a configuração avançada do comando (método
     histórico, widget etc.)
 
@@ -122,7 +122,7 @@ envie e-mails com Jeedom :
 Este plug-in funciona como um módulo, ou seja, uma vez
 salvo, ele aparece na lista de ações ou comandos. Ele é
 muito simples de usar ao criar cenários por
-Exemplo.
+exemple.
 
 Em um cenário, uma vez selecionado em uma ação, você precisará inserir
 título e mensagem.

@@ -1,35 +1,45 @@
 {
-    "plugins/mail/desktop/php/mail.php": {
-        "Ajouter Email": "Tambahan Mail",
-        "Rechercher": "Mencari",
-        "Mes mails": "Mail Saya",
-        "Général": "Umum",
-        "Nom de l'équipement mail": "Nama peralatan mail",
+    "plugins\/mail\/desktop\/php\/mail.php": {
+        "401 - Accès non autorisé": "401 - Akses tidak sah",
+        "Gestion": "Manajemen",
+        "Ajouter": "Tambahan",
+        "Mes mails": "",
+        "Rechercher": "Pencarian",
+        "Configuration avancée": "Konfigurasi lanjutan",
+        "Dupliquer": "Duplikat",
+        "Sauvegarder": "Menyimpan",
+        "Supprimer": "Menghapus",
+        "Equipement": "Peralatan",
+        "Commandes": "Perintah",
+        "Nom de l'équipement mail": "",
         "Objet parent": "Objek induk",
         "Aucun": "Tak ada",
+        "Catégorie": "Kategori",
         "Activer": "Mengaktifkan",
         "Visible": "Terlihat",
-        "Nom expéditeur": "Nama pemakai",
-        "Mail expéditeur": "Mail pengirim",
-        "Mode d'envoi": "Kirim mode",
-        "Configuration SMTP": "Konfigurasi SMTP",
-        "Serveur SMTP": "SMTP server",
-        "Port SMTP": "Port SMTP",
-        "Securité SMTP": "Keamanan SMTP",
-        "Aucune": "Tak ada",
-        "Utilisateur SMTP": "SMTPuser",
-        "Mot de passe SMTP": "Password SMTP",
-        "Email": "Email",
-        "Ajouter une commande mail": "Tambahan pesanan mail",
+        "Nom expéditeur": "",
+        "Mail expéditeur": "",
+        "Mode d'envoi": "",
+        "Serveur SMTP": "",
+        "Port SMTP": "",
+        "Securité SMTP": "",
+        "Aucune": "Tidak",
+        "Utilisateur SMTP": "",
+        "Mot de passe SMTP": "",
+        "Ne pas verifier le certificat SSL": "",
+        "Ajouter une commande mail": "",
         "Nom": "Nama",
-        "Supprimer": "Menghapus",
-        "Sauvegarder": "Menyimpan"
+        "Email": ""
     },
-    "plugins/mail/desktop/js/mail.js": {
+    "plugins\/mail\/desktop\/js\/mail.js": {
         "Tester": "Coba"
     },
-    "plugins/mail/plugin_info/info.xml": {
-        "Plugin pour envoyer des mails": "Plugin untuk kirim mail",
-        "Aucune": "Tak ada"
+    "plugins\/mail\/core\/class\/mail.class.php": {
+        "L\\'adresse mail ne peut etre vide": "",
+        "L\\'adresse mail n\\'est pas valide": "",
+        "[Mail] Les options de la fonction ne peuvent etre null": "",
+        "[Mail] Le message et le sujet ne peuvent être vide": "",
+        "[Jeedom] - Notification": "",
+        "Mode d\\'envoi non reconnu": ""
     }
 }

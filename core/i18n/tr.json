@@ -1,35 +1,45 @@
 {
-    "plugins/mail/desktop/php/mail.php": {
-        "Ajouter Email": "Email ekle",
+    "plugins\/mail\/desktop\/php\/mail.php": {
+        "401 - Accès non autorisé": "401 - Yetkisiz erişim",
+        "Gestion": "Idare",
+        "Ajouter": "Ekle",
+        "Mes mails": "",
         "Rechercher": "Arayın",
-        "Mes mails": "Maillerim",
-        "Général": "Genel",
-        "Nom de l'équipement mail": "Mail ekipmanın ismi",
+        "Configuration avancée": "Gelişmiş ayarlar",
+        "Dupliquer": "Kopyala",
+        "Sauvegarder": "Kaydet",
+        "Supprimer": "Sil",
+        "Equipement": "Cihaz",
+        "Commandes": "Komutalar",
+        "Nom de l'équipement mail": "",
         "Objet parent": "Üst nesne",
         "Aucun": "Hiçbir",
-        "Activer": "Etkinleştirmek",
+        "Catégorie": "Kategori",
+        "Activer": "Etkinleştir",
         "Visible": "Görülebilir",
-        "Nom expéditeur": "Gönderen isim",
-        "Mail expéditeur": "Mail gönderen",
-        "Mode d'envoi": "Gönderme modu",
-        "Configuration SMTP": "SMTP ayarları",
-        "Serveur SMTP": "SMTP sunucu",
-        "Port SMTP": "SMTP Port",
-        "Securité SMTP": "SMTP güvenlik",
-        "Aucune": "Hiçbir",
-        "Utilisateur SMTP": "SMTP kullanıcı",
-        "Mot de passe SMTP": "SMTP Şifre",
-        "Email": "E-posta",
-        "Ajouter une commande mail": "Mail komutası ekleyin",
+        "Nom expéditeur": "",
+        "Mail expéditeur": "",
+        "Mode d'envoi": "",
+        "Serveur SMTP": "",
+        "Port SMTP": "",
+        "Securité SMTP": "",
+        "Aucune": "Hayır",
+        "Utilisateur SMTP": "",
+        "Mot de passe SMTP": "",
+        "Ne pas verifier le certificat SSL": "",
+        "Ajouter une commande mail": "",
         "Nom": "İsim",
-        "Supprimer": "Sil",
-        "Sauvegarder": "Kaydet"
+        "Email": ""
     },
-    "plugins/mail/desktop/js/mail.js": {
-        "Tester": "Dene"
+    "plugins\/mail\/desktop\/js\/mail.js": {
+        "Tester": "Test et"
     },
-    "plugins/mail/plugin_info/info.xml": {
-        "Plugin pour envoyer des mails": "Mail atmak için eklenti",
-        "Aucune": "Hiçbir"
+    "plugins\/mail\/core\/class\/mail.class.php": {
+        "L\\'adresse mail ne peut etre vide": "",
+        "L\\'adresse mail n\\'est pas valide": "",
+        "[Mail] Les options de la fonction ne peuvent etre null": "",
+        "[Mail] Le message et le sujet ne peuvent être vide": "",
+        "[Jeedom] - Notification": "",
+        "Mode d\\'envoi non reconnu": ""
     }
 }

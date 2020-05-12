@@ -1,35 +1,45 @@
 {
-    "plugins/mail/desktop/php/mail.php": {
-        "Ajouter Email": "E-Mail hinzufügen",
+    "plugins\/mail\/desktop\/php\/mail.php": {
+        "401 - Accès non autorisé": "401 - Nicht autorisierter Zugriff",
+        "Gestion": "Verwaltung",
+        "Ajouter": "Hinzufügen",
+        "Mes mails": "Meine E-Mails",
         "Rechercher": "Suchen nach",
-        "Mes mails": "Meine Mails",
-        "Général": "Allgemein",
-        "Nom de l'équipement mail": "E-Mail Gerätename",
-        "Objet parent": "Eltern-Objekt",
-        "Aucun": "Ohne",
-        "Activer": "aktivieren",
-        "Visible": "Sichtbar",
-        "Nom expéditeur": "Absender Name",
-        "Mail expéditeur": "Absender E-Mail",
-        "Mode d'envoi": "Sendeprofil",
-        "Configuration SMTP": "SMTP Konfiguration",
-        "Serveur SMTP": "SMTP Server",
-        "Port SMTP": "SMTP Port",
-        "Securité SMTP": "SMTP Sicherheit",
-        "Aucune": "Ohne",
-        "Utilisateur SMTP": "SMTP Benutzer",
-        "Mot de passe SMTP": "SMTP Password",
-        "Email": "E-Mail",
-        "Ajouter une commande mail": "Einen E-Mail-Befehl hinzufügen",
-        "Nom": "Name",
+        "Configuration avancée": "Erweiterte Konfiguration",
+        "Dupliquer": "Duplikat",
+        "Sauvegarder": "Speichern",
         "Supprimer": "Löschen",
-        "Sauvegarder": "Speichern"
+        "Equipement": "Gerät",
+        "Commandes": "Befehle",
+        "Nom de l'équipement mail": "Name der Postausrüstung",
+        "Objet parent": "Übergeordnetes Objekt",
+        "Aucun": "Ohne",
+        "Catégorie": "Kategorie",
+        "Activer": "Aktivieren",
+        "Visible": "Sichtbar",
+        "Nom expéditeur": "Absendername",
+        "Mail expéditeur": "Mail-Absender",
+        "Mode d'envoi": "Versandart",
+        "Serveur SMTP": "SMTP-Server",
+        "Port SMTP": "SMTP-Port",
+        "Securité SMTP": "SMTP-Sicherheit",
+        "Aucune": "Keine",
+        "Utilisateur SMTP": "SMTP-Benutzer",
+        "Mot de passe SMTP": "SMTP-Passwort",
+        "Ne pas verifier le certificat SSL": "Überprüfen Sie nicht das SSL-Zertifikat",
+        "Ajouter une commande mail": "Fügen Sie einen Versandhandel hinzu",
+        "Nom": "Name",
+        "Email": "E-Mail"
     },
-    "plugins/mail/desktop/js/mail.js": {
+    "plugins\/mail\/desktop\/js\/mail.js": {
         "Tester": "Test"
     },
-    "plugins/mail/plugin_info/info.xml": {
-        "Plugin pour envoyer des mails": "Plugin zum Senden von E-Mails",
-        "Aucune": "Ohne"
+    "plugins\/mail\/core\/class\/mail.class.php": {
+        "L\\'adresse mail ne peut etre vide": "Die E-Mail-Adresse darf nicht leer sein",
+        "L\\'adresse mail n\\'est pas valide": "E-Mail-Adresse ist ungültig",
+        "[Mail] Les options de la fonction ne peuvent etre null": "[Mail] Die Optionen der Funktion dürfen nicht null sein",
+        "[Mail] Le message et le sujet ne peuvent être vide": "[Mail] Nachricht und Betreff dürfen nicht leer sein",
+        "[Jeedom] - Notification": "[Jeedom] - Benachrichtigung",
+        "Mode d\\'envoi non reconnu": "Nicht erkannte Versandart"
     }
 }

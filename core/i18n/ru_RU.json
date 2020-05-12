@@ -1,35 +1,45 @@
 {
-    "plugins/mail/desktop/php/mail.php": {
-        "Ajouter Email": "Добавить Email",
-        "Rechercher": "Искать",
-        "Mes mails": "Мои письма",
-        "Général": "Главная",
-        "Nom de l'équipement mail": "Имя оборудования Mail",
+    "plugins\/mail\/desktop\/php\/mail.php": {
+        "401 - Accès non autorisé": "401 - Несанкционированный доступ",
+        "Gestion": "Управление",
+        "Ajouter": "Добавить",
+        "Mes mails": "",
+        "Rechercher": "поиск",
+        "Configuration avancée": "Расширенные настройки",
+        "Dupliquer": "дубликат",
+        "Sauvegarder": "Сохранить",
+        "Supprimer": "удаление",
+        "Equipement": "Оборудование",
+        "Commandes": "Команды",
+        "Nom de l'équipement mail": "",
         "Objet parent": "Родительский объект",
         "Aucun": "Нет",
-        "Activer": "Активировать",
+        "Catégorie": "категория",
+        "Activer": "активировать",
         "Visible": "Видимый",
-        "Nom expéditeur": "Имя отправителя",
-        "Mail expéditeur": "Почта отправителя",
-        "Mode d'envoi": "Отправка профиля",
-        "Configuration SMTP": "Конфигурация SMTP",
-        "Serveur SMTP": "SMTP сервер",
-        "Port SMTP": "SMTP порт",
-        "Securité SMTP": "Безопасность SMTP",
-        "Aucune": "Нет",
-        "Utilisateur SMTP": "SMTPuser",
-        "Mot de passe SMTP": "Пароль SMTP",
-        "Email": "Email",
-        "Ajouter une commande mail": "Добавить команду почты",
+        "Nom expéditeur": "",
+        "Mail expéditeur": "",
+        "Mode d'envoi": "",
+        "Serveur SMTP": "",
+        "Port SMTP": "",
+        "Securité SMTP": "",
+        "Aucune": "нет",
+        "Utilisateur SMTP": "",
+        "Mot de passe SMTP": "",
+        "Ne pas verifier le certificat SSL": "",
+        "Ajouter une commande mail": "",
         "Nom": "Имя",
-        "Supprimer": "Удалить",
-        "Sauvegarder": "Сохранить"
+        "Email": ""
     },
-    "plugins/mail/desktop/js/mail.js": {
+    "plugins\/mail\/desktop\/js\/mail.js": {
         "Tester": "Тест"
     },
-    "plugins/mail/plugin_info/info.xml": {
-        "Plugin pour envoyer des mails": "Плагин для отправки почты",
-        "Aucune": "Нет"
+    "plugins\/mail\/core\/class\/mail.class.php": {
+        "L\\'adresse mail ne peut etre vide": "",
+        "L\\'adresse mail n\\'est pas valide": "",
+        "[Mail] Les options de la fonction ne peuvent etre null": "",
+        "[Mail] Le message et le sujet ne peuvent être vide": "",
+        "[Jeedom] - Notification": "",
+        "Mode d\\'envoi non reconnu": ""
     }
 }

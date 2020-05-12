@@ -1,35 +1,45 @@
 {
-    "plugins/mail/desktop/php/mail.php": {
-        "Ajouter Email": "メールを追加",
-        "Rechercher": "検索する",
-        "Mes mails": "私のメール",
-        "Général": "コモン",
-        "Nom de l'équipement mail": "名前メールアドレス機器",
+    "plugins\/mail\/desktop\/php\/mail.php": {
+        "401 - Accès non autorisé": "401-不正アクセス",
+        "Gestion": "管理",
+        "Ajouter": "加えます",
+        "Mes mails": "",
+        "Rechercher": "検索",
+        "Configuration avancée": "高度な構成",
+        "Dupliquer": "重複",
+        "Sauvegarder": "セーブ",
+        "Supprimer": "取り除きます",
+        "Equipement": "設備",
+        "Commandes": "コマンド",
+        "Nom de l'équipement mail": "",
         "Objet parent": "親オブジェクト",
         "Aucun": "何でもありません",
-        "Activer": "アクティブにし",
+        "Catégorie": "カテゴリ",
+        "Activer": "アクティブ",
         "Visible": "目に見えます",
-        "Nom expéditeur": "送信者名",
-        "Mail expéditeur": "メール送信者",
-        "Mode d'envoi": "送信プロファイル",
-        "Configuration SMTP": "SMTPの設定",
-        "Serveur SMTP": "SMTPサーバー",
-        "Port SMTP": "SMTPポート",
-        "Securité SMTP": "SMTPセキュリティ",
-        "Aucune": "何でもありません",
-        "Utilisateur SMTP": "SMTPuser",
-        "Mot de passe SMTP": "SMTPパスワード",
-        "Email": "電子メール",
-        "Ajouter une commande mail": "mailコマンドを追加します。",
+        "Nom expéditeur": "",
+        "Mail expéditeur": "",
+        "Mode d'envoi": "",
+        "Serveur SMTP": "",
+        "Port SMTP": "",
+        "Securité SMTP": "",
+        "Aucune": "いいえ",
+        "Utilisateur SMTP": "",
+        "Mot de passe SMTP": "",
+        "Ne pas verifier le certificat SSL": "",
+        "Ajouter une commande mail": "",
         "Nom": "表題",
-        "Supprimer": "取り除きます",
-        "Sauvegarder": "セーブ"
+        "Email": ""
     },
-    "plugins/mail/desktop/js/mail.js": {
+    "plugins\/mail\/desktop\/js\/mail.js": {
         "Tester": "テスト"
     },
-    "plugins/mail/plugin_info/info.xml": {
-        "Plugin pour envoyer des mails": "メールを送信するプラグイン",
-        "Aucune": "何でもありません"
+    "plugins\/mail\/core\/class\/mail.class.php": {
+        "L\\'adresse mail ne peut etre vide": "",
+        "L\\'adresse mail n\\'est pas valide": "",
+        "[Mail] Les options de la fonction ne peuvent etre null": "",
+        "[Mail] Le message et le sujet ne peuvent être vide": "",
+        "[Jeedom] - Notification": "",
+        "Mode d\\'envoi non reconnu": ""
     }
 }

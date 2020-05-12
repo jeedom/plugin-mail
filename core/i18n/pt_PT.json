@@ -1,35 +1,45 @@
 {
-    "plugins/mail/desktop/php/mail.php": {
-        "Ajouter Email": "Adicionar Email",
-        "Rechercher": "Pesquisar",
-        "Mes mails": "meu e-mail",
-        "Général": "Geral",
-        "Nom de l'équipement mail": "Nome equipamentos Email",
-        "Objet parent": "objeto pai",
+    "plugins\/mail\/desktop\/php\/mail.php": {
+        "401 - Accès non autorisé": "401 - Acesso não autorizado",
+        "Gestion": "Gestão",
+        "Ajouter": "Adicionar",
+        "Mes mails": "Meus e-mails",
+        "Rechercher": "Pesquisa",
+        "Configuration avancée": "Configuração avançada",
+        "Dupliquer": "Duplicar",
+        "Sauvegarder": "Salvar",
+        "Supprimer": "Remover",
+        "Equipement": "Equipamento",
+        "Commandes": "Comandos",
+        "Nom de l'équipement mail": "Nome do equipamento de correio",
+        "Objet parent": "Objeto pai",
         "Aucun": "Nemhum",
+        "Catégorie": "Categoria",
         "Activer": "Ativar",
         "Visible": "Visivél",
         "Nom expéditeur": "Nome do remetente",
-        "Mail expéditeur": "remetente do email",
-        "Mode d'envoi": "perfil de envio",
-        "Configuration SMTP": "configuração de SMTP",
-        "Serveur SMTP": "servidor SMTP",
+        "Mail expéditeur": "Remetente do correio",
+        "Mode d'envoi": "Método de envio",
+        "Serveur SMTP": "Servidor SMTP",
         "Port SMTP": "Porta SMTP",
         "Securité SMTP": "Segurança SMTP",
-        "Aucune": "Nenhum",
-        "Utilisateur SMTP": "SMTPuser",
-        "Mot de passe SMTP": "senha SMTP",
-        "Email": "correio eletrônico",
-        "Ajouter une commande mail": "Adicionar um comando de correio",
+        "Aucune": "Não",
+        "Utilisateur SMTP": "Usuário SMTP",
+        "Mot de passe SMTP": "Senha SMTP",
+        "Ne pas verifier le certificat SSL": "Não verifique o certificado SSL",
+        "Ajouter une commande mail": "Adicionar um pedido de correio",
         "Nom": "Nome",
-        "Supprimer": "remover",
-        "Sauvegarder": "Salvar"
+        "Email": "E-mail"
     },
-    "plugins/mail/desktop/js/mail.js": {
-        "Tester": "teste"
+    "plugins\/mail\/desktop\/js\/mail.js": {
+        "Tester": "Teste"
     },
-    "plugins/mail/plugin_info/info.xml": {
-        "Plugin pour envoyer des mails": "Plugin para enviar correio",
-        "Aucune": "Nenhum"
+    "plugins\/mail\/core\/class\/mail.class.php": {
+        "L\\'adresse mail ne peut etre vide": "O endereço de email não pode estar vazio",
+        "L\\'adresse mail n\\'est pas valide": "O endereço de email não é válido",
+        "[Mail] Les options de la fonction ne peuvent etre null": "[Mail] As opções da função não podem ser nulas",
+        "[Mail] Le message et le sujet ne peuvent être vide": "[Mail] Mensagem e assunto não podem estar vazios",
+        "[Jeedom] - Notification": "[Jeedom] - Notificação",
+        "Mode d\\'envoi non reconnu": "Método de envio não reconhecido"
     }
 }

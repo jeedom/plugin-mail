@@ -14,7 +14,7 @@ The configuration of Mail equipment is accessible from the plugin menu :
 
 ![mail2](../images/mail2.PNG)
 
-This is what the Mail plugin page looks like (here with 1 email already, you can add as many as you want with the "Add" button) :
+This is what the Mail plugin page looks like (here with 1 email already, you can add as many as you want with the "Add") :
 
 ![mail3](../images/mail3.PNG)
 
@@ -68,7 +68,7 @@ From the "Orders" tab, you can add orders that correspond to the email addresses
 
 -   **Name** : Name of the order
 -   **E-mail** : the email address to send the message to. You can put several by separating them with ,
--   **Advanced configuration** (small notched wheels) : displays the advanced configuration of the command (logging method, widget, etc.)
+-   **Advanced configuration** (small notched wheels) : used to display the advanced configuration of the command (historization method, widget, etc.)
 -   **Test** : Used to test the command,
 -   **Delete** (sign -) : allows to delete the command.
 

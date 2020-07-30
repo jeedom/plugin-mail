@@ -14,7 +14,7 @@ Auf die Konfiguration der Mail-Geräte kann über das Plugin-Menü zugegriffen w
 
 ![mail2](../images/mail2.PNG)
 
-So sieht die Mail-Plugin-Seite aus (hier mit bereits 1 E-Mail können Sie mit der Schaltfläche "Hinzufügen" so viele hinzufügen, wie Sie möchten) :
+So sieht die Mail-Plugin-Seite aus (hier mit bereits 1 E-Mail können Sie mit "Hinzufügen" beliebig viele hinzufügen") :
 
 ![mail3](../images/mail3.PNG)
 
@@ -68,9 +68,9 @@ Auf der Registerkarte "Bestellungen" können Sie Bestellungen hinzufügen, die d
 
 -   **Name** : Name der Bestellung
 -   **E-Mail** : die E-Mail-Adresse, an die die Nachricht gesendet werden soll. Sie können mehrere setzen, indem Sie sie mit trennen ,
--   **Erweiterte Konfiguration** (kleine gekerbte Räder) : Zeigt die erweiterte Konfiguration des Befehls an (Protokollierungsmethode, Widget usw.)
+-   **Erweiterte Konfiguration** (kleine gekerbte Räder) : wird verwendet, um die erweiterte Konfiguration des Befehls anzuzeigen (Verlaufsmethode, Widget usw.).)
 -   **Test** : Wird zum Testen des Befehls verwendet,
--   **Löschen** (Zeichen -) : ermöglicht das Löschen des Befehls.
+-   **Löschen** (Schild -) : ermöglicht das Löschen des Befehls.
 
 Dieses Plugin funktioniert wie ein Modul, dh es wird nach dem Speichern in der Liste der Aktionen oder Befehle angezeigt. Es ist daher sehr einfach, es beispielsweise beim Erstellen von Szenarien zu verwenden.
 

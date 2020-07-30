@@ -14,7 +14,7 @@ A configuração do equipamento Mail é acessível no menu do plug-in :
 
 ![mail2](../images/mail2.PNG)
 
-É assim que a página do plugin Mail (aqui, com 1 e-mail já, você pode adicionar quantos quiser com o botão "Adicionar") :
+É assim que a página do plugin Mail (aqui, com 1 e-mail já, você pode adicionar quantos quiser com a opção "Adicionar") :
 
 ![mail3](../images/mail3.PNG)
 
@@ -68,9 +68,9 @@ Na guia "Pedidos", você pode adicionar pedidos que correspondam aos endereços 
 
 -   **Nome** : nome do comando
 -   **E-mail** : o endereço de email para enviar a mensagem para. Você pode colocar vários separando-os com ,
--   **Configuração avançada** (pequenas rodas dentadas) : exibe a configuração avançada do comando (método de registro, widget etc.)
+-   **Configuração avançada** (pequenas rodas dentadas) : usado para exibir a configuração avançada do comando (método de historização, widget etc.).)
 -   **Teste** : permite testar o comando,
--   **Remover** (sinal -) : permite excluir o comando.
+-   **Remover** (placa -) : permite excluir o comando.
 
 Este plugin funciona como um módulo, ou seja, uma vez salvo, ele aparece na lista de ações ou comandos. Portanto, é muito simples usá-lo ao criar cenários, por exemplo.
 

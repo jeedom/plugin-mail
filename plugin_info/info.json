@@ -1,13 +1,33 @@
 {
     "id": "mail",
     "name": "Mail",
-    "description": "Plugin pour envoyer des mails",
+    "description": {
+        "fr_FR": "Plugin pour envoyer des mails",
+        "en_US": "Plugin to send emails",
+        "es_ES": "Complemento para enviar correos electrónicos",
+        "de_DE": "Plugin zum Versenden von E-Mails",
+        "pt_PT": "Plug-in para enviar e-mails"
+    },
     "licence": "AGPL",
     "author": "Loïc",
     "require": "2.4",
     "category": "communication",
     "changelog": "https:\/\/doc.jeedom.com\/#language#\/plugins\/communication\/mail\/changelog",
     "documentation": "https:\/\/doc.jeedom.com\/#language#\/plugins\/communication\/mail\/",
-    "language" : ["fr_FR","en_US","de_DE","sp_SP"],
-"compatibility" : ["miniplus","smart","rpi","docker","diy","mobile","v4"]
+    "language": [
+        "fr_FR",
+        "en_US",
+        "es_ES",
+        "de_DE",
+        "pt_PT"
+    ],
+    "compatibility": [
+        "miniplus",
+        "smart",
+        "rpi",
+        "docker",
+        "diy",
+        "mobile",
+        "v4"
+    ]
 }

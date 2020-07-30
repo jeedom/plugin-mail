@@ -14,7 +14,7 @@ Se puede acceder a la configuración del equipo de correo desde el menú de comp
 
 ![mail2](../images/mail2.PNG)
 
-Así es como se ve la página del complemento de correo (aquí con 1 correo electrónico ya, puede agregar tantos como desee con el botón "Agregar") :
+Así es como se ve la página del complemento de correo (aquí con 1 correo electrónico ya, puede agregar tantos como desee con el "Agregar") :
 
 ![mail3](../images/mail3.PNG)
 
@@ -68,7 +68,7 @@ Desde la pestaña "Pedidos", puede agregar pedidos que correspondan a las direcc
 
 -   **Nombre** : Nombre de la orden
 -   **E-mail** : la dirección de correo electrónico para enviar el mensaje. Puedes poner varios separándolos con ,
--   **Configuración avanzada** (ruedas con muescas pequeñas) : muestra la configuración avanzada del comando (método de registro, widget, etc.)
+-   **Configuración avanzada** (ruedas con muescas pequeñas) : se usa para mostrar la configuración avanzada del comando (método de historización, widget, etc.)
 -   **Probar** : Se usa para probar el comando,
 -   **Borrar** (signo -) : permite eliminar el comando.
 

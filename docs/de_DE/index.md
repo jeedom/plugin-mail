@@ -80,7 +80,7 @@ In einem Szenario müssen Sie nach Auswahl in einer Aktion den Titel und die Nac
 
 > **Wichtig**
 >
-> Bei Google Mail müssen Sie ein bestimmtes Passwort für die Anwendung angeben : Mein Konto ⇒ Verbindung und Sicherheit ⇒ Verbindung zu Google herstellen ⇒ Anwendungskennwörter
+> Wenn Sie sich bei Google Mail doppelt authentifizieren, müssen Sie ein bestimmtes Kennwort für die Anwendung angeben : Mein Konto ⇒ Login und Sicherheit ⇒ Verbindung zu Google herstellen ⇒ Anwendungskennwörter. Wenn dies nicht der Fall ist, müssen Sie Ihr übliches Google Mail-Kennwort eingeben.
 
 > **Spitze**
 >

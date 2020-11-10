@@ -80,7 +80,7 @@ En un escenario, una vez seleccionado en una acción, deberá ingresar el títul
 
 > **Importante**
 >
-> Con Gmail, debe proporcionar una contraseña específica para la aplicación : Mi cuenta ⇒ conexión y seguridad ⇒ Conéctese a Google ⇒ Contraseñas de aplicación
+> Si estás en doble autenticación con Gmail debes dar una contraseña específica para la aplicación : Mi cuenta ⇒ inicio de sesión y seguridad ⇒ Conéctese a Google ⇒ Contraseñas de aplicaciones, si este no es el caso, debe ingresar su contraseña habitual de Gmail.
 
 > **Punta**
 >

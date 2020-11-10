@@ -80,7 +80,7 @@ Em um cenário, uma vez selecionado em uma ação, você precisará inserir o t�
 
 > **IMPORTANTE**
 >
-> No Gmail, você precisa fornecer uma senha específica para o aplicativo : Minha conta ⇒ conexão e segurança ⇒ Conectar-se ao Google ⇒ senhas de aplicativos
+> Se você estiver em autenticação dupla com o Gmail, você deve fornecer uma senha específica para o aplicativo : Minha conta ⇒ login e segurança ⇒ Entrar no Google ⇒ Senhas do aplicativo, se este não for o caso, você deve inserir sua senha usual do Gmail.
 
 > **Dica**
 >

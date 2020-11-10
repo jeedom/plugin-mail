@@ -80,7 +80,7 @@ In a scenario, once selected in an action, you will have to enter the title and 
 
 > **Important**
 >
-> With Gmail you have to give a specific password for the application : My account ⇒ connection and security ⇒ Connect to Google ⇒ Application passwords
+> If you are in double authentication with Gmail you must give a specific password for the application : My account ⇒ login and security ⇒ Log in to Google ⇒ Application passwords, if this is not the case you must enter your usual gmail password.
 
 > **Tip**
 >

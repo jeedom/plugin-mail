@@ -41,5 +41,8 @@
         "[Mail] Le message et le sujet ne peuvent être vide": "[Mail] Message and subject cannot be empty",
         "[Jeedom] - Notification": "[Jeedom] - Notification",
         "Mode d\\'envoi non reconnu": "Unrecognized shipping method"
+    },
+    "info.json": {
+        "Plugin pour envoyer des mails": "Plugin to send emails"
     }
 }

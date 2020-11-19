@@ -41,5 +41,8 @@
         "[Mail] Le message et le sujet ne peuvent être vide": "[Mail] Mensagem e assunto não podem estar vazios",
         "[Jeedom] - Notification": "[Jeedom] - Notificação",
         "Mode d\\'envoi non reconnu": "Método de envio não reconhecido"
+    },
+    "info.json": {
+        "Plugin pour envoyer des mails": "Plug-in para enviar e-mails"
     }
 }

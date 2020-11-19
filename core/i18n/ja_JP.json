@@ -41,5 +41,8 @@
         "[Mail] Le message et le sujet ne peuvent être vide": "",
         "[Jeedom] - Notification": "",
         "Mode d\\'envoi non reconnu": ""
+    },
+    "info.json": {
+        "Plugin pour envoyer des mails": ""
     }
 }

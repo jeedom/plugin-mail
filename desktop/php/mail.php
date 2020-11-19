@@ -64,14 +64,16 @@ $eqLogics = eqLogic::byType($plugin->getId());
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label" >{{Objet parent}}</label>
                                     <div class="col-sm-5">
-                                        <select class="eqLogicAttr form-control" data-l1key="object_id">
-                                            <option value="">{{Aucun}}</option>
-                                            <?php
-                                            foreach (jeeObject::all() as $object) {
-                                                echo '<option value="' . $object->getId() . '">' . $object->getName() . '</option>';
-                                            }
-                                            ?>
-                                        </select>
+																			<select id="sel_object" class="eqLogicAttr form-control" data-l1key="object_id">
+																				<option value="">{{Aucun}}</option>
+																				<?php
+																				$options = '';
+																				foreach ((jeeObject::buildTree(null, false)) as $object) {
+																					$options .= '<option value="' . $object->getId() . '">' . str_repeat('&nbsp;&nbsp;', $object->getConfiguration('parentNumber')) . $object->getName() . '</option>';
+																				}
+																				echo $options;
+																				?>
+																			</select>
                                     </div>
                                 </div>
                                 <div class="form-group">

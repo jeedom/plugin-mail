@@ -43,6 +43,6 @@
         "Mode d\\'envoi non reconnu": ""
     },
     "info.json": {
-        "Plugin pour envoyer des mails": ""
+        "Ce plugin permet d'envoyer des e-mails depuis Jeedom. Cela permet de vous notifier directement par mail lors d'une alerte ou tout simplement pour un bilan journalier. Vous pouvez définir autant de destinataires que vous voulez, cela est utile pour envoyer des rapports personnalisés ou cibler les alertes pour tel ou tel destinataire.": ""
     }
 }

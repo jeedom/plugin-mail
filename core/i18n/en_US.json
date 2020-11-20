@@ -11,11 +11,11 @@
         "Supprimer": "Delete",
         "Equipement": "Equipment",
         "Commandes": "Commands",
-        "Nom de l'équipement mail": "Email device name",
+        "Nom de l'équipement mail": "Email equipment name",
         "Objet parent": "Parent object",
         "Aucun": "None",
         "Catégorie": "Category",
-        "Activer": "Activate",
+        "Activer": "Active",
         "Visible": "Visible",
         "Nom expéditeur": "Sender name",
         "Mail expéditeur": "Sender email",
@@ -43,6 +43,6 @@
         "Mode d\\'envoi non reconnu": "Unrecognized shipping method"
     },
     "info.json": {
-        "Plugin pour envoyer des mails": "Plugin to send emails"
+        "Ce plugin permet d'envoyer des e-mails depuis Jeedom. Cela permet de vous notifier directement par mail lors d'une alerte ou tout simplement pour un bilan journalier. Vous pouvez définir autant de destinataires que vous voulez, cela est utile pour envoyer des rapports personnalisés ou cibler les alertes pour tel ou tel destinataire.": "This plugin allows you to send e-mails from Jeedom. This allows you to notify you directly by email during an alert or simply for a daily report. You can define as many recipients as you want, this is useful for sending personalized reports or targeting alerts for a particular recipient"
     }
 }

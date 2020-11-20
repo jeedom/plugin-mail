@@ -43,6 +43,6 @@
         "Mode d\\'envoi non reconnu": "Método de envío no reconocido"
     },
     "info.json": {
-        "Plugin pour envoyer des mails": "Complemento para enviar correos electrónicos"
+        "Ce plugin permet d'envoyer des e-mails depuis Jeedom. Cela permet de vous notifier directement par mail lors d'une alerte ou tout simplement pour un bilan journalier. Vous pouvez définir autant de destinataires que vous voulez, cela est utile pour envoyer des rapports personnalisés ou cibler les alertes pour tel ou tel destinataire.": "Este complemento le permite enviar correos electrónicos desde Jeedom. Esto le permite notificarle directamente por correo electrónico durante una alerta o simplemente para un informe diario. Puede definir tantos destinatarios como desee, esto es útil para enviar informes personalizados o alertas de orientación para un destinatario en particular"
     }
 }

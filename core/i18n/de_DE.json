@@ -17,9 +17,11 @@
         "Catégorie": "Kategorie",
         "Activer": "Aktivieren",
         "Visible": "Sichtbar",
+        "Mode d'envoi": "Versandart",
         "Nom expéditeur": "Absendername",
         "Mail expéditeur": "Mail-Absender",
-        "Mode d'envoi": "Versandart",
+        "Attention il y a une limite de 20 mails par jour (cette limite est succeptible de varier à l'avenir)": "Bitte beachten Sie, dass es ein Limit von 20 E-Mails pro Tag gibt (dieses Limit kann in Zukunft variieren)",
+        "Attention cette option nécessite d'avoir correctement configurer le système (OS).": "Achtung Für diese Option muss das System (OS) korrekt konfiguriert sein",
         "Serveur SMTP": "SMTP-Server",
         "Port SMTP": "SMTP-Port",
         "Securité SMTP": "SMTP-Sicherheit",
@@ -40,6 +42,7 @@
         "[Mail] Les options de la fonction ne peuvent etre null": "[Mail] Die Optionen der Funktion dürfen nicht null sein",
         "[Mail] Le message et le sujet ne peuvent être vide": "[Mail] Nachricht und Betreff dürfen nicht leer sein",
         "[Jeedom] - Notification": "[Jeedom] - Benachrichtigung",
+        "Erreur sur l\\'envoi du mail : ": "Fehler beim Senden der E-Mail:",
         "Mode d\\'envoi non reconnu": "Nicht erkannte Versandart"
     },
     "info.json": {

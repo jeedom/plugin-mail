@@ -17,9 +17,11 @@
         "Catégorie": "Catégorie",
         "Activer": "Activer",
         "Visible": "Visible",
+        "Mode d'envoi": "Mode d'envoi",
         "Nom expéditeur": "Nom expéditeur",
         "Mail expéditeur": "Mail expéditeur",
-        "Mode d'envoi": "Mode d'envoi",
+        "Attention il y a une limite de 20 mails par jour (cette limite est succeptible de varier à l'avenir)": "Attention il y a une limite de 20 mails par jour (cette limite est succeptible de varier à l'avenir)",
+        "Attention cette option nécessite d'avoir correctement configurer le système (OS).": "Attention cette option nécessite d'avoir correctement configurer le système (OS).",
         "Serveur SMTP": "Serveur SMTP",
         "Port SMTP": "Port SMTP",
         "Securité SMTP": "Securité SMTP",
@@ -40,6 +42,7 @@
         "[Mail] Les options de la fonction ne peuvent etre null": "[Mail] Les options de la fonction ne peuvent etre null",
         "[Mail] Le message et le sujet ne peuvent être vide": "[Mail] Le message et le sujet ne peuvent être vide",
         "[Jeedom] - Notification": "[Jeedom] - Notification",
+        "Erreur sur l\\'envoi du mail : ": "Erreur sur l\\'envoi du mail : ",
         "Mode d\\'envoi non reconnu": "Mode d\\'envoi non reconnu"
     },
     "info.json": {

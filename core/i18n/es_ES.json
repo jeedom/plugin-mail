@@ -17,9 +17,11 @@
         "Catégorie": "Categoría",
         "Activer": "Activar",
         "Visible": "Visible",
+        "Mode d'envoi": "Método de envío",
         "Nom expéditeur": "Nombre del remitente",
         "Mail expéditeur": "Remitente de correo",
-        "Mode d'envoi": "Método de envío",
+        "Attention il y a une limite de 20 mails par jour (cette limite est succeptible de varier à l'avenir)": "Tenga en cuenta que hay un límite de 20 correos electrónicos por día (este límite puede variar en el futuro)",
+        "Attention cette option nécessite d'avoir correctement configurer le système (OS).": "Atención esta opción requiere tener configurado correctamente el sistema (SO)",
         "Serveur SMTP": "Servidor SMTP",
         "Port SMTP": "Puerto SMTP",
         "Securité SMTP": "Seguridad SMTP",
@@ -40,6 +42,7 @@
         "[Mail] Les options de la fonction ne peuvent etre null": "[Correo] Las opciones de la función no pueden ser nulas",
         "[Mail] Le message et le sujet ne peuvent être vide": "[Correo] El mensaje y el asunto no pueden estar vacíos",
         "[Jeedom] - Notification": "[Jeedom] - Notificación",
+        "Erreur sur l\\'envoi du mail : ": "Error al enviar el correo electrónico:",
         "Mode d\\'envoi non reconnu": "Método de envío no reconocido"
     },
     "info.json": {

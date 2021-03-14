@@ -17,9 +17,11 @@
         "Catégorie": "Category",
         "Activer": "Active",
         "Visible": "Visible",
+        "Mode d'envoi": "Send mode",
         "Nom expéditeur": "Sender name",
         "Mail expéditeur": "Sender email",
-        "Mode d'envoi": "Send mode",
+        "Attention il y a une limite de 20 mails par jour (cette limite est succeptible de varier à l'avenir)": "Please note there is a limit of 20 emails per day (this limit may vary in the future)",
+        "Attention cette option nécessite d'avoir correctement configurer le système (OS).": "Attention this option requires having correctly configured the system (OS)",
         "Serveur SMTP": "SMTP server",
         "Port SMTP": "SMTP port",
         "Securité SMTP": "SMTP security",
@@ -40,6 +42,7 @@
         "[Mail] Les options de la fonction ne peuvent etre null": "[Mail] Function options cannot be null",
         "[Mail] Le message et le sujet ne peuvent être vide": "[Mail] Message and subject cannot be empty",
         "[Jeedom] - Notification": "[Jeedom] - Notification",
+        "Erreur sur l\\'envoi du mail : ": "Error sending email:",
         "Mode d\\'envoi non reconnu": "Unrecognized shipping method"
     },
     "info.json": {

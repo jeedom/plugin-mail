@@ -3,7 +3,7 @@
         "401 - Accès non autorisé": "401 - Yetkisiz erişim",
         "Gestion": "Idare",
         "Ajouter": "Ekle",
-        "Mes mails": "",
+        "Mes mails": "Mes mails",
         "Rechercher": "Arayın",
         "Configuration avancée": "Gelişmiş ayarlar",
         "Dupliquer": "Kopyala",
@@ -11,38 +11,41 @@
         "Supprimer": "Sil",
         "Equipement": "Cihaz",
         "Commandes": "Komutalar",
-        "Nom de l'équipement mail": "",
+        "Nom de l'équipement mail": "Nom de l'équipement mail",
         "Objet parent": "Üst nesne",
         "Aucun": "Hiçbir",
         "Catégorie": "Kategori",
         "Activer": "Etkinleştir",
         "Visible": "Görülebilir",
-        "Nom expéditeur": "",
-        "Mail expéditeur": "",
-        "Mode d'envoi": "",
-        "Serveur SMTP": "",
-        "Port SMTP": "",
-        "Securité SMTP": "",
+        "Mode d'envoi": "Mode d'envoi",
+        "Nom expéditeur": "Nom expéditeur",
+        "Mail expéditeur": "Mail expéditeur",
+        "Attention il y a une limite de 20 mails par jour (cette limite est succeptible de varier à l'avenir)": "Attention il y a une limite de 20 mails par jour (cette limite est succeptible de varier à l'avenir)",
+        "Attention cette option nécessite d'avoir correctement configurer le système (OS).": "Attention cette option nécessite d'avoir correctement configurer le système (OS)",
+        "Serveur SMTP": "Serveur SMTP",
+        "Port SMTP": "Port SMTP",
+        "Securité SMTP": "Securité SMTP",
         "Aucune": "Hayır",
-        "Utilisateur SMTP": "",
-        "Mot de passe SMTP": "",
-        "Ne pas verifier le certificat SSL": "",
-        "Ajouter une commande mail": "",
+        "Utilisateur SMTP": "Utilisateur SMTP",
+        "Mot de passe SMTP": "Mot de passe SMTP",
+        "Ne pas verifier le certificat SSL": "Ne pas verifier le certificat SSL",
+        "Ajouter une commande mail": "Ajouter une commande mail",
         "Nom": "İsim",
-        "Email": ""
+        "Email": "Email"
     },
     "plugins\/mail\/desktop\/js\/mail.js": {
         "Tester": "Test et"
     },
     "plugins\/mail\/core\/class\/mail.class.php": {
-        "L\\'adresse mail ne peut etre vide": "",
-        "L\\'adresse mail n\\'est pas valide": "",
-        "[Mail] Les options de la fonction ne peuvent etre null": "",
-        "[Mail] Le message et le sujet ne peuvent être vide": "",
-        "[Jeedom] - Notification": "",
-        "Mode d\\'envoi non reconnu": ""
+        "L\\'adresse mail ne peut etre vide": "L\\'adresse mail ne peut etre vide",
+        "L\\'adresse mail n\\'est pas valide": "L\\'adresse mail n\\'est pas valide",
+        "[Mail] Les options de la fonction ne peuvent etre null": "[Mail] Les options de la fonction ne peuvent etre null",
+        "[Mail] Le message et le sujet ne peuvent être vide": "[Mail] Le message et le sujet ne peuvent être vide",
+        "[Jeedom] - Notification": "[Jeedom] - Notification",
+        "Erreur sur l\\'envoi du mail : ": "Erreur sur l\\'envoi du mail :",
+        "Mode d\\'envoi non reconnu": "Mode d\\'envoi non reconnu"
     },
     "info.json": {
-        "Ce plugin permet d'envoyer des e-mails depuis Jeedom. Cela permet de vous notifier directement par mail lors d'une alerte ou tout simplement pour un bilan journalier. Vous pouvez définir autant de destinataires que vous voulez, cela est utile pour envoyer des rapports personnalisés ou cibler les alertes pour tel ou tel destinataire.": ""
+        "Ce plugin permet d'envoyer des e-mails depuis Jeedom. Cela permet de vous notifier directement par mail lors d'une alerte ou tout simplement pour un bilan journalier. Vous pouvez définir autant de destinataires que vous voulez, cela est utile pour envoyer des rapports personnalisés ou cibler les alertes pour tel ou tel destinataire.": "Ce plugin permet d'envoyer des e-mails depuis Jeedom. Cela permet de vous notifier directement par mail lors d'une alerte ou tout simplement pour un bilan journalier. Vous pouvez définir autant de destinataires que vous voulez, cela est utile pour envoyer des rapports personnalisés ou cibler les alertes pour tel ou tel destinataire"
     }
 }

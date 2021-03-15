@@ -4,6 +4,9 @@
 >
 >Como lembrete, se não houver informações sobre a atualização, isso significa que se trata apenas da atualização da documentação, tradução ou texto
 
+
+- Possibilidade de utilização de serviços Jeedom Cloud para envio de mensagens
+
 # 19/11/2020
 
 - Nova apresentação da lista de objetos

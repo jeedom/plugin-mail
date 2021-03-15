@@ -2,6 +2,7 @@
     "changelog.md": {
         "Changelog Mail": "Changelog Mail",
         "Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte": "As a reminder if there is no information on the update, it means that it only concerns the updating of documentation, translation or text",
+        "Possibilité d'utiliser les services Jeedom Cloud pour l'envoi de message": "Possibility of using Jeedom Cloud services for sending messages",
         "19\/11\/2020": "11\/19\/2020",
         "Nouvelle présentation de la liste des objets": "New presentation of the list of objects",
         "Ajout du tag \"Compatibilité V4": "Addition of the tag \"V4 compatibility",

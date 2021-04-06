@@ -4,8 +4,9 @@
 >
 >Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte
 
+# 06/04/2021
 
-- Possibilité d'utiliser les services Jeedom Cloud pour l'envoi de message
+- Possibilité d'utiliser les services Jeedom Cloud pour l'envoi de message (en beta limité a 5 mails jour)
 
 # 19/11/2020
 

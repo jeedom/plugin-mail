@@ -4,8 +4,9 @@
 >
 >Como lembrete, se não houver informações sobre a atualização, isso significa que se trata apenas da atualização da documentação, tradução ou texto
 
+# 06/04/2021
 
-- Possibilidade de utilização de serviços Jeedom Cloud para envio de mensagens
+- Possibilidade de utilização dos serviços Jeedom Cloud para envio de mensagens (em beta limitado a 5 e-mails por dia)
 
 # 19/11/2020
 

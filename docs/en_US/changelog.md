@@ -4,8 +4,9 @@
 >
 >As a reminder if there is no information on the update, it means that it only concerns the updating of documentation, translation or text
 
+# 04/06/2021
 
-- Possibility of using Jeedom Cloud services for sending messages
+- Possibility of using Jeedom Cloud services for sending messages (in beta limited to 5 mails per day)
 
 # 11/19/2020
 

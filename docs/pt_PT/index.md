@@ -31,6 +31,7 @@ Aqui você encontra toda a configuração do seu equipamento :
 -   **Nome do remetente** : nome do remetente do e-mail (ex : Jeedom)
 -   **Remetente do correio** : email do remetente (ex : <jeedom@moi.fr>)
 -   **Método de envio** : método de envio do email :
+    -   Nuvem Jeedom : sem configuração para envio de e-mails pelos serviços em nuvem da Jeedom, no momento em fase beta, limitado a 5 e-mails por dia
     -   SMTP : modo mais comum de envio de correio
     -   Sendmail
     -   Qmail

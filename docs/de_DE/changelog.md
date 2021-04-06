@@ -4,8 +4,9 @@
 >
 >Zur Erinnerung: Wenn keine Informationen zum Update vorhanden sind, bedeutet dies, dass es sich nur um die Aktualisierung von Dokumentation, Übersetzung oder Text handelt
 
+# 04/06/2021
 
-- Möglichkeit der Verwendung von Jeedom Cloud-Diensten zum Senden von Nachrichten
+- Möglichkeit der Verwendung von Jeedom Cloud-Diensten zum Senden von Nachrichten (in der Beta auf 5 E-Mails pro Tag begrenzt)
 
 # 19.11.2020
 

@@ -31,6 +31,7 @@ Hier finden Sie die gesamte Konfiguration Ihrer Geräte :
 -   **Absendername** : Name des Absenders der E-Mail (z : Jeedom)
 -   **Mail-Absender** : E-Mail des Absenders (z : <jeedom@moi.fr>)
 -   **Versandart** : Methode zum Senden der E-Mail :
+    -   Jeedom Wolke : Derzeit keine Konfiguration zum Senden von E-Mails durch die Jeedom-Cloud-Dienste in der Beta-Phase, begrenzt auf 5 E-Mails pro Tag
     -   SMTP : häufigster Modus zum Senden von E-Mails
     -   Sendmail
     -   Qmail

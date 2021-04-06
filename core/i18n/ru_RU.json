@@ -20,7 +20,7 @@
         "Mode d'envoi": "Mode d'envoi",
         "Nom expéditeur": "Nom expéditeur",
         "Mail expéditeur": "Mail expéditeur",
-        "Attention il y a une limite de 20 mails par jour (cette limite est succeptible de varier à l'avenir)": "Attention il y a une limite de 20 mails par jour (cette limite est succeptible de varier à l'avenir)",
+        "Attention il y a une limite de 5 mails par jour (cette limite est succeptible de varier à l'avenir)": "Attention il y a une limite de 5 mails par jour (cette limite est succeptible de varier à l'avenir)",
         "Attention cette option nécessite d'avoir correctement configurer le système (OS).": "Attention cette option nécessite d'avoir correctement configurer le système (OS)",
         "Serveur SMTP": "Serveur SMTP",
         "Port SMTP": "Port SMTP",

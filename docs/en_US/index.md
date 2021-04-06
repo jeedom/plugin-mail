@@ -31,6 +31,7 @@ Here you find all the configuration of your equipment :
 -   **Sender name** : name of the sender of the email (ex : Jeedom)
 -   **Sender email** : sender's email (ex : <jeedom@moi.fr>)
 -   **Send mode** : method of sending the email :
+    -   Jeedom cloud : no configuration to send emails by the Jeedom cloud services, in beta phase for the moment, limited to 5 emails per day
     -   SMTP : most common mode for sending mail
     -   Sendmail
     -   Qmail

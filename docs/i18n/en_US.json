@@ -2,7 +2,8 @@
     "changelog.md": {
         "Changelog Mail": "Changelog Mail",
         "Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte": "As a reminder if there is no information on the update, it means that it only concerns the updating of documentation, translation or text",
-        "Possibilité d'utiliser les services Jeedom Cloud pour l'envoi de message": "Possibility of using Jeedom Cloud services for sending messages",
+        "06\/04\/2021": "04\/06\/2021",
+        "Possibilité d'utiliser les services Jeedom Cloud pour l'envoi de message (en beta limité a 5 mails jour": "Possibility of using Jeedom Cloud services for sending messages (in beta limited to 5 mails per day",
         "19\/11\/2020": "11\/19\/2020",
         "Nouvelle présentation de la liste des objets": "New presentation of the list of objects",
         "Ajout du tag \"Compatibilité V4": "Addition of the tag \"V4 compatibility",
@@ -42,6 +43,8 @@
         "mail de l'expéditeur (ex": "sender's email (ex",
         "Mode d'envoi": "Send mode",
         "mode d'envoi du mail": "method of sending the email",
+        "Jeedom cloud": "Jeedom cloud",
+        "aucune configuration a faire envoi des mails par le services cloud Jeedom, en phase beta pour le moment, limité à 5 mails par jour": "no configuration to send emails by the Jeedom cloud services, in beta phase for the moment, limited to 5 emails per day",
         "mode le plus courant pour l'envoi de mail": "most common mode for sending mail",
         "PHP Function\\": "PHP Function \\",
         "utilise la [fonction d'envoi standard de PHP,window=\"\\_blank": "use the [standard send function of PHP, window = \"\\_ blank",

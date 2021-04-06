@@ -31,6 +31,7 @@ Aquí encontrarás toda la configuración de tu equipo :
 -   **Nombre del remitente** : nombre del remitente del correo electrónico (ej : Jeedom)
 -   **Remitente de correo** : correo electrónico del remitente (ex : <jeedom@moi.fr>)
 -   **Método de envío** : método de enviar el correo electrónico :
+    -   Nube de Jeedom : sin configuración para enviar correos electrónicos por los servicios en la nube de Jeedom, en fase beta por el momento, limitado a 5 correos electrónicos por día
     -   SMTP : modo más común para enviar correo
     -   Sendmail
     -   Qmail

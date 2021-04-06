@@ -31,6 +31,7 @@ Vous retrouvez ici toute la configuration de votre équipement :
 -   **Nom expéditeur** : nom de l’expéditeur du mail (ex : Jeedom)
 -   **Mail expéditeur** : mail de l’expéditeur (ex : <jeedom@moi.fr>)
 -   **Mode d’envoi** : mode d’envoi du mail :
+    -   Jeedom cloud : aucune configuration a faire envoi des mails par le services cloud Jeedom, en phase beta pour le moment, limité à 5 mails par jour
     -   SMTP : mode le plus courant pour l’envoi de mail
     -   Sendmail
     -   Qmail

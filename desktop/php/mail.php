@@ -127,7 +127,7 @@ $eqLogics = eqLogic::byType($plugin->getId());
 						<form class="form-horizontal">
 							<fieldset>
 								<div class='sendMode jeedomCloud' style="display: none;">
-									<div class="alert alert-danger">{{Attention il y a une limite de 20 mails par jour (cette limite est succeptible de varier à l'avenir)}}</div>
+									<div class="alert alert-danger">{{Attention il y a une limite de 5 mails par jour (cette limite est succeptible de varier à l'avenir)}}</div>
 								</div>
 								<div class='sendMode sendmail' style="display: none;">
 									<div class="alert alert-danger">{{Attention cette option nécessite d'avoir correctement configurer le système (OS).}}</div>

@@ -2,6 +2,8 @@
     "changelog.md": {
         "Changelog Mail": "Changelog Mail",
         "Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte": "As a reminder if there is no information on the update, it means that it only concerns the updating of documentation, translation or text",
+        "18\/03\/2022": "03\/18\/2022",
+        "Mise à jour de présenation de l'écrans de configuration des équipements": "Update of the presentation of the equipment configuration screens",
         "06\/04\/2021": "04\/06\/2021",
         "Possibilité d'utiliser les services Jeedom Cloud pour l'envoi de message (en beta limité a 5 mails jour": "Possibility of using Jeedom Cloud services for sending messages (in beta limited to 5 mails per day",
         "19\/11\/2020": "11\/19\/2020",

@@ -2,6 +2,8 @@
     "changelog.md": {
         "Changelog Mail": "Changelog Mail",
         "Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte": "Zur Erinnerung: Wenn keine Informationen zum Update vorhanden sind, bedeutet dies, dass es sich nur um die Aktualisierung von Dokumentation, Übersetzung oder Text handelt",
+        "18\/03\/2022": "18.03.2022",
+        "Mise à jour de présenation de l'écrans de configuration des équipements": "Aktualisierung der Darstellung der Gerätekonfigurationsbildschirme",
         "06\/04\/2021": "04\/06\/2021",
         "Possibilité d'utiliser les services Jeedom Cloud pour l'envoi de message (en beta limité a 5 mails jour": "Möglichkeit der Verwendung von Jeedom Cloud-Diensten zum Senden von Nachrichten (in der Beta auf 5 E-Mails pro Tag begrenzt",
         "19\/11\/2020": "19.11.2020",

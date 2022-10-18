@@ -4,7 +4,7 @@
         "Gestion": "Management",
         "Ajouter": "Add",
         "Mes mails": "My emails",
-        "Aucun équipement Mail trouvé, cliquer sur \"Ajouter\" pour commencer": "No Mail equipment found, click \"Add\" to start",
+        "Aucun équipement trouvé, cliquer sur \"Ajouter\" pour commencer": "No equipment found, click \"Add\" to start",
         "Rechercher": "Search",
         "Equipement visible": "Visible equipment",
         "Equipement non visible": "Equipment not visible",
@@ -14,15 +14,18 @@
         "Supprimer": "Delete",
         "Equipement": "Equipment",
         "Commandes": "Commands",
-        "Nom de l'équipement mail": "Email equipment name",
+        "Paramètres généraux": "General settings",
+        "Nom de l'équipement": "Equipment name",
         "Objet parent": "Parent object",
         "Aucun": "None",
         "Catégorie": "Category",
         "Activer": "Active",
         "Visible": "Visible",
+        "Paramètres spécifiques": "Specific parameters",
         "Mode d'envoi": "Send mode",
         "Nom expéditeur": "Sender name",
         "Mail expéditeur": "Sender email",
+        "Informations": "Information",
         "Attention il y a une limite de 5 mails par jour (cette limite est succeptible de varier à l'avenir)": "Please note there is a limit of 5 emails per day (this limit may vary in the future)",
         "Attention cette option nécessite d'avoir correctement configurer le système (OS).": "Attention this option requires having correctly configured the system (OS)",
         "Serveur SMTP": "SMTP server",
@@ -34,7 +37,8 @@
         "Ne pas verifier le certificat SSL": "Do not check SSL certificate",
         "Ajouter une commande mail": "Add an email command",
         "Nom": "Name",
-        "Email": "E-mail"
+        "Email": "E-mail",
+        "Actions": "Shares"
     },
     "plugins\/mail\/desktop\/js\/mail.js": {
         "Tester": "Test"

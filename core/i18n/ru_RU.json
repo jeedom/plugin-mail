@@ -4,7 +4,7 @@
         "Gestion": "Управление",
         "Ajouter": "Добавить",
         "Mes mails": "Mes mails",
-        "Aucun équipement Mail trouvé, cliquer sur \"Ajouter\" pour commencer": "Aucun équipement Mail trouvé, cliquer sur \"Ajouter\" pour commencer",
+        "Aucun équipement trouvé, cliquer sur \"Ajouter\" pour commencer": "Aucun équipement trouvé, cliquer sur \"Ajouter\" pour commencer",
         "Rechercher": "поиск",
         "Equipement visible": "Equipement visible",
         "Equipement non visible": "Equipement non visible",
@@ -14,15 +14,18 @@
         "Supprimer": "удаление",
         "Equipement": "Оборудование",
         "Commandes": "Команды",
-        "Nom de l'équipement mail": "Nom de l'équipement mail",
+        "Paramètres généraux": "Paramètres généraux",
+        "Nom de l'équipement": "Nom de l'équipement",
         "Objet parent": "Родительский объект",
         "Aucun": "Нет",
         "Catégorie": "категория",
         "Activer": "активировать",
         "Visible": "Видимый",
+        "Paramètres spécifiques": "Paramètres spécifiques",
         "Mode d'envoi": "Mode d'envoi",
         "Nom expéditeur": "Nom expéditeur",
         "Mail expéditeur": "Mail expéditeur",
+        "Informations": "Informations",
         "Attention il y a une limite de 5 mails par jour (cette limite est succeptible de varier à l'avenir)": "Attention il y a une limite de 5 mails par jour (cette limite est succeptible de varier à l'avenir)",
         "Attention cette option nécessite d'avoir correctement configurer le système (OS).": "Attention cette option nécessite d'avoir correctement configurer le système (OS)",
         "Serveur SMTP": "Serveur SMTP",
@@ -34,7 +37,8 @@
         "Ne pas verifier le certificat SSL": "Ne pas verifier le certificat SSL",
         "Ajouter une commande mail": "Ajouter une commande mail",
         "Nom": "Имя",
-        "Email": "Email"
+        "Email": "Email",
+        "Actions": "Actions"
     },
     "plugins\/mail\/desktop\/js\/mail.js": {
         "Tester": "Тест"

@@ -4,7 +4,7 @@
         "Gestion": "Gestão",
         "Ajouter": "Adicionar",
         "Mes mails": "Meus e-mails",
-        "Aucun équipement Mail trouvé, cliquer sur \"Ajouter\" pour commencer": "Nenhum equipamento de correio encontrado, clique em \"Adicionar\" para iniciar",
+        "Aucun équipement trouvé, cliquer sur \"Ajouter\" pour commencer": "Nenhum equipamento encontrado, clique em \"Adicionar\" para iniciar",
         "Rechercher": "Pesquisa",
         "Equipement visible": "Equipamento visível",
         "Equipement non visible": "Equipamento não visível",
@@ -14,15 +14,18 @@
         "Supprimer": "Remover",
         "Equipement": "Equipamento",
         "Commandes": "Comandos",
-        "Nom de l'équipement mail": "Nome do equipamento de correio",
+        "Paramètres généraux": "Configurações Gerais",
+        "Nom de l'équipement": "Nome do equipamento",
         "Objet parent": "Objeto pai",
         "Aucun": "Nemhum",
         "Catégorie": "Categoria",
         "Activer": "Ativar",
         "Visible": "Visivél",
+        "Paramètres spécifiques": "Parâmetros específicos",
         "Mode d'envoi": "Método de envio",
         "Nom expéditeur": "Nome do remetente",
         "Mail expéditeur": "Remetente do correio",
+        "Informations": "Em formação",
         "Attention il y a une limite de 5 mails par jour (cette limite est succeptible de varier à l'avenir)": "Observe que há um limite de 5 e-mails por dia (esse limite pode variar no futuro)",
         "Attention cette option nécessite d'avoir correctement configurer le système (OS).": "Atenção, esta opção requer a configuração correta do sistema (SO)",
         "Serveur SMTP": "Servidor SMTP",
@@ -34,7 +37,8 @@
         "Ne pas verifier le certificat SSL": "Não verifique o certificado SSL",
         "Ajouter une commande mail": "Adicionar um pedido de correio",
         "Nom": "Nome",
-        "Email": "E-mail"
+        "Email": "E-mail",
+        "Actions": "Ações"
     },
     "plugins\/mail\/desktop\/js\/mail.js": {
         "Tester": "Teste"

@@ -4,7 +4,7 @@
         "Gestion": "Verwaltung",
         "Ajouter": "Hinzufügen",
         "Mes mails": "Meine E-Mails",
-        "Aucun équipement Mail trouvé, cliquer sur \"Ajouter\" pour commencer": "Kein Mail-Gerät gefunden, klicken Sie zum Starten auf „Hinzufügen“",
+        "Aucun équipement trouvé, cliquer sur \"Ajouter\" pour commencer": "Keine Ausrüstung gefunden, klicken Sie zum Starten auf \"Hinzufügen\"",
         "Rechercher": "Suchen nach",
         "Equipement visible": "Sichtbare Ausrüstung",
         "Equipement non visible": "Ausrüstung nicht sichtbar",
@@ -14,15 +14,18 @@
         "Supprimer": "Löschen",
         "Equipement": "Gerät",
         "Commandes": "Befehle",
-        "Nom de l'équipement mail": "Name der Postausrüstung",
+        "Paramètres généraux": "Allgemeine Einstellungen",
+        "Nom de l'équipement": "Ausrüstungsname",
         "Objet parent": "Übergeordnetes Objekt",
         "Aucun": "Ohne",
         "Catégorie": "Kategorie",
         "Activer": "Aktivieren",
         "Visible": "Sichtbar",
+        "Paramètres spécifiques": "Spezifische Parameter",
         "Mode d'envoi": "Versandart",
         "Nom expéditeur": "Absendername",
         "Mail expéditeur": "Mail-Absender",
+        "Informations": "Information",
         "Attention il y a une limite de 5 mails par jour (cette limite est succeptible de varier à l'avenir)": "Bitte beachten Sie, dass es ein Limit von 5 E-Mails pro Tag gibt (dieses Limit kann in Zukunft variieren)",
         "Attention cette option nécessite d'avoir correctement configurer le système (OS).": "Achtung Für diese Option muss das System (OS) korrekt konfiguriert sein",
         "Serveur SMTP": "SMTP-Server",
@@ -34,7 +37,8 @@
         "Ne pas verifier le certificat SSL": "Überprüfen Sie nicht das SSL-Zertifikat",
         "Ajouter une commande mail": "Fügen Sie einen Versandhandel hinzu",
         "Nom": "Name",
-        "Email": "E-Mail"
+        "Email": "E-Mail",
+        "Actions": "Anteile"
     },
     "plugins\/mail\/desktop\/js\/mail.js": {
         "Tester": "Test"

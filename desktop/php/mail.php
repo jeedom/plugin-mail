@@ -20,9 +20,8 @@ $eqLogics = eqLogic::byType($plugin->getId());
 		<legend><i class="fas fa-envelope"></i> {{Mes mails}}</legend>
 		<?php
 		if (count($eqLogics) == 0) {
-			echo '<br><div class="text-center" style="font-size:1.2em;font-weight:bold;">{{Aucun équipement Mail trouvé, cliquer sur "Ajouter" pour commencer}}</div>';
+			echo '<br><div class="text-center" style="font-size:1.2em;font-weight:bold;">{{Aucun équipement trouvé, cliquer sur "Ajouter" pour commencer}}</div>';
 		} else {
-			// Champ de recherche
 			echo '<div class="input-group" style="margin:5px;">';
 			echo '<input class="form-control roundedLeft" placeholder="{{Rechercher}}" id="in_searchEqlogic">';
 			echo '<div class="input-group-btn">';
@@ -30,7 +29,6 @@ $eqLogics = eqLogic::byType($plugin->getId());
 			echo '<a class="btn roundedRight hidden" id="bt_pluginDisplayAsTable" data-coreSupport="1" data-state="0"><i class="fas fa-grip-lines"></i></a>';
 			echo '</div>';
 			echo '</div>';
-			// Liste des équipements du plugin
 			echo '<div class="eqLogicThumbnailContainer">';
 			foreach ($eqLogics as $eqLogic) {
 				$opacity = ($eqLogic->getIsEnable()) ? '' : 'disableCard';
@@ -61,145 +59,143 @@ $eqLogics = eqLogic::byType($plugin->getId());
 		<ul class="nav nav-tabs" role="tablist">
 			<li role="presentation"><a href="" class="eqLogicAction" aria-controls="home" role="tab" data-toggle="tab" data-action="returnToThumbnailDisplay"><i class="fas fa-arrow-circle-left"></i></a></li>
 			<li role="presentation" class="active"><a href="#eqlogictab" aria-controls="home" role="tab" data-toggle="tab"><i class="fas fa-tachometer-alt"></i> {{Equipement}}</a></li>
-			<li role="presentation"><a href="#commandtab" aria-controls="profile" role="tab" data-toggle="tab"><i class="fas fa-list-alt"></i> {{Commandes}}</a></li>
+			<li role="presentation"><a href="#commandtab" aria-controls="profile" role="tab" data-toggle="tab"><i class="fas fa-list"></i> {{Commandes}}</a></li>
 		</ul>
 		<div class="tab-content" style="height:calc(100% - 50px);overflow:auto;overflow-x: hidden;">
 			<div role="tabpanel" class="tab-pane active" id="eqlogictab">
-				<br />
-				<div class='row'>
-					<div class="col-sm-7">
-						<form class="form-horizontal">
-							<fieldset>
-								<div class="form-group">
-									<label class="col-sm-3 control-label">{{Nom de l'équipement mail}}</label>
-									<div class="col-sm-5">
-										<input type="text" class="eqLogicAttr form-control" data-l1key="id" style="display : none;" />
-										<input type="text" class="eqLogicAttr form-control" data-l1key="name" placeholder="{{Nom de l'équipement mail}}" />
-									</div>
+				<form class="form-horizontal">
+					<fieldset>
+						<div class="col-sm-6">
+							<legend><i class="fas fa-wrench"></i> {{Paramètres généraux}}</legend>
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{{Nom de l'équipement}}</label>
+								<div class="col-sm-6">
+									<input type="text" class="eqLogicAttr form-control" data-l1key="id" style="display : none;" />
+									<input type="text" class="eqLogicAttr form-control" data-l1key="name" placeholder="{{Nom de l'équipement}}" />
 								</div>
-								<div class="form-group">
-									<label class="col-sm-3 control-label">{{Objet parent}}</label>
-									<div class="col-sm-5">
-										<select id="sel_object" class="eqLogicAttr form-control" data-l1key="object_id">
-											<option value="">{{Aucun}}</option>
-											<?php
-											$options = '';
-											foreach ((jeeObject::buildTree(null, false)) as $object) {
-												$options .= '<option value="' . $object->getId() . '">' . str_repeat('&nbsp;&nbsp;', $object->getConfiguration('parentNumber')) . $object->getName() . '</option>';
-											}
-											echo $options;
-											?>
-										</select>
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="col-sm-3 control-label">{{Catégorie}}</label>
-									<div class="col-sm-8">
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{{Objet parent}}</label>
+								<div class="col-sm-6">
+									<select id="sel_object" class="eqLogicAttr form-control" data-l1key="object_id">
+										<option value="">{{Aucun}}</option>
 										<?php
-										foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
-											echo '<label class="checkbox-inline">';
-											echo '<input type="checkbox" class="eqLogicAttr" data-l1key="category" data-l2key="' . $key . '" />' . $value['name'];
-											echo '</label>';
+										$options = '';
+										foreach ((jeeObject::buildTree(null, false)) as $object) {
+											$options .= '<option value="' . $object->getId() . '">' . str_repeat('&nbsp;&nbsp;', $object->getConfiguration('parentNumber')) . $object->getName() . '</option>';
 										}
+										echo $options;
 										?>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{{Catégorie}}</label>
+								<div class="col-sm-8">
+									<?php
+									foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
+										echo '<label class="checkbox-inline">';
+										echo '<input type="checkbox" class="eqLogicAttr" data-l1key="category" data-l2key="' . $key . '" />' . $value['name'];
+										echo '</label>';
+									}
+									?>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label"></label>
+								<div class="col-sm-6">
+									<label class="checkbox-inline"><input type="checkbox" class="eqLogicAttr" data-l1key="isEnable" checked />{{Activer}}</label>
+									<label class="checkbox-inline"><input type="checkbox" class="eqLogicAttr" data-l1key="isVisible" checked />{{Visible}}</label>
+								</div>
+							</div>
+
+							<legend><i class="fas fa-cogs"></i> {{Paramètres spécifiques}}</legend>
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{{Mode d'envoi}}</label>
+								<div class="col-sm-6">
+									<select class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='sendMode'>
+										<option value='smtp'>SMTP</option>
+										<option value='sendmail'>Sendmail</option>
+										<option value='qmail'>Qmail</option>
+										<option value='mail'>Mail() [PHP fonction]</option>
+										<option value='jeedomCloud'>Jeedom cloud</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group sendMode mail qmail sendmail smtp">
+								<label class="col-sm-4 control-label">{{Nom expéditeur}}</label>
+								<div class="col-sm-6">
+									<input type="text" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='fromName' />
+								</div>
+							</div>
+							<div class="form-group sendMode mail qmail sendmail smtp">
+								<label class="col-sm-4 control-label">{{Mail expéditeur}}</label>
+								<div class="col-sm-6">
+									<input type="text" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='fromMail' />
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<legend><i class="fas fa-info"></i> {{Informations}}</legend>
+							<div class='sendMode jeedomCloud' style="display: none;">
+								<div class="alert alert-danger">{{Attention il y a une limite de 5 mails par jour (cette limite est succeptible de varier à l'avenir)}}</div>
+							</div>
+							<div class='sendMode sendmail' style="display: none;">
+								<div class="alert alert-danger">{{Attention cette option nécessite d'avoir correctement configurer le système (OS).}}</div>
+							</div>
+							<div class='sendMode mail' style="display: none;">
+								<div class="alert alert-danger">{{Attention cette option nécessite d'avoir correctement configurer le système (OS).}}</div>
+							</div>
+							<div class='sendMode qmail' style="display: none;">
+								<div class="alert alert-danger">{{Attention cette option nécessite d'avoir correctement configurer le système (OS).}}</div>
+							</div>
+							<div class='sendMode smtp' style="display: none;">
+								<div class="form-group">
+									<label class="col-sm-2 control-label">{{Serveur SMTP}}</label>
+									<div class="col-sm-8">
+										<input type="text" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::server' />
 									</div>
 								</div>
 								<div class="form-group">
-									<label class="col-sm-3 control-label"></label>
-									<div class="col-sm-9">
-										<label class="checkbox-inline"><input type="checkbox" class="eqLogicAttr" data-l1key="isEnable" checked />{{Activer}}</label>
-										<label class="checkbox-inline"><input type="checkbox" class="eqLogicAttr" data-l1key="isVisible" checked />{{Visible}}</label>
+									<label class="col-sm-2 control-label">{{Port SMTP}}</label>
+									<div class="col-sm-8">
+										<input type="text" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::port' />
 									</div>
 								</div>
-								<br />
 								<div class="form-group">
-									<label class="col-sm-3 control-label">{{Mode d'envoi}}</label>
-									<div class="col-sm-5">
-										<select class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='sendMode'>
-											<option value='smtp'>SMTP</option>
-											<option value='sendmail'>Sendmail</option>
-											<option value='qmail'>Qmail</option>
-											<option value='mail'>Mail() [PHP fonction]</option>
-											<option value='jeedomCloud'>Jeedom cloud</option>
+									<label class="col-sm-2 control-label">{{Securité SMTP}}</label>
+									<div class="col-sm-8">
+										<select class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::security'>
+											<option value=''>{{Aucune}}</option>
+											<option value='tls'>TLS</option>
+											<option value='ssl'>SSL</option>
 										</select>
 									</div>
 								</div>
-								<div class="form-group sendMode mail qmail sendmail smtp">
-									<label class="col-sm-3 control-label">{{Nom expéditeur}}</label>
-									<div class="col-sm-5">
-										<input type="text" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='fromName' />
+								<div class="form-group">
+									<label class="col-sm-2 control-label">{{Utilisateur SMTP}}</label>
+									<div class="col-sm-8">
+										<input type="text" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::username' />
 									</div>
 								</div>
-								<div class="form-group sendMode mail qmail sendmail smtp">
-									<label class="col-sm-3 control-label">{{Mail expéditeur}}</label>
-									<div class="col-sm-5">
-										<input type="text" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='fromMail' />
+								<div class="form-group">
+									<label class="col-sm-2 control-label">{{Mot de passe SMTP}}</label>
+									<div class="col-sm-8">
+										<input type="password" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::password' />
 									</div>
 								</div>
-							</fieldset>
-						</form>
-					</div>
-					<div class="col-sm-5">
-						<form class="form-horizontal">
-							<fieldset>
-								<div class='sendMode jeedomCloud' style="display: none;">
-									<div class="alert alert-danger">{{Attention il y a une limite de 5 mails par jour (cette limite est succeptible de varier à l'avenir)}}</div>
-								</div>
-								<div class='sendMode sendmail' style="display: none;">
-									<div class="alert alert-danger">{{Attention cette option nécessite d'avoir correctement configurer le système (OS).}}</div>
-								</div>
-								<div class='sendMode mail' style="display: none;">
-									<div class="alert alert-danger">{{Attention cette option nécessite d'avoir correctement configurer le système (OS).}}</div>
-								</div>
-								<div class='sendMode qmail' style="display: none;">
-									<div class="alert alert-danger">{{Attention cette option nécessite d'avoir correctement configurer le système (OS).}}</div>
-								</div>
-								<div class='sendMode smtp' style="display: none;">
-									<div class="form-group">
-										<label class="col-sm-2 control-label">{{Serveur SMTP}}</label>
-										<div class="col-sm-8">
-											<input type="text" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::server' />
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="col-sm-2 control-label">{{Port SMTP}}</label>
-										<div class="col-sm-8">
-											<input type="text" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::port' />
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="col-sm-2 control-label">{{Securité SMTP}}</label>
-										<div class="col-sm-8">
-											<select class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::security'>
-												<option value=''>{{Aucune}}</option>
-												<option value='tls'>TLS</option>
-												<option value='ssl'>SSL</option>
-											</select>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="col-sm-2 control-label">{{Utilisateur SMTP}}</label>
-										<div class="col-sm-8">
-											<input type="text" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::username' />
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="col-sm-2 control-label">{{Mot de passe SMTP}}</label>
-										<div class="col-sm-8">
-											<input type="password" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::password' />
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="col-sm-2 control-label"></label>
-										<div class="col-sm-6">
-											<label class="control-label"><input type="checkbox" class="eqLogicAttr" data-l1key='configuration' data-l2key='smtp::dontcheckssl' />{{Ne pas verifier le certificat SSL}}</label>
-										</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label"></label>
+									<div class="col-sm-6">
+										<label class="control-label"><input type="checkbox" class="eqLogicAttr" data-l1key='configuration' data-l2key='smtp::dontcheckssl' />{{Ne pas verifier le certificat SSL}}</label>
 									</div>
 								</div>
-							</fieldset>
-						</form>
-					</div>
-				</div>
+							</div>
+
+						</div>
+					</fieldset>
+				</form>
 			</div>
 			<div role="tabpanel" class="tab-pane" id="commandtab">
 				<a class="btn btn-default btn-sm pull-right cmdAction" data-action="add" style="margin-top:5px;"><i class="fas fa-plus-circle"></i> {{Ajouter une commande mail}}</a>
@@ -207,9 +203,9 @@ $eqLogics = eqLogic::byType($plugin->getId());
 				<table id="table_cmd" class="table table-bordered table-condensed">
 					<thead>
 						<tr>
-							<th style="width: 550px;">{{Nom}}</th>
-							<th style="width: 550px;">{{Email}}</th>
-							<th style="width: 130px"></th>
+							<th style="min-width:200px;width:350px;">{{Nom}}</th>
+							<th>{{Email}}</th>
+							<th style="width:130px;">{{Actions}}</th>
 						</tr>
 					</thead>
 					<tbody>

@@ -34,7 +34,7 @@
         "Aucune": "Aucune",
         "Utilisateur SMTP": "Utilisateur SMTP",
         "Mot de passe SMTP": "Mot de passe SMTP",
-        "Ne pas verifier le certificat SSL": "Ne pas verifier le certificat SSL",
+        "Ne pas vérifier le certificat SSL": "Ne pas vérifier le certificat SSL",
         "Ajouter une commande mail": "Ajouter une commande mail",
         "Nom": "Nom",
         "Email": "Email",
@@ -44,10 +44,10 @@
         "Tester": "Tester"
     },
     "plugins\/mail\/core\/class\/mail.class.php": {
-        "L\\'adresse mail ne peut etre vide": "L\\'adresse mail ne peut etre vide",
+        "L\\'adresse mail ne peut être vide": "L\\'adresse mail ne peut être vide",
         "L\\'adresse mail n\\'est pas valide": "L\\'adresse mail n\\'est pas valide",
-        "[Mail] Les options de la fonction ne peuvent etre null": "[Mail] Les options de la fonction ne peuvent etre null",
-        "[Mail] Le message et le sujet ne peuvent être vide": "[Mail] Le message et le sujet ne peuvent être vide",
+        "[Mail] Les options de la fonction ne peuvent être null": "[Mail] Les options de la fonction ne peuvent être null",
+        "[Mail] Le message et le sujet ne peuvent être vides": "[Mail] Le message et le sujet ne peuvent être vides",
         "[Jeedom] - Notification": "[Jeedom] - Notification",
         "Erreur sur l\\'envoi du mail : ": "Erreur sur l\\'envoi du mail : ",
         "Mode d\\'envoi non reconnu": "Mode d\\'envoi non reconnu"

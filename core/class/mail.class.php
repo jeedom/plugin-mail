@@ -18,51 +18,85 @@
 
 /* * ***************************Includes********************************* */
 require_once dirname(__FILE__) . '/../../../../core/php/core.inc.php';
-include_file('3rdparty', 'PHPMailer/PHPMailerAutoload', 'php','mail');
+include_file('3rdparty', 'PHPMailer/PHPMailerAutoload', 'php', 'mail');
 
 class mail extends eqLogic {
-	
+
+	public function postSave() {
+		$customNumber = $this->getCmd(null, 'send_to_custom_email');
+		if (!is_object($customNumber)) {
+			$customNumber = new mailCmd();
+			$customNumber->setEqLogic_id($this->getId());
+			$customNumber->setLogicalId('send_to_custom_email');
+			$customNumber->setIsVisible(0);
+			$customNumber->setName(__('Envoyer email à', __FILE__));
+			$customNumber->setType('action');
+			$customNumber->setSubType('message');
+			$customNumber->setDisplay('cmd_with_recipient', '1');
+			$customNumber->save();
+		}
+	}
 }
 
 class mailCmd extends cmd {
 	/*     * *************************Attributs****************************** */
-	
+
 	/*     * ***********************Methode static*************************** */
-	
+
 	/*     * *********************Methode d'instance************************* */
-	
+
 	public function preSave() {
+		if ($this->getLogicalId() == 'send_to_custom_email') return;
+
 		$this->setType('action');
 		$this->setSubType('message');
 		if ($this->getConfiguration('recipient') == '') {
 			throw new Exception(__('L\'adresse mail ne peut etre vide', __FILE__));
 		}
 		$bValid = true;
-		foreach(explode(',', $this->getConfiguration('recipient')) AS $sEmailAddress){
+		foreach (explode(',', $this->getConfiguration('recipient')) as $sEmailAddress) {
 			$bValid = ($bValid && filter_var(trim($sEmailAddress), FILTER_VALIDATE_EMAIL));
 		}
 		if ($bValid == false) {
 			throw new Exception(__('L\'adresse mail n\'est pas valide', __FILE__));
 		}
 	}
-	
+
+	public function getWidgetTemplateCode($_version = 'dashboard', $_clean = true, $_widgetName = '') {
+
+		if ($_version != 'scenario') return parent::getWidgetTemplateCode($_version, $_clean, $_widgetName);
+
+		if ($this->getDisplay('cmd_with_recipient', '') != 1) return parent::getWidgetTemplateCode($_version, $_clean, $_widgetName);
+
+		$template = getTemplate('core', $_version, 'cmd.action.message_with_recipient', 'mail');
+
+		if (!empty($template)) {
+			if (version_compare(jeedom::version(), '4.2.0', '>=')) {
+				if (!is_array($template)) return array('template' => $template, 'isCoreWidget' => false);
+			} else {
+				return $template;
+			}
+		}
+		return parent::getWidgetTemplateCode($_version, $_clean, $_widgetName);
+	}
+
 	public function execute($_options = null) {
 		$eqLogic = $this->getEqLogic();
 		if ($_options === null) {
 			throw new Exception(__('[Mail] Les options de la fonction ne peuvent etre null', __FILE__));
 		}
-		
+
 		if ($_options['message'] == '' && $_options['title'] == '') {
 			throw new Exception(__('[Mail] Le message et le sujet ne peuvent être vide', __FILE__));
 			return false;
 		}
-		
+
 		if ($_options['title'] == '') {
 			$_options['title'] = __('[Jeedom] - Notification', __FILE__);
 		}
-		if($eqLogic->getConfiguration('sendMode', 'mail') == 'jeedomCloud'){
+		if ($eqLogic->getConfiguration('sendMode', 'mail') == 'jeedomCloud') {
 			$data = array(
-				'to' => $this->getConfiguration('recipient'),
+				'to' => $_options['recipient'] ?? $this->getConfiguration('recipient'),
 				'subject' => $_options['title'],
 				'text' => $_options['message'],
 				'html' => $_options['message']
@@ -76,54 +110,54 @@ class mailCmd extends cmd {
 					);
 				}
 			}
-			$url = config::byKey('service::cloud::url').'/service/mail';
+			$url = config::byKey('service::cloud::url') . '/service/mail';
 			$request_http = new com_http($url);
-			$request_http->setHeader(array('Content-Type: application/json','Autorization: '.sha512(mb_strtolower(config::byKey('market::username')).':'.config::byKey('market::password'))));
+			$request_http->setHeader(array('Content-Type: application/json', 'Autorization: ' . sha512(mb_strtolower(config::byKey('market::username')) . ':' . config::byKey('market::password'))));
 			$request_http->setPost(json_encode($data));
-			$datas = json_decode($request_http->exec(30,1),true);
-			if($datas['state'] != 'ok'){
-				throw new \Exception(__('Erreur sur l\'envoi du mail : ',__FILE__).json_encode($datas));
+			$datas = json_decode($request_http->exec(30, 1), true);
+			if ($datas['state'] != 'ok') {
+				throw new \Exception(__('Erreur sur l\'envoi du mail : ', __FILE__) . json_encode($datas));
 			}
 			return;
 		}
-		
+
 		$mail = new PHPMailer(true); //PHPMailer instance with exceptions enabled
 		$mail->CharSet = 'utf-8';
 		$mail->SMTPDebug = 0;
 		switch ($eqLogic->getConfiguration('sendMode', 'mail')) {
 			case 'smtp':
-			$mail->isSMTP();
-			$mail->Host = $eqLogic->getConfiguration('smtp::server');
-			$mail->Port = (integer) $eqLogic->getConfiguration('smtp::port');
-			if ($eqLogic->getConfiguration('smtp::security', '') != '' && $eqLogic->getConfiguration('smtp::security', '') != 'none') {
-				$mail->SMTPSecure = $eqLogic->getConfiguration('smtp::security', '');
-			}
-			if ($eqLogic->getConfiguration('smtp::username') != '') {
-				$mail->SMTPAuth = true;
-				$mail->Username = $eqLogic->getConfiguration('smtp::username'); // SMTP account username
-				$mail->Password = $eqLogic->getConfiguration('smtp::password'); // SMTP account password
-			}
-			if ($eqLogic->getConfiguration('smtp::dontcheckssl', 0) == 1) {
-				$mail->SMTPOptions = array(
-					'ssl' => array(
-						'verify_peer' => false,
-						'verify_peer_name' => false,
-						'allow_self_signed' => true,
-					),
-				);
-			}
-			break;
+				$mail->isSMTP();
+				$mail->Host = $eqLogic->getConfiguration('smtp::server');
+				$mail->Port = (int) $eqLogic->getConfiguration('smtp::port');
+				if ($eqLogic->getConfiguration('smtp::security', '') != '' && $eqLogic->getConfiguration('smtp::security', '') != 'none') {
+					$mail->SMTPSecure = $eqLogic->getConfiguration('smtp::security', '');
+				}
+				if ($eqLogic->getConfiguration('smtp::username') != '') {
+					$mail->SMTPAuth = true;
+					$mail->Username = $eqLogic->getConfiguration('smtp::username'); // SMTP account username
+					$mail->Password = $eqLogic->getConfiguration('smtp::password'); // SMTP account password
+				}
+				if ($eqLogic->getConfiguration('smtp::dontcheckssl', 0) == 1) {
+					$mail->SMTPOptions = array(
+						'ssl' => array(
+							'verify_peer' => false,
+							'verify_peer_name' => false,
+							'allow_self_signed' => true,
+						),
+					);
+				}
+				break;
 			case 'mail':
-			$mail->isMail();
-			break;
+				$mail->isMail();
+				break;
 			case 'sendmail':
-			$mail->isSendmail();
-			break;
+				$mail->isSendmail();
+				break;
 			case 'qmail':
-			$mail->isQmail();
-			break;
+				$mail->isQmail();
+				break;
 			default:
-			throw new Exception(__('Mode d\'envoi non reconnu', __FILE__));
+				throw new Exception(__('Mode d\'envoi non reconnu', __FILE__));
 		}
 		if ($eqLogic->getConfiguration('fromName') != '') {
 			$mail->addReplyTo($eqLogic->getConfiguration('fromMail'), $eqLogic->getConfiguration('fromName'));
@@ -134,7 +168,8 @@ class mailCmd extends cmd {
 		}
 		$mail->From = $eqLogic->getConfiguration('fromMail');
 		$mail->isHTML(true);
-		foreach(explode(',', $this->getConfiguration('recipient')) AS $sEmailAddress){
+		$recipientsArr =  $_options['recipient'] ?? $this->getConfiguration('recipient');
+		foreach (explode(',', $recipientsArr) as $sEmailAddress) {
 			$mail->AddAddress(trim($sEmailAddress));
 		}
 		$mail->Subject = $_options['title'];
@@ -147,6 +182,6 @@ class mailCmd extends cmd {
 		}
 		return $mail->send();
 	}
-	
+
 	/*     * **********************Getteur Setteur*************************** */
 }

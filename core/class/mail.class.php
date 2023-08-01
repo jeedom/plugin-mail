@@ -23,17 +23,17 @@ include_file('3rdparty', 'PHPMailer/PHPMailerAutoload', 'php', 'mail');
 class mail extends eqLogic {
 
 	public function postSave() {
-		$customNumber = $this->getCmd(null, 'send_to_custom_email');
-		if (!is_object($customNumber)) {
-			$customNumber = new mailCmd();
-			$customNumber->setEqLogic_id($this->getId());
-			$customNumber->setLogicalId('send_to_custom_email');
-			$customNumber->setIsVisible(0);
-			$customNumber->setName(__('Envoyer email à', __FILE__));
-			$customNumber->setType('action');
-			$customNumber->setSubType('message');
-			$customNumber->setDisplay('cmd_with_recipient', '1');
-			$customNumber->save();
+		$customEmail = $this->getCmd(null, 'send_to_custom_email');
+		if (!is_object($customEmail)) {
+			$customEmail = new mailCmd();
+			$customEmail->setEqLogic_id($this->getId());
+			$customEmail->setLogicalId('send_to_custom_email');
+			$customEmail->setIsVisible(0);
+			$customEmail->setName(__('Envoyer email à', __FILE__));
+			$customEmail->setType('action');
+			$customEmail->setSubType('message');
+			$customEmail->setDisplay('cmd_with_recipient', '1');
+			$customEmail->save();
 		}
 	}
 }

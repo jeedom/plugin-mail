@@ -35,7 +35,7 @@ class mailCmd extends cmd {
 		$this->setType('action');
 		$this->setSubType('message');
 		if ($this->getConfiguration('recipient') == '') {
-			throw new Exception(__('L\'adresse mail ne peut etre vide', __FILE__));
+			throw new Exception(__('L\'adresse mail ne peut être vide', __FILE__));
 		}
 		$bValid = true;
 		foreach(explode(',', $this->getConfiguration('recipient')) AS $sEmailAddress){
@@ -49,11 +49,11 @@ class mailCmd extends cmd {
 	public function execute($_options = null) {
 		$eqLogic = $this->getEqLogic();
 		if ($_options === null) {
-			throw new Exception(__('[Mail] Les options de la fonction ne peuvent etre null', __FILE__));
+			throw new Exception(__('[Mail] Les options de la fonction ne peuvent être null', __FILE__));
 		}
 		
 		if ($_options['message'] == '' && $_options['title'] == '') {
-			throw new Exception(__('[Mail] Le message et le sujet ne peuvent être vide', __FILE__));
+			throw new Exception(__('[Mail] Le message et le sujet ne peuvent être vides', __FILE__));
 			return false;
 		}
 		

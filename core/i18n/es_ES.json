@@ -27,14 +27,14 @@
         "Mail expéditeur": "Remitente de correo",
         "Informations": "Información",
         "Attention il y a une limite de 5 mails par jour (cette limite est succeptible de varier à l'avenir)": "Tenga en cuenta que hay un límite de 5 correos electrónicos por día (este límite puede variar en el futuro)",
-        "Attention cette option nécessite d'avoir correctement configurer le système (OS).": "Atención esta opción requiere tener configurado correctamente el sistema (SO)",
+        "Attention cette option nécessite d'avoir correctement configuré le système (OS).": "Tenga en cuenta que esta opción requiere que haya configurado correctamente el sistema (SO)",
         "Serveur SMTP": "Servidor SMTP",
         "Port SMTP": "Puerto SMTP",
-        "Securité SMTP": "Seguridad SMTP",
+        "Sécurité SMTP": "Seguridad SMTP",
         "Aucune": "Ninguna",
         "Utilisateur SMTP": "Usuario SMTP",
         "Mot de passe SMTP": "Contraseña SMTP",
-        "Ne pas verifier le certificat SSL": "No verifique el certificado SSL",
+        "Ne pas vérifier le certificat SSL": "No verifique el certificado SSL",
         "Ajouter une commande mail": "Agregar un pedido por correo",
         "Nom": "Nombre",
         "Email": "E-mail",
@@ -44,13 +44,17 @@
         "Tester": "Probar"
     },
     "plugins\/mail\/core\/class\/mail.class.php": {
-        "L\\'adresse mail ne peut etre vide": "La dirección de correo electrónico no puede estar vacía",
+        "Envoyer email à": "Enviar el email a",
+        "L\\'adresse mail ne peut être vide": "La dirección de correo electrónico no puede estar vacía",
         "L\\'adresse mail n\\'est pas valide": "La dirección de correo electrónico no es válida",
-        "[Mail] Les options de la fonction ne peuvent etre null": "[Correo] Las opciones de la función no pueden ser nulas",
-        "[Mail] Le message et le sujet ne peuvent être vide": "[Correo] El mensaje y el asunto no pueden estar vacíos",
+        "[Mail] Les options de la fonction ne peuvent être null": "[Correo] Las opciones de la función no pueden ser nulas",
+        "[Mail] Le message et le sujet ne peuvent être vides": "[Correo] El mensaje y el asunto no pueden estar vacíos",
         "[Jeedom] - Notification": "[Jeedom] - Notificación",
         "Erreur sur l\\'envoi du mail : ": "Error al enviar el correo electrónico:",
         "Mode d\\'envoi non reconnu": "Método de envío no reconocido"
+    },
+    "plugins\/mail\/core\/template\/scenario\/cmd.action.message_with_recipient.html": {
+        "Sélectionner la commande": "Elije el orden"
     },
     "info.json": {
         "Ce plugin permet d'envoyer des e-mails depuis Jeedom. Cela permet de vous notifier directement par mail lors d'une alerte ou tout simplement pour un bilan journalier. Vous pouvez définir autant de destinataires que vous voulez, cela est utile pour envoyer des rapports personnalisés ou cibler les alertes pour tel ou tel destinataire.": "Este complemento le permite enviar correos electrónicos desde Jeedom. Esto le permite notificarle directamente por correo electrónico durante una alerta o simplemente para un informe diario. Puede definir tantos destinatarios como desee, esto es útil para enviar informes personalizados o alertas de orientación para un destinatario en particular"

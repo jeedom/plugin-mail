@@ -27,14 +27,14 @@
         "Mail expéditeur": "Mail-Absender",
         "Informations": "Information",
         "Attention il y a une limite de 5 mails par jour (cette limite est succeptible de varier à l'avenir)": "Bitte beachten Sie, dass es ein Limit von 5 E-Mails pro Tag gibt (dieses Limit kann in Zukunft variieren)",
-        "Attention cette option nécessite d'avoir correctement configurer le système (OS).": "Achtung Für diese Option muss das System (OS) korrekt konfiguriert sein",
+        "Attention cette option nécessite d'avoir correctement configuré le système (OS).": "Bitte beachten Sie, dass für diese Option eine korrekte Konfiguration des Systems (Betriebssystems) erforderlich ist",
         "Serveur SMTP": "SMTP-Server",
         "Port SMTP": "SMTP-Port",
-        "Securité SMTP": "SMTP-Sicherheit",
+        "Sécurité SMTP": "SMTP-Sicherheit",
         "Aucune": "Keine",
         "Utilisateur SMTP": "SMTP-Benutzer",
         "Mot de passe SMTP": "SMTP-Passwort",
-        "Ne pas verifier le certificat SSL": "Überprüfen Sie nicht das SSL-Zertifikat",
+        "Ne pas vérifier le certificat SSL": "Überprüfen Sie nicht das SSL-Zertifikat",
         "Ajouter une commande mail": "Fügen Sie einen Versandhandel hinzu",
         "Nom": "Name",
         "Email": "E-Mail",
@@ -44,13 +44,17 @@
         "Tester": "Test"
     },
     "plugins\/mail\/core\/class\/mail.class.php": {
-        "L\\'adresse mail ne peut etre vide": "Die E-Mail-Adresse darf nicht leer sein",
+        "Envoyer email à": "Schicke eine Email an",
+        "L\\'adresse mail ne peut être vide": "Die E-Mail-Adresse darf nicht leer sein",
         "L\\'adresse mail n\\'est pas valide": "E-Mail-Adresse ist ungültig",
-        "[Mail] Les options de la fonction ne peuvent etre null": "[Mail] Die Optionen der Funktion dürfen nicht null sein",
-        "[Mail] Le message et le sujet ne peuvent être vide": "[Mail] Nachricht und Betreff dürfen nicht leer sein",
+        "[Mail] Les options de la fonction ne peuvent être null": "[Mail] Die Optionen der Funktion dürfen nicht null sein",
+        "[Mail] Le message et le sujet ne peuvent être vides": "[Mail] Nachricht und Betreff dürfen nicht leer sein",
         "[Jeedom] - Notification": "[Jeedom] - Benachrichtigung",
         "Erreur sur l\\'envoi du mail : ": "Fehler beim Senden der E-Mail:",
         "Mode d\\'envoi non reconnu": "Nicht erkannte Versandart"
+    },
+    "plugins\/mail\/core\/template\/scenario\/cmd.action.message_with_recipient.html": {
+        "Sélectionner la commande": "Bestellung auswählen"
     },
     "info.json": {
         "Ce plugin permet d'envoyer des e-mails depuis Jeedom. Cela permet de vous notifier directement par mail lors d'une alerte ou tout simplement pour un bilan journalier. Vous pouvez définir autant de destinataires que vous voulez, cela est utile pour envoyer des rapports personnalisés ou cibler les alertes pour tel ou tel destinataire.": "Mit diesem Plugin können Sie E-Mails von Jeedom senden. Auf diese Weise können Sie Sie während einer Benachrichtigung oder einfach für einen täglichen Bericht direkt per E-Mail benachrichtigen. Sie können so viele Empfänger definieren, wie Sie möchten. Dies ist nützlich, um personalisierte Berichte zu senden oder Warnungen für einen bestimmten Empfänger auszurichten"

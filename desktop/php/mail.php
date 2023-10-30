@@ -142,13 +142,13 @@ $eqLogics = eqLogic::byType($plugin->getId());
 								<div class="alert alert-danger">{{Attention il y a une limite de 5 mails par jour (cette limite est succeptible de varier à l'avenir)}}</div>
 							</div>
 							<div class='sendMode sendmail' style="display: none;">
-								<div class="alert alert-danger">{{Attention cette option nécessite d'avoir correctement configurer le système (OS).}}</div>
+								<div class="alert alert-danger">{{Attention cette option nécessite d'avoir correctement configuré le système (OS).}}</div>
 							</div>
 							<div class='sendMode mail' style="display: none;">
-								<div class="alert alert-danger">{{Attention cette option nécessite d'avoir correctement configurer le système (OS).}}</div>
+								<div class="alert alert-danger">{{Attention cette option nécessite d'avoir correctement configuré le système (OS).}}</div>
 							</div>
 							<div class='sendMode qmail' style="display: none;">
-								<div class="alert alert-danger">{{Attention cette option nécessite d'avoir correctement configurer le système (OS).}}</div>
+								<div class="alert alert-danger">{{Attention cette option nécessite d'avoir correctement configuré le système (OS).}}</div>
 							</div>
 							<div class='sendMode smtp' style="display: none;">
 								<div class="form-group">
@@ -164,7 +164,7 @@ $eqLogics = eqLogic::byType($plugin->getId());
 									</div>
 								</div>
 								<div class="form-group">
-									<label class="col-sm-2 control-label">{{Securité SMTP}}</label>
+									<label class="col-sm-2 control-label">{{Sécurité SMTP}}</label>
 									<div class="col-sm-8">
 										<select class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::security'>
 											<option value=''>{{Aucune}}</option>
@@ -188,7 +188,7 @@ $eqLogics = eqLogic::byType($plugin->getId());
 								<div class="form-group">
 									<label class="col-sm-2 control-label"></label>
 									<div class="col-sm-6">
-										<label class="control-label"><input type="checkbox" class="eqLogicAttr" data-l1key='configuration' data-l2key='smtp::dontcheckssl' />{{Ne pas verifier le certificat SSL}}</label>
+										<label class="control-label"><input type="checkbox" class="eqLogicAttr" data-l1key='configuration' data-l2key='smtp::dontcheckssl' />{{Ne pas vérifier le certificat SSL}}</label>
 									</div>
 								</div>
 							</div>

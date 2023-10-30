@@ -18,7 +18,14 @@
 
 /* * ***************************Includes********************************* */
 require_once dirname(__FILE__) . '/../../../../core/php/core.inc.php';
-include_file('3rdparty', 'PHPMailer/PHPMailerAutoload', 'php', 'mail');
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require_once dirname(__FILE__) . '/../../3rdparty/PHPMailer/src/Exception.php';
+require_once dirname(__FILE__) . '/../../3rdparty/PHPMailer/src/PHPMailer.php';
+require_once dirname(__FILE__) . '/../../3rdparty/PHPMailer/src/SMTP.php';
+
 
 class mail extends eqLogic {
 

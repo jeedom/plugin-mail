@@ -4,45 +4,59 @@
         "Gestion": "Gestão",
         "Ajouter": "Adicionar",
         "Mes mails": "Meus e-mails",
+        "Aucun équipement trouvé, cliquer sur \"Ajouter\" pour commencer": "Nenhum equipamento encontrado, clique em \"Adicionar\" para iniciar",
         "Rechercher": "Pesquisa",
+        "Equipement visible": "Equipamento visível",
+        "Equipement non visible": "Equipamento não visível",
         "Configuration avancée": "Configuração avançada",
         "Dupliquer": "Duplicar",
         "Sauvegarder": "Salvar",
         "Supprimer": "Remover",
         "Equipement": "Equipamento",
         "Commandes": "Comandos",
-        "Nom de l'équipement mail": "Nome do equipamento de correio",
+        "Paramètres généraux": "Configurações Gerais",
+        "Nom de l'équipement": "Nome do equipamento",
         "Objet parent": "Objeto pai",
         "Aucun": "Nemhum",
         "Catégorie": "Categoria",
         "Activer": "Ativar",
         "Visible": "Visivél",
+        "Paramètres spécifiques": "Parâmetros específicos",
+        "Mode d'envoi": "Método de envio",
         "Nom expéditeur": "Nome do remetente",
         "Mail expéditeur": "Remetente do correio",
-        "Mode d'envoi": "Método de envio",
+        "Informations": "Em formação",
+        "Attention il y a une limite de 5 mails par jour (cette limite est succeptible de varier à l'avenir)": "Observe que há um limite de 5 e-mails por dia (esse limite pode variar no futuro)",
+        "Attention cette option nécessite d'avoir correctement configuré le système (OS).": "Observe que esta opção requer que você tenha configurado corretamente o sistema (SO)",
         "Serveur SMTP": "Servidor SMTP",
         "Port SMTP": "Porta SMTP",
-        "Securité SMTP": "Segurança SMTP",
+        "Sécurité SMTP": "Segurança SMTP",
         "Aucune": "Não",
         "Utilisateur SMTP": "Usuário SMTP",
         "Mot de passe SMTP": "Senha SMTP",
-        "Ne pas verifier le certificat SSL": "Não verifique o certificado SSL",
+        "Ne pas vérifier le certificat SSL": "Não verifique o certificado SSL",
         "Ajouter une commande mail": "Adicionar um pedido de correio",
         "Nom": "Nome",
-        "Email": "E-mail"
+        "Email": "E-mail",
+        "Actions": "Ações"
     },
     "plugins\/mail\/desktop\/js\/mail.js": {
         "Tester": "Teste"
     },
     "plugins\/mail\/core\/class\/mail.class.php": {
-        "L\\'adresse mail ne peut etre vide": "O endereço de email não pode estar vazio",
+        "Envoyer email à": "Enviar um email a",
+        "L\\'adresse mail ne peut être vide": "O endereço de email não pode estar vazio",
         "L\\'adresse mail n\\'est pas valide": "O endereço de email não é válido",
-        "[Mail] Les options de la fonction ne peuvent etre null": "[Mail] As opções da função não podem ser nulas",
-        "[Mail] Le message et le sujet ne peuvent être vide": "[Mail] Mensagem e assunto não podem estar vazios",
+        "[Mail] Les options de la fonction ne peuvent être null": "[Mail] As opções da função não podem ser nulas",
+        "[Mail] Le message et le sujet ne peuvent être vides": "[Mail] Mensagem e assunto não podem ficar vazios",
         "[Jeedom] - Notification": "[Jeedom] - Notificação",
+        "Erreur sur l\\'envoi du mail : ": "Erro ao enviar e-mail:",
         "Mode d\\'envoi non reconnu": "Método de envio não reconhecido"
     },
+    "plugins\/mail\/core\/template\/scenario\/cmd.action.message_with_recipient.html": {
+        "Sélectionner la commande": "Selecione o pedido"
+    },
     "info.json": {
-        "Plugin pour envoyer des mails": "Plug-in para enviar e-mails"
+        "Ce plugin permet d'envoyer des e-mails depuis Jeedom. Cela permet de vous notifier directement par mail lors d'une alerte ou tout simplement pour un bilan journalier. Vous pouvez définir autant de destinataires que vous voulez, cela est utile pour envoyer des rapports personnalisés ou cibler les alertes pour tel ou tel destinataire.": "Este plugin permite enviar e-mails do Jeedom. Isso permite que você o notifique diretamente por e-mail durante um alerta ou simplesmente para um relatório diário. Você pode definir quantos destinatários quiser; isso é útil para enviar relatórios personalizados ou alertas de direcionamento para um destinatário específico"
     }
 }

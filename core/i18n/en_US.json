@@ -4,45 +4,59 @@
         "Gestion": "Management",
         "Ajouter": "Add",
         "Mes mails": "My emails",
+        "Aucun équipement trouvé, cliquer sur \"Ajouter\" pour commencer": "No equipment found, click \"Add\" to start",
         "Rechercher": "Search",
+        "Equipement visible": "Visible equipment",
+        "Equipement non visible": "Equipment not visible",
         "Configuration avancée": "Advanced configuration",
         "Dupliquer": "Duplicate",
         "Sauvegarder": "Save",
         "Supprimer": "Delete",
         "Equipement": "Equipment",
         "Commandes": "Commands",
-        "Nom de l'équipement mail": "Email device name",
+        "Paramètres généraux": "General settings",
+        "Nom de l'équipement": "Equipment name",
         "Objet parent": "Parent object",
         "Aucun": "None",
         "Catégorie": "Category",
-        "Activer": "Activate",
+        "Activer": "Active",
         "Visible": "Visible",
+        "Paramètres spécifiques": "Specific parameters",
+        "Mode d'envoi": "Send mode",
         "Nom expéditeur": "Sender name",
         "Mail expéditeur": "Sender email",
-        "Mode d'envoi": "Send mode",
+        "Informations": "Information",
+        "Attention il y a une limite de 5 mails par jour (cette limite est succeptible de varier à l'avenir)": "Please note there is a limit of 5 emails per day (this limit may vary in the future)",
+        "Attention cette option nécessite d'avoir correctement configuré le système (OS).": "Please note, this option requires you to have correctly configured the system (OS)",
         "Serveur SMTP": "SMTP server",
         "Port SMTP": "SMTP port",
-        "Securité SMTP": "SMTP security",
+        "Sécurité SMTP": "SMTP security",
         "Aucune": "None",
         "Utilisateur SMTP": "SMTP user",
         "Mot de passe SMTP": "SMTP password",
-        "Ne pas verifier le certificat SSL": "Do not check SSL certificate",
+        "Ne pas vérifier le certificat SSL": "Do not check SSL certificate",
         "Ajouter une commande mail": "Add an email command",
         "Nom": "Name",
-        "Email": "E-mail"
+        "Email": "E-mail",
+        "Actions": "Shares"
     },
     "plugins\/mail\/desktop\/js\/mail.js": {
         "Tester": "Test"
     },
     "plugins\/mail\/core\/class\/mail.class.php": {
-        "L\\'adresse mail ne peut etre vide": "Email address cannot be empty",
+        "Envoyer email à": "Send email to",
+        "L\\'adresse mail ne peut être vide": "Email address cannot be empty",
         "L\\'adresse mail n\\'est pas valide": "Email address is not empty",
-        "[Mail] Les options de la fonction ne peuvent etre null": "[Mail] Function options cannot be null",
-        "[Mail] Le message et le sujet ne peuvent être vide": "[Mail] Message and subject cannot be empty",
+        "[Mail] Les options de la fonction ne peuvent être null": "[Mail] Function options cannot be null",
+        "[Mail] Le message et le sujet ne peuvent être vides": "[Mail] Message and subject cannot be empty",
         "[Jeedom] - Notification": "[Jeedom] - Notification",
+        "Erreur sur l\\'envoi du mail : ": "Error sending email:",
         "Mode d\\'envoi non reconnu": "Unrecognized shipping method"
     },
+    "plugins\/mail\/core\/template\/scenario\/cmd.action.message_with_recipient.html": {
+        "Sélectionner la commande": "Select order"
+    },
     "info.json": {
-        "Plugin pour envoyer des mails": "Plugin to send emails"
+        "Ce plugin permet d'envoyer des e-mails depuis Jeedom. Cela permet de vous notifier directement par mail lors d'une alerte ou tout simplement pour un bilan journalier. Vous pouvez définir autant de destinataires que vous voulez, cela est utile pour envoyer des rapports personnalisés ou cibler les alertes pour tel ou tel destinataire.": "This plugin allows you to send e-mails from Jeedom. This allows you to notify you directly by email during an alert or simply for a daily report. You can define as many recipients as you want, this is useful for sending personalized reports or targeting alerts for a particular recipient"
     }
 }

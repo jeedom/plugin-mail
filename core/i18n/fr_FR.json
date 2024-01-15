@@ -4,45 +4,59 @@
         "Gestion": "Gestion",
         "Ajouter": "Ajouter",
         "Mes mails": "Mes mails",
+        "Aucun équipement trouvé, cliquer sur \"Ajouter\" pour commencer": "Aucun équipement trouvé, cliquer sur \"Ajouter\" pour commencer",
         "Rechercher": "Rechercher",
+        "Equipement visible": "Equipement visible",
+        "Equipement non visible": "Equipement non visible",
         "Configuration avancée": "Configuration avancée",
         "Dupliquer": "Dupliquer",
         "Sauvegarder": "Sauvegarder",
         "Supprimer": "Supprimer",
         "Equipement": "Equipement",
         "Commandes": "Commandes",
-        "Nom de l'équipement mail": "Nom de l'équipement mail",
+        "Paramètres généraux": "Paramètres généraux",
+        "Nom de l'équipement": "Nom de l'équipement",
         "Objet parent": "Objet parent",
         "Aucun": "Aucun",
         "Catégorie": "Catégorie",
         "Activer": "Activer",
         "Visible": "Visible",
+        "Paramètres spécifiques": "Paramètres spécifiques",
+        "Mode d'envoi": "Mode d'envoi",
         "Nom expéditeur": "Nom expéditeur",
         "Mail expéditeur": "Mail expéditeur",
-        "Mode d'envoi": "Mode d'envoi",
+        "Informations": "Informations",
+        "Attention il y a une limite de 5 mails par jour (cette limite est succeptible de varier à l'avenir)": "Attention il y a une limite de 5 mails par jour (cette limite est succeptible de varier à l'avenir)",
+        "Attention cette option nécessite d'avoir correctement configuré le système (OS).": "Attention cette option nécessite d'avoir correctement configuré le système (OS).",
         "Serveur SMTP": "Serveur SMTP",
         "Port SMTP": "Port SMTP",
-        "Securité SMTP": "Securité SMTP",
+        "Sécurité SMTP": "Sécurité SMTP",
         "Aucune": "Aucune",
         "Utilisateur SMTP": "Utilisateur SMTP",
         "Mot de passe SMTP": "Mot de passe SMTP",
-        "Ne pas verifier le certificat SSL": "Ne pas verifier le certificat SSL",
+        "Ne pas vérifier le certificat SSL": "Ne pas vérifier le certificat SSL",
         "Ajouter une commande mail": "Ajouter une commande mail",
         "Nom": "Nom",
-        "Email": "Email"
+        "Email": "Email",
+        "Actions": "Actions"
     },
     "plugins\/mail\/desktop\/js\/mail.js": {
         "Tester": "Tester"
     },
     "plugins\/mail\/core\/class\/mail.class.php": {
-        "L\\'adresse mail ne peut etre vide": "L\\'adresse mail ne peut etre vide",
+        "Envoyer email à": "Envoyer email à",
+        "L\\'adresse mail ne peut être vide": "L\\'adresse mail ne peut être vide",
         "L\\'adresse mail n\\'est pas valide": "L\\'adresse mail n\\'est pas valide",
-        "[Mail] Les options de la fonction ne peuvent etre null": "[Mail] Les options de la fonction ne peuvent etre null",
-        "[Mail] Le message et le sujet ne peuvent être vide": "[Mail] Le message et le sujet ne peuvent être vide",
+        "[Mail] Les options de la fonction ne peuvent être null": "[Mail] Les options de la fonction ne peuvent être null",
+        "[Mail] Le message et le sujet ne peuvent être vides": "[Mail] Le message et le sujet ne peuvent être vides",
         "[Jeedom] - Notification": "[Jeedom] - Notification",
+        "Erreur sur l\\'envoi du mail : ": "Erreur sur l\\'envoi du mail : ",
         "Mode d\\'envoi non reconnu": "Mode d\\'envoi non reconnu"
     },
+    "plugins\/mail\/core\/template\/scenario\/cmd.action.message_with_recipient.html": {
+        "Sélectionner la commande": "Sélectionner la commande"
+    },
     "info.json": {
-        "Plugin pour envoyer des mails": "Plugin pour envoyer des mails"
+        "Ce plugin permet d'envoyer des e-mails depuis Jeedom. Cela permet de vous notifier directement par mail lors d'une alerte ou tout simplement pour un bilan journalier. Vous pouvez définir autant de destinataires que vous voulez, cela est utile pour envoyer des rapports personnalisés ou cibler les alertes pour tel ou tel destinataire.": "Ce plugin permet d'envoyer des e-mails depuis Jeedom. Cela permet de vous notifier directement par mail lors d'une alerte ou tout simplement pour un bilan journalier. Vous pouvez définir autant de destinataires que vous voulez, cela est utile pour envoyer des rapports personnalisés ou cibler les alertes pour tel ou tel destinataire."
     }
 }

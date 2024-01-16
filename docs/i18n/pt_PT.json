@@ -2,6 +2,10 @@
     "changelog.md": {
         "Changelog Mail": "Changelog Mail",
         "Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte": "Como lembrete, se não houver informações sobre a atualização, isso significa que se trata apenas da atualização da documentação, tradução ou texto",
+        "15\/01\/2024": "15\/01\/2024",
+        "Préparation pour jeedom 4.4": "Preparando-se para Jeedom 4.4",
+        "Meilleur support de php 8": "Melhor suporte para PHP 8",
+        "Mise à jour de la librairie de gestion des mails": "Atualizando a biblioteca de gerenciamento de e-mail",
         "18\/03\/2022": "18\/03\/2022",
         "Mise à jour de présentation de l'écran de configuration des équipements": "Apresentação atualizada da tela de configuração do equipamento",
         "06\/04\/2021": "06\/04\/2021",

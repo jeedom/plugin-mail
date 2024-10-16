@@ -139,7 +139,7 @@ $eqLogics = eqLogic::byType($plugin->getId());
 						<div class="col-sm-6">
 							<legend><i class="fas fa-info"></i> {{Informations}}</legend>
 							<div class='sendMode jeedomCloud' style="display: none;">
-								<div class="alert alert-danger">{{Attention il y a une limite de 5 mails par jour (cette limite est succeptible de varier à l'avenir)}}</div>
+								<div class="alert alert-danger">{{Attention il y a une limite de 1 mails par jour (cette limite est succeptible de varier à l'avenir)}}</div>
 							</div>
 							<div class='sendMode sendmail' style="display: none;">
 								<div class="alert alert-danger">{{Attention cette option nécessite d'avoir correctement configuré le système (OS).}}</div>

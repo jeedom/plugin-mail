@@ -26,7 +26,7 @@
         "Nom expéditeur": "Sender name",
         "Mail expéditeur": "Sender email",
         "Informations": "Information",
-        "Attention il y a une limite de 5 mails par jour (cette limite est succeptible de varier à l'avenir)": "Please note there is a limit of 5 emails per day (this limit may vary in the future)",
+        "Attention il y a une limite de 1 mails par jour (cette limite est succeptible de varier à l'avenir)": "Please note that there is a limit of 1 email per day (this limit is likely to vary in the future)",
         "Attention cette option nécessite d'avoir correctement configuré le système (OS).": "Please note, this option requires you to have correctly configured the system (OS)",
         "Serveur SMTP": "SMTP server",
         "Port SMTP": "SMTP port",

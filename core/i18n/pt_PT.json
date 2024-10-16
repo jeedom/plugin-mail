@@ -26,7 +26,7 @@
         "Nom expéditeur": "Nome do remetente",
         "Mail expéditeur": "Remetente do correio",
         "Informations": "Em formação",
-        "Attention il y a une limite de 5 mails par jour (cette limite est succeptible de varier à l'avenir)": "Observe que há um limite de 5 e-mails por dia (esse limite pode variar no futuro)",
+        "Attention il y a une limite de 1 mails par jour (cette limite est succeptible de varier à l'avenir)": "Observe que há um limite de 1 e-mail por dia (esse limite pode variar no futuro)",
         "Attention cette option nécessite d'avoir correctement configuré le système (OS).": "Observe que esta opção requer que você tenha configurado corretamente o sistema (SO)",
         "Serveur SMTP": "Servidor SMTP",
         "Port SMTP": "Porta SMTP",

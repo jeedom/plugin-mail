@@ -190,7 +190,13 @@ class mailCmd extends cmd {
 				$mail->addAttachment($file);
 			}
 		}
+		try {
+			return $mail->send();
+		} catch (\Throwable $th) {
+			sleep(30);
+		}
 		return $mail->send();
+		
 	}
 
 	/*     * **********************Getteur Setteur*************************** */

@@ -56,8 +56,10 @@ class mailCmd extends cmd {
 	/*     * *********************Methode d'instance************************* */
 
 	public function preSave() {
-		if ($this->getLogicalId() == 'send_to_custom_email') return;
-
+		if ($this->getLogicalId() == 'send_to_custom_email'){
+			$this->setConfiguration('recipient','');
+			return;
+		}
 		$this->setType('action');
 		$this->setSubType('message');
 		if ($this->getConfiguration('recipient') == '') {

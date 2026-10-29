@@ -17,6 +17,7 @@
     "author": "Loïc",
     "require": "4.4",
     "hasDependency": true,
+    "hasOwnDeamon": true,
     "category": "communication",
     "changelog": "https:\/\/doc.jeedom.com\/#language#\/plugins\/communication\/mail\/changelog",
     "documentation": "https:\/\/doc.jeedom.com\/#language#\/plugins\/communication\/mail\/",

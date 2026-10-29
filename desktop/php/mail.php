@@ -16,6 +16,11 @@ $eqLogics = eqLogic::byType($plugin->getId());
 				<br />
 				<span>{{Ajouter}}</span>
 			</div>
+			<div class="cursor eqLogicAction logoSecondary" data-action="gotoPluginConf">
+				<i class="fas fa-wrench"></i>
+				<br />
+				<span>{{Configuration}}</span>
+			</div>
 		</div>
 		<legend><i class="fas fa-envelope"></i> {{Mes mails}}</legend>
 		<?php
@@ -59,6 +64,7 @@ $eqLogics = eqLogic::byType($plugin->getId());
 		<ul class="nav nav-tabs" role="tablist">
 			<li role="presentation"><a href="" class="eqLogicAction" aria-controls="home" role="tab" data-toggle="tab" data-action="returnToThumbnailDisplay"><i class="fas fa-arrow-circle-left"></i></a></li>
 			<li role="presentation" class="active"><a href="#eqlogictab" aria-controls="home" role="tab" data-toggle="tab"><i class="fas fa-tachometer-alt"></i> {{Equipement}}</a></li>
+			<li role="presentation"><a href="#receivetab" aria-controls="profile" role="tab" data-toggle="tab"><i class="fas fa-inbox"></i> {{Réception}}</a></li>
 			<li role="presentation"><a href="#commandtab" aria-controls="profile" role="tab" data-toggle="tab"><i class="fas fa-list"></i> {{Commandes}}</a></li>
 		</ul>
 		<div class="tab-content" style="height:calc(100% - 50px);overflow:auto;overflow-x: hidden;">
@@ -122,6 +128,45 @@ $eqLogics = eqLogic::byType($plugin->getId());
 									</select>
 								</div>
 							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{{Authentification}}
+									<sup><i class="fas fa-question-circle tooltips" title="{{Utilisée pour l'envoi SMTP et pour la réception IMAP. Google et Microsoft 365 imposent OAuth2}}"></i></sup>
+								</label>
+								<div class="col-sm-6">
+									<select class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="oauth::provider">
+										<option value="">{{Mot de passe}}</option>
+										<option value="google">Google (OAuth2)</option>
+										<option value="microsoft">Microsoft 365 / Outlook (OAuth2)</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group oauthConfig" style="display:none;">
+								<label class="col-sm-4 control-label">{{Compte}}</label>
+								<div class="col-sm-6">
+									<span id="span_oauthAccount" class="label label-default"></span>
+									<a class="btn btn-sm btn-success" id="bt_oauthConnect"><i class="fas fa-link"></i> {{Connecter le compte}}</a>
+									<a class="btn btn-sm btn-danger" id="bt_oauthDisconnect"><i class="fas fa-unlink"></i> {{Déconnecter}}</a>
+								</div>
+							</div>
+							<div class="form-group" id="div_oauthGoogle" style="display:none;">
+								<div class="col-sm-offset-4 col-sm-6">
+									<div class="alert alert-info">{{Autorisez l'accès dans la fenêtre Google qui vient de s'ouvrir. Votre navigateur affichera ensuite une page en erreur : copiez l'adresse complète de cette page (elle commence par http://127.0.0.1:47823/) et collez-la ci-dessous.}}</div>
+									<div class="input-group">
+										<input type="text" class="form-control roundedLeft" id="in_oauthGoogleUrl" placeholder="http://127.0.0.1:47823/?state=...&code=..." />
+										<span class="input-group-btn">
+											<a class="btn btn-success roundedRight" id="bt_oauthGoogleFinish"><i class="fas fa-check"></i> {{Valider}}</a>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="form-group" id="div_oauthMicrosoft" style="display:none;">
+								<div class="col-sm-offset-4 col-sm-6">
+									<div class="alert alert-info">
+										{{Ouvrez}} <a id="a_oauthMicrosoftUri" target="_blank" rel="noopener"></a> {{et saisissez le code}} <strong id="span_oauthMicrosoftCode" style="font-size:1.3em;"></strong>
+										<br /><i class="fas fa-spinner fa-spin"></i> {{En attente de l'autorisation...}}
+									</div>
+								</div>
+							</div>
 							<div class="form-group sendMode mail qmail sendmail smtp">
 								<label class="col-sm-4 control-label">{{Nom expéditeur}}</label>
 								<div class="col-sm-6">
@@ -173,13 +218,13 @@ $eqLogics = eqLogic::byType($plugin->getId());
 										</select>
 									</div>
 								</div>
-								<div class="form-group">
+								<div class="form-group passwordAuth">
 									<label class="col-sm-2 control-label">{{Utilisateur SMTP}}</label>
 									<div class="col-sm-8">
 										<input type="text" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::username' />
 									</div>
 								</div>
-								<div class="form-group">
+								<div class="form-group passwordAuth">
 									<label class="col-sm-2 control-label">{{Mot de passe SMTP}}</label>
 									<div class="col-sm-8">
 										<input type="password" class="eqLogicAttr form-control" data-l1key='configuration' data-l2key='smtp::password' />
@@ -193,6 +238,111 @@ $eqLogics = eqLogic::byType($plugin->getId());
 								</div>
 							</div>
 
+						</div>
+					</fieldset>
+				</form>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="receivetab">
+				<form class="form-horizontal">
+					<fieldset>
+						<div class="col-sm-6">
+							<legend><i class="fas fa-inbox"></i> {{Réception des mails (IMAP)}}</legend>
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{{Activer la réception}}
+									<sup><i class="fas fa-question-circle tooltips" title="{{Surveille une boîte mail et met à jour les commandes info de l'équipement à chaque nouveau mail}}"></i></sup>
+								</label>
+								<div class="col-sm-6">
+									<input type="checkbox" class="eqLogicAttr" data-l1key="configuration" data-l2key="imap::enable" />
+								</div>
+							</div>
+							<div class="imapConfig">
+								<div class="form-group">
+									<label class="col-sm-4 control-label">{{Serveur IMAP}}</label>
+									<div class="col-sm-6">
+										<input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="imap::server" placeholder="imap.exemple.com" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-4 control-label">{{Sécurité IMAP}}</label>
+									<div class="col-sm-6">
+										<select class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="imap::security">
+											<option value="ssl">SSL/TLS</option>
+											<option value="starttls">STARTTLS</option>
+											<option value="none">{{Aucune}}</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-4 control-label">{{Port IMAP}}</label>
+									<div class="col-sm-6">
+										<input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="imap::port" placeholder="993" />
+									</div>
+								</div>
+								<div class="form-group passwordAuth">
+									<label class="col-sm-4 control-label">{{Utilisateur IMAP}}</label>
+									<div class="col-sm-6">
+										<input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="imap::username" autocomplete="off" />
+									</div>
+								</div>
+								<div class="form-group passwordAuth">
+									<label class="col-sm-4 control-label">{{Mot de passe IMAP}}</label>
+									<div class="col-sm-6">
+										<input type="password" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="imap::password" autocomplete="new-password" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-4 control-label"></label>
+									<div class="col-sm-6">
+										<label class="checkbox-inline"><input type="checkbox" class="eqLogicAttr" data-l1key="configuration" data-l2key="imap::dontcheckssl" />{{Ne pas vérifier le certificat SSL}}</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-4 control-label">{{Dossier surveillé}}</label>
+									<div class="col-sm-6">
+										<input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="imap::folder" placeholder="INBOX" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-4 control-label">{{Marquer comme lu}}
+										<sup><i class="fas fa-question-circle tooltips" title="{{Marque les mails traités comme lus sur le serveur}}"></i></sup>
+									</label>
+									<div class="col-sm-6">
+										<input type="checkbox" class="eqLogicAttr" data-l1key="configuration" data-l2key="imap::markSeen" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 imapConfig">
+							<legend><i class="fas fa-filter"></i> {{Filtres}}</legend>
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{{Expéditeurs}}
+									<sup><i class="fas fa-question-circle tooltips" title="{{Ne traiter que les mails dont l'adresse de l'expéditeur contient l'une de ces valeurs (séparées par des virgules). Vide pour tout accepter}}"></i></sup>
+								</label>
+								<div class="col-sm-6">
+									<input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="imap::filter::from" placeholder="alarme@exemple.com, @domaine.fr" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{{Sujet contient}}
+									<sup><i class="fas fa-question-circle tooltips" title="{{Ne traiter que les mails dont le sujet contient ce texte. Vide pour tout accepter}}"></i></sup>
+								</label>
+								<div class="col-sm-6">
+									<input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="imap::filter::subject" />
+								</div>
+							</div>
+							<legend><i class="fas fa-paperclip"></i> {{Pièces jointes}}</legend>
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{{Enregistrer les pièces jointes}}</label>
+								<div class="col-sm-6">
+									<input type="checkbox" class="eqLogicAttr" data-l1key="configuration" data-l2key="imap::attachments" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{{Conservation (jours)}}</label>
+								<div class="col-sm-6">
+									<input type="number" min="1" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="imap::attachments::retention" placeholder="7" />
+								</div>
+							</div>
 						</div>
 					</fieldset>
 				</form>

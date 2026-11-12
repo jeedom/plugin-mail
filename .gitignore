@@ -5,3 +5,5 @@ plugins
 sftp-config.json
 .project
 .vscode
+data/
+__pycache__/
